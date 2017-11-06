@@ -6,7 +6,7 @@ import { transformSchema } from 'graphql-transform-schema'
 import { makeRemoteExecutableSchema, mergeSchemas, introspectSchema } from 'graphql-tools'
 import { HttpLink } from 'apollo-link-http'
 import fetch from 'node-fetch'
-import { express as playground } from 'graphql-playground/middleware'
+import { expressPlayground } from 'graphql-playground-middleware'
 import { request } from 'graphql-request'
 import * as jwt from 'jsonwebtoken'
 
@@ -107,7 +107,7 @@ async function run() {
   const app = express()
 
   app.use('/graphql', cors(), bodyParser.json(), graphqlExpress(req => ({ schema: schema, context: { req } })))
-  app.use('/playground', playground({ endpoint: '/graphql' }))
+  app.use('/playground', expressPlayground({ endpoint: '/graphql' }))
 
   app.listen(3000, () => console.log('Server running. Open http://localhost:3000/playground to run queries.'))
 }
