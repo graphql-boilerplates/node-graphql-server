@@ -3,8 +3,8 @@ Boilerplate for a scalable, production-ready GraphQL Gateway server
 
 ## Features
 - Logging
-- Custom GraphQL Schema composition using `graphql-delegate`
-- Stackable resolvers with `graphql-stack`
+- Custom GraphQL Schema composition using [`graphql-delegate`](https://github.com/graphcool/graphql-stack/tree/master/packages/graphql-delegate)
+- Stackable resolvers with [`graphql-stack`](https://github.com/graphcool/graphql-stack)
 - Scalable application architecture
 - Authentication through JWT
 - Before and after hooks for resolvers
