@@ -1,3 +1,5 @@
 types: ./types.graphqls
 permissions:
   - operation: "*"
+rootTokens:
+  - main
