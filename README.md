@@ -46,7 +46,7 @@ mutation {
         title: "Post 2"
       }, {
         title: "Post 3"
-			}]
+      }]
     }]
   ) {
     id
