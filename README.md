@@ -76,6 +76,9 @@ With the token, you now can check the `viewer` query:
 }
 ```
 
+## Learning the code
+We highly suggest you check out the code of the Gateway! The [`index.ts`](https://github.com/graphcool/graphql-boilerplate/blob/master/gateway/src/index.ts) is a good starting point.
+
 ## Community
 
 Graphcool has a community of thousands of amazing developers and contributors. Welcome, please join us! 👋
