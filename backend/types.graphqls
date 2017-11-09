@@ -1,11 +1,9 @@
-# The following types define the data model of the example service
-# based on which the GraphQL API is generated
-
 type User @model {
   id: ID! @isUnique
-  name: String!
+  #name: String!
   createdAt: DateTime!
 
+  name: String
   email: String! @isUnique
   password: String!
 
@@ -13,6 +11,7 @@ type User @model {
 
   posts: [Post!]! @relation(name: "UserPosts")
   comments: [Comment!]! @relation(name: "UserComments")
+  friends: [User!]! @relation(name: "Friends")
 }
 
 
@@ -32,4 +31,10 @@ type Comment @model {
   text: String!
   author: User! @relation(name: "UserComments")
   post: Post! @relation(name: "PostComments")
+}
+
+type Item @model {
+  id: ID! @isUnique
+  title: String!
+  secret: Boolean! @defaultValue(value: "false")
 }
