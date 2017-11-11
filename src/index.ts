@@ -28,7 +28,7 @@ async function run() {
   // initializes the remote schema
   await delegate.init()
 
-  const typeDefs = `
+  const apiSchema = `
     type Query {
       viewer: Viewer!
     }
@@ -48,13 +48,11 @@ async function run() {
       token: String
     }
   `
-  const allTypes = delegate.extractMissingTypes(typeDefs)
+  const typeDefs = delegate.extractMissingTypes(apiSchema)
 
-  const stack = new Stack({ typeDefs: allTypes })
+  const stack = new Stack({ typeDefs })
 
   // middlewares can be added here
-  // app.use(caching())
-  // app.use(metrics())
   stack.use({
     Query: {
       viewer: authMiddleware,

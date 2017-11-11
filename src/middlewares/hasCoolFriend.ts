@@ -1,4 +1,4 @@
-import { checkPermission, getUserId } from '../../util'
+import { checkPermission, getUserId } from '../util'
 
 export const hasCoolFriend = name => async ({context, mergeInfo, parent, args, info}, resolve) => {
   const userId = getUserId(context)

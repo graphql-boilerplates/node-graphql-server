@@ -1,4 +1,4 @@
-types: ./types.graphqls
+types: ./types.graphql
 permissions:
   - operation: "*"
 rootTokens:
