@@ -14,7 +14,7 @@ Boilerplate for a scalable, production-ready GraphQL Gateway server
 ## Development
 ### Initializing the Graphcool Service
 ```
-cd backend
+cd database
 gc deploy
 gc info # put the simple endpoint into the `GRAPHQL_ENDPOINT` env var in .envrc
 gc root-token main # put the root token into the `ADMIN_TOKEN` env var in .envrc
