@@ -3,7 +3,7 @@ Boilerplate for a scalable, production-ready GraphQL Gateway server
 
 ## Features
 - Logging
-- Custom GraphQL Schema composition using [`graphql-delegate`](https://github.com/graphcool/graphql-stack/tree/master/packages/graphql-delegate)
+- Custom GraphQL Schema composition using [`graphql-delegate`](https://github.com/graphcool/graphql-delegate)
 - Stackable resolvers with [`graphql-stack`](https://github.com/graphcool/graphql-stack)
 - Scalable application architecture
 - Authentication through JWT
@@ -77,7 +77,7 @@ With the token, you now can check the `viewer` query:
 ```
 
 ## Learning the code
-We highly suggest you check out the code of the Gateway! The [`index.ts`](https://github.com/graphcool/graphql-boilerplate/blob/master/gateway/src/index.ts) is a good starting point.
+We highly suggest you check out the code of the Gateway! The [`index.ts`](https://github.com/graphcool/graphql-boilerplate/blob/master/src/index.ts) is a good starting point.
 
 ## Community
 
@@ -101,4 +101,4 @@ If an existing feature request or bug report is very important for you, please g
 
 ### Requesting a new feature
 
-We love your ideas for new features. If you're missing a certain feature, please feel free to [request a new feature here](https://github.com/graphcool/framework/issues/new). (Please make sure to check first if somebody else already requested it.)
+We love your ideas for new features. If you're missing a certain feature, please feel free to [request a new feature here](https://github.com/graphcool/graphql-boilerplate/issues/new). (Please make sure to check first if somebody else already requested it.)
