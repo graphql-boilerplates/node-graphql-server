@@ -1,7 +1,7 @@
-.DS_Store
-node_modules
+.envrc
+.env
+dist
 package-lock.json
-yarn.lock
+node_modules
 .idea
 .graphcoolrc
-.envrc

@@ -1,88 +1,34 @@
-import * as express from 'express'
-import * as cors from 'cors'
-import * as bodyParser from 'body-parser'
-import expressPlayground from 'graphql-playground-middleware-express'
-import { graphqlExpress } from 'apollo-server-express'
-import * as morgan from 'morgan'
-import { HttpLink } from 'apollo-link-http'
-import fetch from 'node-fetch'
-import { Stack } from 'graphql-stack'
-import { me } from './resolvers/Query/me'
-import { login } from './resolvers/Mutation/login'
-import { signup } from './resolvers/Mutation/signup'
-import { beforeAfterHook } from './middlewares/beforeAfterHook'
-import { authMiddleware } from './middlewares/authMiddleware'
-import { hasCoolFriend } from './middlewares/hasCoolFriend'
-import { friendsPosts } from './resolvers/Viewer/friendsPosts'
-import { nonSecretPosts } from './resolvers/Viewer/nonSecretPosts'
-import { Delegate } from 'graphql-delegate'
+import { GraphQLServer } from 'graphql-yoga'
+import { Remote, GraphcoolLink } from 'graphql-remote'
+import { Query } from './resolvers/Query'
+import { importSchema } from 'graphql-import'
+import { Graphcool } from 'graphcool-orm'
 
-async function run() {
-  const app = express()
-  const link = new HttpLink({
-    uri: process.env.GRAPHQL_ENDPOINT,
-    fetch,
-    headers: { Authorization: `Bearer ${process.env.ADMIN_TOKEN}` },
-  })
-  const delegate = new Delegate(link)
-  // initializes the remote schema
-  await delegate.init()
+import { auth } from './resolvers/Mutation/auth'
+import { AuthPayload } from './resolvers/AuthPayload'
+import { post } from './resolvers/Mutation/post'
 
-  const apiSchema = `
-    type Query {
-      viewer: Viewer!
-    }
-
-    type Viewer {
-      me: User
-      friendsPosts(limit: Int): [Post!]!
-      nonSecretPosts(limit: Int): [Post!]!
-    }
-
-    type Mutation {
-      login(email: String!, password: String!): AuthPayload!
-      signup(email: String!, password: String!): AuthPayload!
-    }
-
-    type AuthPayload {
-      token: String
-    }
-  `
-  const typeDefs = delegate.extractMissingTypes(apiSchema)
-
-  const stack = new Stack({ typeDefs })
-
-  // middlewares can be added here
-  stack.use({
-    Query: {
-      viewer: authMiddleware,
-    },
-    Viewer: {
-      me: me,
-      friendsPosts: [hasCoolFriend('David'), beforeAfterHook, friendsPosts],
-      nonSecretPosts: [beforeAfterHook, nonSecretPosts],
-    },
-    Mutation: {
-      login,
-      signup,
-    },
-  })
-
-  const schema = stack.getSchema()
-
-  app.use(
-    '/graphql',
-    cors(),
-    bodyParser.json(),
-    graphqlExpress(req => ({ schema, context: { req, delegate: delegate.getDelegator() } })),
-  )
-  app.use(morgan('tiny'))
-  app.use('/playground', expressPlayground({ endpoint: '/graphql' }))
-  app.listen(3000, () =>
-    console.log(
-      'Server running. Open http://localhost:3000/playground to run queries.',
-    ),
-  )
+const typeDefs = importSchema('./src/schema.graphql')
+const resolvers = {
+  Query,
+  Mutation: {
+    ...auth,
+    ...post,
+  },
+  AuthPayload,
 }
 
-run().catch(console.error.bind(console))
+const server = new GraphQLServer({
+  typeDefs,
+  resolvers,
+  context: req => ({
+    ...req,
+    graphcool: new Graphcool({
+      schema: 'schemas/db-service.graphql',
+      endpoint: process.env.GRAPHCOOL_ENDPOINT,
+      apikey: process.env.GRAPHCOOL_APIKEY,
+    }),
+  }),
+})
+
+server.start(() => console.log('Server is running on http://localhost:4000'))
