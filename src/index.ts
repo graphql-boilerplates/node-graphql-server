@@ -1,22 +1,9 @@
 import { GraphQLServer } from 'graphql-yoga'
-import { Remote, GraphcoolLink } from 'graphql-remote'
-import { Query } from './resolvers/Query'
 import { importSchema } from 'graphql-import'
 import { Graphcool } from 'graphcool-orm'
-
-import { auth } from './resolvers/Mutation/auth'
-import { AuthPayload } from './resolvers/AuthPayload'
-import { post } from './resolvers/Mutation/post'
+import resolvers from './resolvers'
 
 const typeDefs = importSchema('./src/schema.graphql')
-const resolvers = {
-  Query,
-  Mutation: {
-    ...auth,
-    ...post,
-  },
-  AuthPayload,
-}
 
 const server = new GraphQLServer({
   typeDefs,

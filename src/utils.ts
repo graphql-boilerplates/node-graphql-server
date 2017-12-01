@@ -18,13 +18,6 @@ export function getUserId(ctx: Context) {
   throw new AuthError()
 }
 
-export async function authenticated(cb) {
-  return (parent, args, ctx, info) => {
-    getUserId(ctx)
-    return cb(parent, args, ctx, info)
-  }
-}
-
 export class AuthError extends Error {
   constructor() {
     super('Not authorized')
