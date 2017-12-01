@@ -5,7 +5,7 @@ import { AuthError, Context } from '../../utils'
 export const auth = {
   async signup(parent, args, ctx: Context, info) {
     const password = await bcrypt.hash(args.password, 10)
-    const user = await ctx.graphcool.createUser({ ...args, password })
+    const user = await ctx.db.createUser({ ...args, password })
 
     return {
       token: jwt.sign({ userId: user.id }, process.env.JWT_SECRET),
@@ -14,7 +14,7 @@ export const auth = {
   },
 
   async login(parent, args, ctx: Context, info) {
-    const user = await ctx.graphcool.User({ email: args.email })
+    const user = await ctx.db.User({ email: args.email })
     if (!user) {
       throw new Error('No such user found')
     }

@@ -3,7 +3,7 @@ import * as fs from 'fs'
 import { Graphcool } from 'graphcool-orm'
 
 export interface Context {
-  graphcool: Graphcool
+  db: Graphcool
   request: any
 }
 

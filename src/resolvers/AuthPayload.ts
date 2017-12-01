@@ -2,6 +2,6 @@ import { Context } from '../utils'
 
 export const AuthPayload = {
   user: async ({ user: { id } }, args, ctx: Context, info) => {
-    return ctx.graphcool.User({ id }, info)
+    return ctx.db.User({ id }, info)
   },
 }

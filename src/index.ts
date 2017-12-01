@@ -10,7 +10,7 @@ const server = new GraphQLServer({
   resolvers,
   context: req => ({
     ...req,
-    graphcool: new Graphcool({
+    db: new Graphcool({
       schema: 'schemas/db-service.graphql',
       endpoint: process.env.GRAPHCOOL_ENDPOINT,
       apikey: process.env.GRAPHCOOL_APIKEY,
