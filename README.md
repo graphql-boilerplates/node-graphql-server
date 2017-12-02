@@ -1,4 +1,4 @@
-# graphql-boilerplate-typescript
+# graphql-boilerplate
 
 Boilerplate for a scalable, production-ready GraphQL server ([Hosted Demo](https://graphql-bp.now.sh/))
 
@@ -24,7 +24,7 @@ curl https://codeload.github.com/graphcool/graphql-boilerplate/tar.gz/master | t
 yarn
 ```
 
-### 2. Deploy Graphcool database
+### 2. Deploy GraphQL database
 
 ```sh
 # Deploy database
@@ -42,7 +42,23 @@ graphcool root-token apikey
 yarn start
 ```
 
-## Deployment
+## Docs
+
+### Workflows
+
+* `yarn start` starts GraphQL server
+* `yarn debug` starts GraphQL server in debug mode (open [chrome://inspect/#devices](chrome://inspect/#devices) to debug)
+* `yarn get-schema` downloads the GraphQL schemas to `schema/*.graphql`
+* `yarn playground` opens the GraphQL Playground
+* `yarn deploy` deploys the GraphQL server to [now](https://zeit.co/now)
+
+### Deployment
+
+Deploying this project involves two parts: 1) Deploying the GraphQL server and 2) Deploying the GraphQL database
+
+### Debugging
+
+### Testings
 
 *WIP*
 

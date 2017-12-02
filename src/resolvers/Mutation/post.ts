@@ -1,9 +1,9 @@
 import { getUserId, Context } from '../../utils'
 
 export const post = {
-  async writePost(parent, args, ctx: Context, info) {
+  async writePost(parent, { title, text }, ctx: Context, info) {
     const authorId = getUserId(ctx)
-    return ctx.db.createPost({ ...args, authorId }, info)
+    return ctx.db.createPost({ title, text, authorId, isPublished: true }, info)
   },
 
   async deletePost(parent, { id }, ctx: Context, info) {
