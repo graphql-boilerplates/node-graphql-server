@@ -14,5 +14,4 @@ type User @model {
   password: String!
   name: String!
   posts: [Post!]! @relation(name: "UserPosts")
-  friends: [User!]! @relation(name: "UserFriends")
 }
