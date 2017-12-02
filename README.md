@@ -51,7 +51,7 @@ yarn start
 yarn playground
 ```
 
-![](https://imgur.com/4P5VhoA.png)
+![](https://imgur.com/eMpNw0e.png)
 
 ## Example Codebase
 
