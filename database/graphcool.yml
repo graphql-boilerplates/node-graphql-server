@@ -1,4 +1,0 @@
-types: ./types.graphql
-
-rootTokens:
-- main
