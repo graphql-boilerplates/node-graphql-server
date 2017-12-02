@@ -18,7 +18,7 @@ mkdir graphql-server
 cd graphql-server
 
 # download boilerplate
-curl https://codeload.github.com/graphcool/graphql-boilerplate/tar.gz/orm | tar -xz --strip=1 graphql-boilerplate-orm
+curl https://codeload.github.com/graphcool/graphql-boilerplate/tar.gz/master | tar -xz --strip=1 graphql-boilerplate-master
 
 # install dependencies
 yarn
