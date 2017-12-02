@@ -12,6 +12,7 @@ Boilerplate for a scalable, production-ready GraphQL server ([Hosted Demo](https
 
 #### Requirements
 
+* Node 8 (or higher)
 * Graphcool CLI (Get it via `npm install -g graphcool`)
 * Optional: GraphQL Playground desktop app (Download [here](https://github.com/graphcool/graphql-playground/releases))
 
@@ -49,6 +50,10 @@ yarn start
 # Open Playground to explore GraphQL API
 yarn playground
 ```
+
+## Example Codebase
+
+*WIP*
 
 ## Docs
 
