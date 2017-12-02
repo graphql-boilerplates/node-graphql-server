@@ -8,8 +8,8 @@ projects:
           url: "${env:GRAPHCOOL_ENDPOINT}"
           headers:
             Authorization: "Bearer ${env:GRAPHCOOL_APIKEY}"
-  gateway:
-    schemaPath: "schemas/gateway.graphql"
+  server:
+    schemaPath: "schemas/server.graphql"
     includes: ["queries/{booking,queries}.graphql"]
     extensions:
       endpoints:
