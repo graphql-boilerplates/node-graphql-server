@@ -51,6 +51,8 @@ yarn start
 yarn playground
 ```
 
+![](https://imgur.com/4P5VhoA.png)
+
 ## Example Codebase
 
 *WIP*
