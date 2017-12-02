@@ -10,6 +10,11 @@ Boilerplate for a scalable, production-ready GraphQL server ([Hosted Demo](https
 
 ## Getting started
 
+### Requirements
+
+* Graphcool CLI (Get it via `npm install -g graphcool`)
+* Optional: GraphQL Playground desktop app (Download [here](https://github.com/graphcool/graphql-playground/releases))
+
 ### 1. Setup project
 
 ```sh
@@ -38,13 +43,16 @@ graphcool root-token apikey
 ### 3. Launch local server
 
 ```sh
-# Start server and open http://localhost:4000
+# Start server (runs on http://localhost:4000)
 yarn start
+
+# Open Playground to explore GraphQL API
+yarn playground
 ```
 
 ## Docs
 
-### Workflows
+### Commands
 
 * `yarn start` starts GraphQL server
 * `yarn debug` starts GraphQL server in debug mode (open [chrome://inspect/#devices](chrome://inspect/#devices) to debug)
