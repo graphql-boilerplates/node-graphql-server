@@ -1,41 +1,18 @@
-type User @model {
-  id: ID! @isUnique
-  #name: String!
-  createdAt: DateTime!
-
-  name: String
-  email: String! @isUnique
-  password: String!
-
-  # Uncomment below - you can declare relations between models like this
-
-  posts: [Post!]! @relation(name: "UserPosts")
-  comments: [Comment!]! @relation(name: "UserComments")
-  friends: [User!]! @relation(name: "Friends")
-}
-
-
-# Uncomment the model below as well
-
 type Post @model {
   id: ID! @isUnique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  isPublished: Boolean! @defaultValue(value: false)
   title: String!
-  secret: Boolean @defaultValue(value: false)
-
-  # Every relation also required a back-relation (to determine 1:1, 1:n or n:m)
-  author: User! @relation(name: "UserPosts")
-  comments: [Comment!]! @relation(name: "PostComments")
-}
-
-type Comment @model {
-  id: ID! @isUnique
   text: String!
-  author: User! @relation(name: "UserComments")
-  post: Post! @relation(name: "PostComments")
+  author: User! @relation(name: "UserPosts")
 }
 
-type Item @model {
+type User @model {
   id: ID! @isUnique
-  title: String!
-  secret: Boolean! @defaultValue(value: "false")
+  email: String! @isUnique
+  password: String!
+  name: String!
+  posts: [Post!]! @relation(name: "UserPosts")
+  friends: [User!]! @relation(name: "UserFriends")
 }

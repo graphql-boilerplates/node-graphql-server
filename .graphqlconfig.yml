@@ -1,0 +1,16 @@
+projects:
+  database:
+    schemaPath: "schemas/database.graphql"
+    includes: ["queries/seed.graphql", "src/schema.graphql"]
+    extensions:
+      endpoints:
+        default:
+          url: "${env:GRAPHCOOL_ENDPOINT}"
+          headers:
+            Authorization: "Bearer ${env:GRAPHCOOL_APIKEY}"
+  server:
+    schemaPath: "schemas/server.graphql"
+    includes: ["queries/{booking,queries}.graphql"]
+    extensions:
+      endpoints:
+        default: "${env:SERVER_ENDPOINT}"

@@ -2,9 +2,12 @@
   "compilerOptions": {
     "target": "es5",
     "moduleResolution": "node",
+    "module": "commonjs",
     "sourceMap": true,
+    "rootDir": "src",
+    "outDir": "dist",
     "lib": [
-      "es2017"
+      "esnext", "dom"
     ]
   }
 }
