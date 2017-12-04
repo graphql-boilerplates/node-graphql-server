@@ -1,5 +1,5 @@
 # source: http://localhost:60000/simple/v1/cjanotp2l000201666m3w6r8x
-# timestamp: Fri Dec 01 2017 17:14:54 GMT+0100 (CET)
+# timestamp: Mon Dec 04 2017 15:58:23 GMT+0100 (CET)
 
 enum _ModelMutationType {
   CREATED
@@ -10,11 +10,6 @@ enum _ModelMutationType {
 # Meta information about the query.
 type _QueryMeta {
   count: Int!
-}
-
-type AddToUserFriendsPayload {
-  friends2User: User
-  friends1User: User
 }
 
 type AddToUserPostsPayload {
@@ -34,8 +29,6 @@ input CreateUser {
   email: String!
   name: String!
   password: String!
-  friendsIds: [ID!]
-  friends: [UserfriendsUser!]
   postsIds: [ID!]
   posts: [UserpostsPost!]
 }
@@ -45,15 +38,13 @@ scalar DateTime
 type Mutation {
   createPost(isPublished: Boolean, text: String!, title: String!, authorId: ID, author: PostauthorUser): Post
   updatePost(id: ID!, isPublished: Boolean, text: String, title: String, authorId: ID, author: PostauthorUser): Post
-  updateUser(email: String, id: ID!, name: String, password: String, friendsIds: [ID!], friends: [UserfriendsUser!], postsIds: [ID!], posts: [UserpostsPost!]): User
+  updateUser(email: String, id: ID!, name: String, password: String, postsIds: [ID!], posts: [UserpostsPost!]): User
   updateOrCreatePost(update: UpdatePost!, create: CreatePost!): Post
   updateOrCreateUser(update: UpdateUser!, create: CreateUser!): User
   deletePost(id: ID!): Post
   deleteUser(id: ID!): User
-  addToUserFriends(friends1UserId: ID!, friends2UserId: ID!): AddToUserFriendsPayload
   addToUserPosts(authorUserId: ID!, postsPostId: ID!): AddToUserPostsPayload
-  removeFromUserFriends(friends1UserId: ID!, friends2UserId: ID!): RemoveFromUserFriendsPayload
-  createUser(email: String!, name: String!, password: String!, friendsIds: [ID!], friends: [UserfriendsUser!], postsIds: [ID!], posts: [UserpostsPost!]): User
+  createUser(email: String!, name: String!, password: String!, postsIds: [ID!], posts: [UserpostsPost!]): User
 }
 
 # An object with an ID
@@ -76,8 +67,6 @@ input PostauthorUser {
   email: String!
   name: String!
   password: String!
-  friendsIds: [ID!]
-  friends: [UserfriendsUser!]
   postsIds: [ID!]
   posts: [UserpostsPost!]
 }
@@ -499,11 +488,6 @@ type Query {
   ): Node
 }
 
-type RemoveFromUserFriendsPayload {
-  friends2User: User
-  friends1User: User
-}
-
 type Subscription {
   Post(filter: PostSubscriptionFilter): PostSubscriptionPayload
   User(filter: UserSubscriptionFilter): UserSubscriptionPayload
@@ -523,22 +507,16 @@ input UpdateUser {
   id: ID!
   name: String
   password: String
-  friendsIds: [ID!]
-  friends: [UserfriendsUser!]
   postsIds: [ID!]
   posts: [UserpostsPost!]
 }
 
 type User implements Node {
   email: String!
-  friends(filter: UserFilter, orderBy: UserOrderBy, skip: Int, after: String, before: String, first: Int, last: Int): [User!]
   id: ID!
   name: String!
   password: String!
   posts(filter: PostFilter, orderBy: PostOrderBy, skip: Int, after: String, before: String, first: Int, last: Int): [Post!]
-
-  # Meta information about the query.
-  _friendsMeta(filter: UserFilter, orderBy: UserOrderBy, skip: Int, after: String, before: String, first: Int, last: Int): _QueryMeta!
 
   # Meta information about the query.
   _postsMeta(filter: PostFilter, orderBy: PostOrderBy, skip: Int, after: String, before: String, first: Int, last: Int): _QueryMeta!
@@ -710,22 +688,9 @@ input UserFilter {
 
   # All values not ending with the given string.
   password_not_ends_with: String
-  friends_every: UserFilter
-  friends_some: UserFilter
-  friends_none: UserFilter
   posts_every: PostFilter
   posts_some: PostFilter
   posts_none: PostFilter
-}
-
-input UserfriendsUser {
-  email: String!
-  name: String!
-  password: String!
-  friendsIds: [ID!]
-  friends: [UserfriendsUser!]
-  postsIds: [ID!]
-  posts: [UserpostsPost!]
 }
 
 enum UserOrderBy {
@@ -934,9 +899,6 @@ input UserSubscriptionFilterNode {
 
   # All values not ending with the given string.
   password_not_ends_with: String
-  friends_every: UserFilter
-  friends_some: UserFilter
-  friends_none: UserFilter
   posts_every: PostFilter
   posts_some: PostFilter
   posts_none: PostFilter

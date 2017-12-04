@@ -1,6 +1,6 @@
 import { GraphQLServer } from 'graphql-yoga'
 import { importSchema } from 'graphql-import'
-import { Graphcool } from 'graphcool-orm'
+import { Graphcool } from 'graphcool-binding'
 import resolvers from './resolvers'
 
 const typeDefs = importSchema('./src/schema.graphql')
