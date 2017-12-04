@@ -21,7 +21,7 @@
   "devDependencies": {
     "@types/bcryptjs": "^2.4.1",
     "dotenv-cli": "^1.4.0",
-    "graphql-cli": "^2.0.3",
+    "graphql-cli": "^2.0.4",
     "nodemon": "^1.12.1",
     "now": "^8.5.4",
     "ts-node": "^3.3.0",
