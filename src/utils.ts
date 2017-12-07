@@ -1,6 +1,5 @@
 import * as jwt from 'jsonwebtoken'
-import * as fs from 'fs'
-import { Graphcool } from 'graphcool-orm'
+import { Graphcool } from 'graphcool-binding'
 
 export interface Context {
   db: Graphcool

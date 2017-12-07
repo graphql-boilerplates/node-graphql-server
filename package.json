@@ -1,5 +1,5 @@
 {
-  "name": "graphql-bp",
+  "name": "graphql-boilerplate",
   "version": "1.0.0",
   "scripts": {
     "start": "dotenv -- nodemon -x ts-node -e ts,graphql src/index.ts",
@@ -14,13 +14,13 @@
     "bcryptjs": "^2.4.3",
     "graphcool-binding": "^0.1.0",
     "graphql-import": "^0.1.4",
-    "graphql-yoga": "^0.2.2",
+    "graphql-yoga": "^0.2.3",
     "jsonwebtoken": "^8.1.0"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.1",
     "dotenv-cli": "^1.4.0",
-    "graphql-cli": "^2.0.4",
+    "graphql-cli": "^2.0.5",
     "nodemon": "^1.12.2",
     "now": "^8.5.4",
     "ts-node": "^3.3.0",
