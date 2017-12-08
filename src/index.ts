@@ -3,7 +3,7 @@ import { importSchema } from 'graphql-import'
 import { Graphcool } from 'graphcool-binding'
 import resolvers from './resolvers'
 
-const typeDefs = importSchema('./src/schema.graphql')
+const typeDefs = importSchema('./src/schemas/app.graphql')
 
 const server = new GraphQLServer({
   typeDefs,
@@ -11,9 +11,9 @@ const server = new GraphQLServer({
   context: req => ({
     ...req,
     db: new Graphcool({
-      schema: 'schemas/database.graphql',
+      schema: './src/schemas/database.graphql',
       endpoint: process.env.GRAPHCOOL_ENDPOINT,
-      apikey: process.env.GRAPHCOOL_APIKEY,
+      secret: process.env.GRAPHCOOL_SECRET,
     }),
   }),
 })

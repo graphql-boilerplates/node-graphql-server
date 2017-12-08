@@ -1,4 +1,4 @@
-types: database/types.graphql
+types: database/datamodel.graphql
 
 rootTokens:
 - apikey

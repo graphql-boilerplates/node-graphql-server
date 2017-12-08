@@ -4,7 +4,6 @@
   "scripts": {
     "start": "dotenv -- nodemon -x ts-node -e ts,graphql src/index.ts",
     "debug": "dotenv -- nodemon -x 'ts-node --inspect' -e ts,graphql src/index.ts",
-    "get-schema": "dotenv -- graphql get-schema -p database && dotenv -- graphql get-schema -p server",
     "playground": "dotenv -- graphql playground",
     "build": "rm -rf dist && tsc",
     "deploy": "now --public --dotenv .env.prod && now alias && now rm --yes --safe graphql-bp",
