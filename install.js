@@ -9,9 +9,7 @@ module.exports = ({ project }) => {
 }
 
 function replaceInFile(filePath, searchValue, replaceValue) {
-  const contents = fs.readFileSync(path.join(__dirname, filePath), 'utf8')
-  console.log(contents)
+  const contents = fs.readFileSync(filePath, 'utf8')
   const newContents = contents.replace(searchValue, replaceValue)
-  console.log(newContents)
   fs.writeFileSync(filePath, newContents)
 }
