@@ -18,6 +18,9 @@ Next steps:
 
 function replaceInFile(filePath, searchValue, replaceValue) {
   const contents = fs.readFileSync(filePath, 'utf8')
-  const newContents = contents.replace(searchValue, replaceValue)
+  const newContents = contents.replace(
+    new RegExp(searchValue, 'g'),
+    replaceValue,
+  )
   fs.writeFileSync(filePath, newContents)
 }
