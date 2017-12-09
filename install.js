@@ -3,6 +3,7 @@ const path = require('path')
 
 module.exports = ({ project }) => {
   const templateName = 'graphql-boilerplate'
+  console.log(__dirname, process.cwd(), project)
   replaceInFile('package.json', templateName, project)
   replaceInFile('graphcool.yml', templateName, project)
   replaceInFile('.env', templateName, project)
