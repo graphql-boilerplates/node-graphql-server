@@ -9,8 +9,9 @@ module.exports = ({ project }) => {
   console.log(`\
 Next steps:
 
-  1. Deploy database service: \`gc-db deploy\`
-  2. Start local server: \`yarn start\`
+  1. Change directory: \`cd ${project}\`
+  2. Deploy database service: \`gc-db deploy\`
+  3. Start local server: \`yarn start\`
   `)
 }
 
