@@ -12,6 +12,7 @@ Next steps:
   1. Change directory: \`cd ${project}\`
   2. Deploy database service: \`gc-db deploy\`
   3. Start local server: \`yarn start\`
+  4. Open Playground: \`yarn playground\`
   `)
 }
 
