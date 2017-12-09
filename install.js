@@ -10,6 +10,6 @@ module.exports = ({ project }) => {
 
 function replaceInFile(filePath, searchValue, replaceValue) {
   const contents = fs.readFileSync(path.join(__dirname, filePath), 'utf8')
-  contents.replace(searchValue, replaceValue)
-  fs.writeFileSync(filePath, contents)
+  const newContents = contents.replace(searchValue, replaceValue)
+  fs.writeFileSync(filePath, newContents)
 }
