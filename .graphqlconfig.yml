@@ -11,4 +11,4 @@ projects:
         default:
           url: "${env:GRAPHCOOL_ENDPOINT}"
           headers:
-            Authorization: "Bearer ${env:GRAPHCOOL_APIKEY}"
+            Authorization: "Bearer ${env:GRAPHCOOL_SECRET}"

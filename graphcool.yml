@@ -1,4 +1,6 @@
-types: database/datamodel.graphql
+service: boilerplate
+stages: 
+  default: dev
+  dev: shared-eu-west-1
 
-rootTokens:
-- apikey
+datamodel: database/datamodel.graphql

@@ -2,7 +2,7 @@ type Post @model {
   id: ID! @isUnique
   createdAt: DateTime!
   updatedAt: DateTime!
-  isPublished: Boolean! @defaultValue(value: false)
+  isPublished: Boolean! # @default(value: false)
   title: String!
   text: String!
   author: User! @relation(name: "UserPosts")

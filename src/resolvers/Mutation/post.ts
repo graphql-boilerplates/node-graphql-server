@@ -11,7 +11,7 @@ export const post = {
 
   async deletePost(parent, { id }, ctx: Context, info) {
     const authorId = getUserId(ctx)
-    const postExists = await ctx.db.exists.Post({
+    const postExists = await ctx.db.exists.posts({
       id,
       author: { id: authorId },
     })
