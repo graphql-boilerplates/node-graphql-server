@@ -1,4 +1,5 @@
 const fs = require('fs')
+const path = require('path')
 
 module.exports = ({ project }) => {
   const templateName = 'graphql-boilerplate'
@@ -8,7 +9,7 @@ module.exports = ({ project }) => {
 }
 
 function replaceInFile(filePath, searchValue, replaceValue) {
-  const contents = fs.readFileSync(filePath, { encoding: 'utf8' })
+  const contents = fs.readFileSync(path.join(__dirname, filePath), 'utf8')
   contents.replace(searchValue, replaceValue)
   fs.writeFileSync(filePath, contents)
 }
