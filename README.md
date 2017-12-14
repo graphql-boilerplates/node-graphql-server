@@ -68,3 +68,19 @@ yarn playground
 - [`/src/schema.graphql`](https://github.com/graphcool/graphql-boilerplate/blob/master/src/schema.graphql) contains the GraphQL API of your application that is exposed to the world
 - [`/src/index.ts`](https://github.com/graphcool/graphql-boilerplate/blob/master/src/index.ts) is the entry point of your application, pulling everything together and starting the [`graphql-yoga`](https://github.com/graphcool/graphql-yoga) Server.
 - [`/src/resolvers/`](https://github.com/graphcool/graphql-boilerplate/tree/master/src/resolvers) includes the actual business logic of your application. In GraphQL you implement [resolvers](http://graphql.org/learn/execution/) that *resolve*  a specific query being requested
+
+## Community
+
+Graphcool has a community of thousands of amazing developers and contributors. Welcome, please join us! 👋
+
+* [Forum](https://www.graph.cool/forum)
+* [Slack](https://slack.graph.cool/)
+* [Stackoverflow](https://stackoverflow.com/questions/tagged/graphcool)
+* [Twitter](https://twitter.com/graphcool)
+* [Facebook](https://www.facebook.com/GraphcoolHQ)
+* [Meetup](https://www.meetup.com/graphql-berlin)
+* [Email](hello@graph.cool)
+
+## Contributing
+
+Your feedback is **very helpful**, please share your opinion and thoughts!
