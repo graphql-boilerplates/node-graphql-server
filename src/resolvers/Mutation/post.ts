@@ -4,7 +4,16 @@ export const post = {
   async writePost(parent, { title, text }, ctx: Context, info) {
     const authorId = getUserId(ctx)
     return ctx.db.mutation.createPost(
-      { data: { title, text, authorId, isPublished: true } },
+      {
+        data: {
+          title,
+          text,
+          isPublished: true,
+          author: {
+            connect: { id: authorId },
+          },
+        },
+      },
       info,
     )
   },
