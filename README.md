@@ -22,7 +22,7 @@ A hosted demo is available at https://graphql-bp.now.sh
 
 #### Setting up your project
 
-1. Via `graphql`
+##### 1. Via `graphql-cli`
 
 ```sh
 # 1 .From your root directory of choice execute:
@@ -37,7 +37,7 @@ cd [project-name]
 graphcool deploy
 ```
 
-2. By cloning repo
+##### 2. By cloning repo
 ```sh
 # 1. Clone the repo
 git clone https://github.com/graphcool/graphql-boilerplate.git
