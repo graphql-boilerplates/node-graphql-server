@@ -71,9 +71,9 @@ yarn playground
 
 ### Next Steps
 #### Adding a custom resolver
-Suppose we want to add a custom resolver to delete a post (example). We can take the following steps:-
+Suppose we want to add a custom resolver to delete a post. We can take the following steps:
 
-Add `delete` field to the Mutation type in `src/schema.graphql`
+Add a new `delete` field to the Mutation type in `src/schema.graphql`
 ```
 type Mutation {
   createDraft(title: String!, text: String): Post
@@ -82,7 +82,7 @@ type Mutation {
 }
 ```
 
-Add `delete` resolver to Mutation part of `src/index.js`
+Add a `delete` resolver to Mutation part of `src/index.js`
 ```
 delete(parent, { id }, ctx, info) {
   return ctx.db.mutation.deletePost(
@@ -95,6 +95,16 @@ delete(parent, { id }, ctx, info) {
 ```
 
 Run `yarn start`
+
+Then we can run the following mutation to delete a post:
+
+```
+mutation {
+  delete(id: "cuid") {
+    id
+  }
+}
+```
 
 ## Community
 
