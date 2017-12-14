@@ -1,6 +1,6 @@
 service: graphql-boilerplate
 stages: 
   default: dev
-  dev: shared-eu-west-1
+  dev: shared-public-demo
 
 datamodel: database/datamodel.graphql

@@ -1,4 +1,4 @@
-# import Post from "./database.graphql"
+# import Post from "../database/schema.graphql"
 
 type Query {
   feed: [Post!]!

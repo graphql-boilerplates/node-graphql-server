@@ -4,7 +4,7 @@ export const post = {
   async writePost(parent, { title, text }, ctx: Context, info) {
     const authorId = getUserId(ctx)
     return ctx.db.mutation.createPost(
-      { title, text, authorId, isPublished: true },
+      { data: { title, text, authorId, isPublished: true } },
       info,
     )
   },
@@ -19,6 +19,6 @@ export const post = {
       throw new Error(`Post not found or you're not the author`)
     }
 
-    return ctx.db.mutation.deletePost({ id })
+    return ctx.db.mutation.deletePost({ where: { id } })
   },
 }

@@ -1,5 +1,5 @@
-type Post @model {
-  id: ID! @isUnique
+type Post {
+  id: ID! @unique
   createdAt: DateTime!
   updatedAt: DateTime!
   isPublished: Boolean! # @default(value: false)
@@ -8,9 +8,9 @@ type Post @model {
   author: User! @relation(name: "UserPosts")
 }
 
-type User @model {
-  id: ID! @isUnique
-  email: String! @isUnique
+type User {
+  id: ID! @unique
+  email: String! @unique
   password: String!
   name: String!
   posts: [Post!]! @relation(name: "UserPosts")
