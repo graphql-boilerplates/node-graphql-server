@@ -1,14 +1,10 @@
 projects:
   app:
-    schemaPath: "src/schemas/app.graphql"
+    schemaPath: "src/schema.graphql"
     extensions:
       endpoints:
         default: "${env:SERVER_ENDPOINT}"
   database:
-    schemaPath: "src/schemas/database.graphql"
+    schemaPath: "database/schema.graphql"
     extensions:
-      endpoints:
-        default:
-          url: "${env:GRAPHCOOL_ENDPOINT}"
-          headers:
-            Authorization: "Bearer ${env:GRAPHCOOL_APIKEY}"
+      graphcool: graphcool.yml
