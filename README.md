@@ -1,47 +1,41 @@
 # graphql-boilerplate
 
-Boilerplate for a scalable, production-ready GraphQL server ([Hosted Demo](https://graphql-bp.now.sh/))
+![](https://imgur.com/eMpNw0e.png)
+
+Boilerplate for a scalable, production-ready GraphQL gateway server.
+
+A hosted demo is available at https://graphql-bp.now.sh
 
 ## Features
 
-* User authentication & permissions
-* Unit tests
-* Logging & performance tracing
+* Database (via [Graphcool](https://graph.cool))
+* User authentication
 
 ## Getting started
 
 #### Requirements
 
 * Node 8 (or higher)
-* Graphcool CLI (Get it via `npm install -g graphcool`)
+* Graphcool CLI (Get it via `npm i -g graphcool@alpha`)
+* GraphQL CLI (Get it via `npm i -g graphql-cli@beta`)
 * Optional: GraphQL Playground desktop app (Download [here](https://github.com/graphcool/graphql-playground/releases))
 
-### 1. Setup project
+#### Setup your project
 
 ```sh
-# Create a new directory
-mkdir graphql-server
-cd graphql-server
+# 1 .From your root directory of choice execute:
+graphql create [project-name]
 
-# download boilerplate
-curl https://codeload.github.com/graphcool/graphql-boilerplate/tar.gz/master | tar -xz --strip=1 graphql-boilerplate-master
+# 2. Choose the "Basic (TypeScript, DB, Auth) option
 
-# install dependencies
-yarn
-```
+# 3. Navigate to the new project
+cd [project-name]
 
-### 2. Deploy GraphQL database
-
-```sh
-# Deploy database
-# ... and copy `Simple API` endpoint to .env file as `GRAPHCOOL_ENDPOINT`
+#4. Deploy the Graphcool database
 graphcool deploy
-
-# Get root token and copy to .env file as `GRAPHCOOL_APIKEY`
-graphcool root-token apikey
 ```
 
-### 3. Launch local server
+#### Launch the local server
 
 ```sh
 # Start server (runs on http://localhost:4000)
@@ -51,12 +45,6 @@ yarn start
 yarn playground
 ```
 
-![](https://imgur.com/eMpNw0e.png)
-
-## Example Codebase
-
-*WIP*
-
 ## Docs
 
 ### Commands
@@ -65,20 +53,3 @@ yarn playground
 * `yarn debug` starts GraphQL server in debug mode (open [chrome://inspect/#devices](chrome://inspect/#devices) to debug)
 * `yarn get-schema` downloads the GraphQL schemas to `schema/*.graphql`
 * `yarn playground` opens the GraphQL Playground
-* `yarn deploy` deploys the GraphQL server to [now](https://zeit.co/now)
-
-### Deployment
-
-Deploying this project involves two parts: 1) Deploying the GraphQL server and 2) Deploying the GraphQL database
-
-### Debugging
-
-### Testings
-
-*WIP*
-
-## TODO
-
-* [ ] Subsriptions
-* [ ] Unit tests
-* [ ] Logging
