@@ -12,7 +12,7 @@
     "bcryptjs": "^2.4.3",
     "graphcool-binding": "^0.2.1",
     "graphql-import": "^0.1.5",
-    "graphql-yoga": "^0.2.3",
+    "graphql-yoga": "^0.3.0",
     "jsonwebtoken": "^8.1.0"
   },
   "devDependencies": {
