@@ -20,7 +20,9 @@ A hosted demo is available at https://graphql-bp.now.sh
 * GraphQL CLI (Get it via `npm i -g graphql-cli@beta`)
 * Optional: GraphQL Playground desktop app (Download [here](https://github.com/graphcool/graphql-playground/releases))
 
-#### Setup your project
+#### Setting up your project
+
+##### 1. Via `graphql-cli`
 
 ```sh
 # 1 .From your root directory of choice execute:
@@ -32,6 +34,15 @@ graphql create [project-name]
 cd [project-name]
 
 #4. Deploy the Graphcool database
+graphcool deploy
+```
+
+##### 2. By cloning repo
+```sh
+# 1. Clone the repo
+git clone https://github.com/graphcool/graphql-boilerplate.git
+
+# 2. Deploy the Graphcool database
 graphcool deploy
 ```
 
