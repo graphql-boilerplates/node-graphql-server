@@ -16,7 +16,7 @@ A hosted demo is available at https://graphql-bp.now.sh
 #### Requirements
 
 * Node 8 (or higher)
-* Graphcool CLI (Get it via `npm i -g graphcool@alpha`)
+* Graphcool CLI (Get it via `npm i -g graphcool@beta`)
 * GraphQL CLI (Get it via `npm i -g graphql-cli@beta`)
 * Optional: GraphQL Playground desktop app (Download [here](https://github.com/graphcool/graphql-playground/releases))
 
