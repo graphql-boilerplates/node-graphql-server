@@ -80,8 +80,26 @@ yarn playground
 - [`/src/index.ts`](https://github.com/graphcool/graphql-boilerplate/blob/master/src/index.ts) is the entry point of your application, pulling everything together and starting the [`graphql-yoga`](https://github.com/graphcool/graphql-yoga) Server.
 - [`/src/resolvers/`](https://github.com/graphcool/graphql-boilerplate/tree/master/src/resolvers) includes the actual business logic of your application. In GraphQL you implement [resolvers](http://graphql.org/learn/execution/) that *resolve*  a specific query being requested
 
-### Next Steps
-#### Adding a custom resolver
+### Common Questions
+
+#### I'm getting a 'Schema could not be fetched.' error after deploying, what gives?
+
+Access to the Graphcool API is secured by a secret. This also applies to the introspection query. Using the latest version of GraphQL Playground, the `Authorization` header should automatically be setup with a proper JWT signing the secret. If that's not the case, you can follow these steps to access your API:
+
+* Visit http://jwtbuilder.jamiekurtz.com/
+* Replace the `Key` at the bottom of the page with [your secret from the `.env` file](https://github.com/graphcool/graphql-boilerplate/blob/master/.env#L3)
+* Click `Create signed JWT` and copy the obtained token
+* Now, to access the schema, use the `Authorization: Bearer <token>` header, or in the GraphQL Playground set it as JSON:
+
+```json
+{
+  "Authorization": "Bearer <token>"
+}
+```
+
+> Note: Currently, no content of the signed JWT is verified. This will be implemented [according to this proposal](https://github.com/graphcool/framework/issues/1365) at a later stage.
+
+#### How to add a new resolver?
 Suppose we want to add a custom resolver to delete a post. We can take the following steps:
 
 Add a new `delete` field to the Mutation type in `src/schema.graphql`
