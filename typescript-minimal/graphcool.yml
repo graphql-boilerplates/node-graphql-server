@@ -1,0 +1,8 @@
+service: graphql-template-node
+stages: 
+  default: dev
+  dev: local
+
+secret: your-graphcool-secret
+
+datamodel: database/datamodel.graphql

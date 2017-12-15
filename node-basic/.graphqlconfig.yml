@@ -1,0 +1,10 @@
+projects:
+  app:
+    schemaPath: "src/schema.graphql"
+    extensions:
+      endpoints:
+        default: "${env:SERVER_ENDPOINT}"
+  database:
+    schemaPath: "database/schema.graphql"
+    extensions:
+      graphcool: graphcool.yml
