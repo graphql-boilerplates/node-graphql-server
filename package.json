@@ -4,7 +4,7 @@
     "start": "dotenv -- nodemon -x ts-node -e ts,graphql src/index.ts",
     "debug": "dotenv -- nodemon -x 'ts-node --inspect' -e ts,graphql src/index.ts",
     "playground": "dotenv -- graphql playground",
-    "build": "rm -rf dist && tsc",
+    "build": "rimraf dist && tsc",
     "deploy": "now --public --dotenv .env.prod && now alias && now rm --yes --safe graphql-boilerplate",
     "now-start": "node dist"
   },
@@ -21,6 +21,7 @@
     "graphql-cli": "^2.0.5",
     "nodemon": "^1.12.2",
     "now": "^8.5.4",
+    "rimraf": "^2.6.2",
     "ts-node": "^3.3.0",
     "typescript": "^2.6.2"
   },
