@@ -2,7 +2,7 @@ const fs = require('fs')
 
 module.exports = ({ project }) => {
   const templateName = 'graphql-template-node'
-  replaceInFile('src/index.js', templateName, project)
+  replaceInFile('src/index.ts', templateName, project)
   replaceInFile('package.json', templateName, project)
   replaceInFile('graphcool.yml', templateName, project)
 
