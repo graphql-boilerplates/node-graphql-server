@@ -6,7 +6,7 @@ module.exports = ({ project }) => {
   replaceInFile('package.json', templateName, project)
   replaceInFile('graphcool.yml', templateName, project)
 
-  console.log(`\
+  console.log(`
 Next steps:
 
   1. Change directory: \`cd ${project}\`
