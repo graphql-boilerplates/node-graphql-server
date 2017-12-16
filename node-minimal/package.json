@@ -2,6 +2,7 @@
   "name": "graphql-boilerplate",
   "scripts": {
     "start": "node src/index.js",
+    "playground": "graphql playground",
     "deploy": "now --public && now alias && now rm --yes --safe graphql-template-node"
   },
   "dependencies": {
