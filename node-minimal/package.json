@@ -1,5 +1,5 @@
 {
-  "name": "graphql-template-node",
+  "name": "graphql-boilerplate",
   "scripts": {
     "start": "node src/index.js",
     "deploy": "now --public && now alias && now rm --yes --safe graphql-template-node"

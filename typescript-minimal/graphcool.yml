@@ -1,4 +1,4 @@
-service: graphql-template-node
+service: graphql-boilerplate
 stages: 
   default: dev
   dev: local

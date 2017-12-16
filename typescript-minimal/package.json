@@ -1,5 +1,5 @@
 {
-  "name": "graphql-template-node",
+  "name": "graphql-boilerplate",
   "scripts": {
     "start": "ts-node src/index.ts"
   },
