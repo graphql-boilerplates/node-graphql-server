@@ -1,5 +1,5 @@
 projects:
-  app:
+  graphql-boilerplate:
     schemaPath: "src/schema.graphql"
     extensions:
       endpoints:
