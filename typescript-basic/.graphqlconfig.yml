@@ -3,7 +3,7 @@ projects:
     schemaPath: "src/schema.graphql"
     extensions:
       endpoints:
-        default: "${env:SERVER_ENDPOINT}"
+        default: "http://localhost:4000"
   database:
     schemaPath: "database/schema.graphql"
     extensions:

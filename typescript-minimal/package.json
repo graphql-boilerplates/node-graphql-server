@@ -1,7 +1,8 @@
 {
   "name": "graphql-boilerplate",
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/index.ts",
+    "playground": "graphql playground"
   },
   "dependencies": {
     "graphcool-binding": "^0.2.1",

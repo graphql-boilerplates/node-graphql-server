@@ -3,7 +3,7 @@
   "scripts": {
     "start": "dotenv -- nodemon -x ts-node -e ts,graphql src/index.ts",
     "debug": "dotenv -- nodemon -x 'ts-node --inspect' -e ts,graphql src/index.ts",
-    "playground": "dotenv -- graphql playground",
+    "playground": "graphql playground",
     "build": "rimraf dist && tsc",
     "deploy": "now --public --dotenv .env.prod && now alias && now rm --yes --safe graphql-boilerplate",
     "now-start": "node dist"
