@@ -9,14 +9,14 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "graphcool-binding": "^0.2.1",
-    "graphql-import": "^0.1.5",
-    "graphql-yoga": "^0.3.0",
+    "graphql-import": "^0.1.6",
+    "graphql-yoga": "^0.4.0",
     "jsonwebtoken": "^8.1.0"
   },
   "devDependencies": {
     "dotenv-cli": "^1.4.0",
     "graphql-cli": "^2.0.5",
-    "nodemon": "^1.12.2",
+    "nodemon": "^1.13.3",
     "now": "^8.5.4",
     "rimraf": "^2.6.2"
   },

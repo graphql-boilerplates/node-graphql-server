@@ -5,8 +5,8 @@
   },
   "dependencies": {
     "graphcool-binding": "^0.2.1",
-    "graphql-import": "^0.1.5",
-    "graphql-yoga": "^0.3.0"
+    "graphql-import": "^0.1.6",
+    "graphql-yoga": "^0.4.0"
   },
   "devDependencies": {
     "ts-node": "^4.0.2",
