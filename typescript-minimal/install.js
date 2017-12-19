@@ -5,6 +5,7 @@ module.exports = ({ project }) => {
   replaceInFile('src/index.ts', templateName, project)
   replaceInFile('package.json', templateName, project)
   replaceInFile('graphcool.yml', templateName, project)
+  replaceInFile('.graphqlconfig.yml', templateName, project)
 
   console.log(`\
 Next steps:

@@ -5,7 +5,8 @@ module.exports = ({ project }) => {
   replaceInFile('package.json', templateName, project)
   replaceInFile('graphcool.yml', templateName, project)
   replaceInFile('.env', templateName, project)
-
+  replaceInFile('.graphqlconfig.yml', templateName, project)
+  
   console.log(`\
 Next steps:
 

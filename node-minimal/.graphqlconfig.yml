@@ -1,5 +1,5 @@
 projects:
-  app:
+  graphql-template-node:
     schemaPath: "src/schema.graphql"
     extensions:
       endpoints:
