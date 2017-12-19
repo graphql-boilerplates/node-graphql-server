@@ -2,9 +2,9 @@ const fs = require('fs')
 
 module.exports = ({ project }) => {
   const templateName = 'graphql-boilerplate'
+  replaceInFile('src/index.js', templateName, project)
   replaceInFile('package.json', templateName, project)
   replaceInFile('graphcool.yml', templateName, project)
-  replaceInFile('.env', templateName, project)
 
   console.log(`\
 Next steps:
@@ -12,7 +12,7 @@ Next steps:
   1. Change directory: \`cd ${project}\`
   2. Deploy database service: \`graphcool deploy\`
   3. Start local server: \`yarn start\`
-  4. Open Playground: \`yarn playground\`
+  4. Open Playground: http://localhost:4000
   `)
 }
 

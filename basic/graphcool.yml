@@ -1,9 +1,8 @@
 service: graphql-boilerplate
-
-datamodel: database/datamodel.graphql
-
 stages: 
   default: dev
   dev: local
 
-secret: abc
+secret: your-graphcool-secret
+
+datamodel: database/datamodel.graphql

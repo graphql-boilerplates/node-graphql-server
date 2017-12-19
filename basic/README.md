@@ -1,15 +1,13 @@
-# graphql-boilerplate
+# graphql-template-node
 
 ![](https://imgur.com/eMpNw0e.png)
 
-Boilerplate for a scalable, production-ready GraphQL gateway server.
-
-A hosted demo is available at https://graphql-bp.now.sh
+Minimal boilerplate for a scalable, production-ready GraphQL gateway server.
 
 ## Features
 
 * Database (via [Graphcool](https://graph.cool))
-* User authentication
+* Good basis for new projects
 
 ## Getting started
 
@@ -20,29 +18,18 @@ A hosted demo is available at https://graphql-bp.now.sh
 * GraphQL CLI (Get it via `npm i -g graphql-cli@beta`)
 * Optional: GraphQL Playground desktop app (Download [here](https://github.com/graphcool/graphql-playground/releases))
 
-#### Setting up your project
-
-##### 1. Via `graphql-cli`
+#### Setup your project
 
 ```sh
 # 1 .From your root directory of choice execute:
 graphql create [project-name]
 
-# 2. Choose the "Basic (TypeScript, DB, Auth) option
+# 2. Choose the "Basic (TypeScript, DB, Auth)" option
 
 # 3. Navigate to the new project
 cd [project-name]
 
 #4. Deploy the Graphcool database
-graphcool deploy
-```
-
-##### 2. By cloning repo
-```sh
-# 1. Clone the repo
-git clone https://github.com/graphcool/graphql-boilerplate.git
-
-# 2. Deploy the Graphcool database
 graphcool deploy
 ```
 
@@ -77,27 +64,7 @@ yarn playground
 
 #### `/src`
 - [`/src/schema.graphql`](https://github.com/graphcool/graphql-boilerplate/blob/master/src/schema.graphql) contains the GraphQL API of your application that is exposed to the world
-- [`/src/index.ts`](https://github.com/graphcool/graphql-boilerplate/blob/master/src/index.ts) is the entry point of your application, pulling everything together and starting the [`graphql-yoga`](https://github.com/graphcool/graphql-yoga) Server.
-- [`/src/resolvers/`](https://github.com/graphcool/graphql-boilerplate/tree/master/src/resolvers) includes the actual business logic of your application. In GraphQL you implement [resolvers](http://graphql.org/learn/execution/) that *resolve*  a specific query being requested
-
-### Common Questions
-
-#### I'm getting a 'Schema could not be fetched.' error after deploying, what gives?
-
-Access to the Graphcool API is secured by a secret. This also applies to the introspection query. Using the latest version of GraphQL Playground, the `Authorization` header should automatically be setup with a proper JWT signing the secret. If that's not the case, you can follow these steps to access your API:
-
-* Visit http://jwtbuilder.jamiekurtz.com/
-* Replace the `Key` at the bottom of the page with [your secret from the `.env` file](https://github.com/graphcool/graphql-boilerplate/blob/master/.env#L3)
-* Click `Create signed JWT` and copy the obtained token
-* Now, to access the schema, use the `Authorization: Bearer <token>` header, or in the GraphQL Playground set it as JSON:
-
-```json
-{
-  "Authorization": "Bearer <token>"
-}
-```
-
-> Note: Currently, no content of the signed JWT is verified. This will be implemented [according to this proposal](https://github.com/graphcool/framework/issues/1365) at a later stage.
+- [`/src/index.ts`](https://github.com/graphcool/graphql-boilerplate/blob/master/src/index.ts) is the entry point of your application, defining the resolvers and starting the [`graphql-yoga`](https://github.com/graphcool/graphql-yoga) Server.
 
 ## Community
 
