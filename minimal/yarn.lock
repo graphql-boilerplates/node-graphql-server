@@ -430,18 +430,19 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
-graphcool-binding@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/graphcool-binding/-/graphcool-binding-0.2.1.tgz#74fa18da949a34fcb241f2b9c157bbb1fc276fe6"
+graphcool-binding@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/graphcool-binding/-/graphcool-binding-0.2.3.tgz#37de0a594fb3c920274196cca346d32483d6fd19"
   dependencies:
     "@types/jsonwebtoken" "^7.2.4"
     apollo-link "^1.0.6"
     apollo-link-http "^1.3.1"
     cross-fetch "^1.1.1"
-    graphql "^0.11.7"
+    graphql "^0.12.3"
     graphql-import "^0.1.5"
     graphql-request "^1.4.0"
     graphql-schema-cache "^0.3.0"
+    graphql-tools "^2.14.0"
     jsonwebtoken "^8.1.0"
 
 graphcool-json-schema@^1.0.1-alpha.2:
@@ -494,6 +495,15 @@ graphql-extensions@^0.0.x:
 graphql-import@^0.1.5:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/graphql-import/-/graphql-import-0.1.6.tgz#819aa1bdfc1f55021a8c5c989fe3c3b6cd71a6aa"
+  dependencies:
+    "@types/graphql" "0.11.7"
+    "@types/lodash" "^4.14.85"
+    graphql "^0.11.7"
+    lodash "^4.17.4"
+
+graphql-import@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/graphql-import/-/graphql-import-0.1.7.tgz#78c25f9f402582e9d17a1ffda13a1d4a915a54be"
   dependencies:
     "@types/graphql" "0.11.7"
     "@types/lodash" "^4.14.85"
@@ -576,7 +586,7 @@ graphql@^0.11.7:
   dependencies:
     iterall "1.1.3"
 
-graphql@^0.12.0:
+graphql@^0.12.0, graphql@^0.12.3:
   version "0.12.3"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.12.3.tgz#11668458bbe28261c0dcb6e265f515ba79f6ce07"
   dependencies:
