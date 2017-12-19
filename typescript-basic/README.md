@@ -99,42 +99,6 @@ Access to the Graphcool API is secured by a secret. This also applies to the int
 
 > Note: Currently, no content of the signed JWT is verified. This will be implemented [according to this proposal](https://github.com/graphcool/framework/issues/1365) at a later stage.
 
-#### How to add a new resolver?
-Suppose we want to add a custom resolver to delete a post. We can take the following steps:
-
-Add a new `delete` field to the Mutation type in `src/schema.graphql`
-```
-type Mutation {
-  createDraft(title: String!, text: String): Post
-  publish(id: ID!): Post
-  delete(id: ID!): Post
-}
-```
-
-Add a `delete` resolver to Mutation part of `src/index.js`
-```
-delete(parent, { id }, ctx, info) {
-  return ctx.db.mutation.deletePost(
-  {
-    where: { id }
-  },
-    info
-  );
-}
-```
-
-Run `yarn start`
-
-Then we can run the following mutation to delete a post:
-
-```
-mutation {
-  delete(id: "cuid") {
-    id
-  }
-}
-```
-
 ## Community
 
 Graphcool has a community of thousands of amazing developers and contributors. Welcome, please join us! 👋

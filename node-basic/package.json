@@ -2,7 +2,7 @@
   "name": "graphql-boilerplate",
   "scripts": {
     "start": "dotenv -- nodemon src/index.js",
-    "playground": "dotenv -- graphql playground",
+    "playground": "graphql playground",
     "deploy": "now --public --dotenv .env.prod && now alias && now rm --yes --safe graphql-boilerplate",
     "now-start": "node src/index.js"
   },
