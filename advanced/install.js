@@ -5,7 +5,7 @@ module.exports = ({ project }) => {
   replaceInFile('package.json', templateName, project)
   replaceInFile('graphcool.yml', templateName, project)
   replaceInFile('.env', templateName, project)
-  fs.appendFileSync('.env', '\nenv*')
+  fs.appendFileSync('.gitignore', 'env*\n')
 
   console.log(`\
 Next steps:
