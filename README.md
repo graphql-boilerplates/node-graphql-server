@@ -1,6 +1,6 @@
 # node-graphql-server
 
-![](https://imgur.com/eMpNw0e.png)
+![](https://imgur.com/LG6r1q1.png)
 
 Starter projects for GraphQL servers. This repository contains boilerplates for three different scenarios:
 
