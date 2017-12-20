@@ -22,7 +22,7 @@
 
 #### 1. Setting up your project
 
-##### [**Option A**]: Via `graphql create` (recommended)
+##### [Option A]: Via `graphql create` (recommended)
 
 ```sh
 # 1 Bootstrap GraphQL server in directory `my-app`, based on `node-basic` boilerplate
@@ -35,7 +35,7 @@ cd my-app
 graphcool deploy
 ```
 
-##### [**Option B**]: By cloning the repo
+##### [Option B]: By cloning the repo
 
 ```sh
 # 1. Clone the repo and navigate into project directory
