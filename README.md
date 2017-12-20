@@ -1,6 +1,6 @@
 # node-graphql-server
 
-🚀 Starter projects for GraphQL servers. This repository contains boilerplates for three different scenarios and use cases.
+🚀 Starter projects for GraphQL servers. This repository contains boilerplates for three different scenarios.
 
 ![](https://imgur.com/D9K5hiQ.png)
 
