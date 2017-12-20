@@ -11,56 +11,55 @@ Basic starter code for a scalable, production-ready GraphQL server for Node.js.
 - Preconfigured [`graphql-config`](https://github.com/graphcool/graphql-config)
 - Out-of-the-box support for [GraphQL Playground](https://github.com/graphcool/graphql-playground) & [Tracing](https://github.com/apollographql/apollo-tracing)
 
-## Getting started
+## Requirements
 
-#### Requirements
+You need to have the following things installed:
 
 * Node 8 (or higher)
 * Graphcool CLI (Get it via `npm i -g graphcool@beta`)
 * GraphQL CLI (Get it via `npm i -g graphql-cli`)
 * Optional: GraphQL Playground desktop app (Download [here](https://github.com/graphcool/graphql-playground/releases))
 
-#### 1. Setting up your project
-
-Using `graphql create` (recommended)
+## Getting Started
 
 ```sh
-# 1 Bootstrap GraphQL server in directory `my-app`, based on `node-basic` boilerplate
+# Bootstrap GraphQL server in directory `my-app`, based on `node-basic` boilerplate
 graphql create my-app -b node-basic
 
-# 2. Navigate to the new project
+# Navigate to the new project
 cd my-app
 
-# 3. Deploy the Graphcool database
-graphcool deploy
-```
-
-<details>
-<summaryAlternative: Clone repo</summary>
-
-```sh
-# 1. Clone the repo and navigate into project directory
-git clone https://github.com/graphql-boilerplates/node-graphql-server.git
-cd node-graphql-server/basic
-
-# 2. Deploy the Graphcool database
+# Deploy the Graphcool database
 graphcool deploy
 
-# 3. Install node dependencies
-yarn install
-```
-</details>
-
-
-#### 2. Start the local server
-
-```sh
 # Start server (runs on http://localhost:4000)
 yarn start
 
 # Open Playground to explore GraphQL API
 yarn playground
 ```
+
+<details>
+<summary>Alternative: Clone repo</summary>
+
+```sh
+# Clone the repo and navigate into project directory
+git clone https://github.com/graphql-boilerplates/node-graphql-server.git
+cd node-graphql-server/basic
+
+# Deploy the Graphcool database
+graphcool deploy
+
+# Install node dependencies
+yarn install
+
+# Start server (runs on http://localhost:4000)
+yarn start
+
+# Open Playground to explore GraphQL API
+yarn playground
+```
+</details>
 
 ## Docs
 
