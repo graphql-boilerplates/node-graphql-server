@@ -22,7 +22,7 @@ Basic starter code for a scalable, production-ready GraphQL server for Node.js.
 
 #### 1. Setting up your project
 
-##### [Option A] Via `graphql create` (recommended)
+Using `graphql create` (recommended)
 
 ```sh
 # 1 Bootstrap GraphQL server in directory `my-app`, based on `node-basic` boilerplate
@@ -31,11 +31,12 @@ graphql create my-app -b node-basic
 # 2. Navigate to the new project
 cd my-app
 
-#4. Deploy the Graphcool database
+# 3. Deploy the Graphcool database
 graphcool deploy
 ```
 
-##### [Option B] By cloning the repo
+<details>
+<summaryAlternative: Clone repo</summary>
 
 ```sh
 # 1. Clone the repo and navigate into project directory
@@ -48,6 +49,8 @@ graphcool deploy
 # 3. Install node dependencies
 yarn install
 ```
+</details>
+
 
 #### 2. Start the local server
 
