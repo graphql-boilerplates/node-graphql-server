@@ -10,7 +10,7 @@
 - Database with powerful CRUD API (powered by [Graphcool](https://www.graph.cool/))
 - Preconfigured [`graphql-config`](https://github.com/graphcool/graphql-config)
 - Out-of-the-box support for [GraphQL Playground](https://github.com/graphcool/graphql-playground) & [Tracing](https://github.com/apollographql/apollo-tracing)
-- Authenticatoin based on email & password
+- Authentication based on email & password
 - Realtime functionality with GraphQL subscriptions (_coming soon_)
 
 ## Getting started
