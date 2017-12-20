@@ -1,8 +1,8 @@
 # node-basic
 
-![](https://imgur.com/eMpNw0e.png)
-
 🚀 Basic starter code for a scalable, production-ready GraphQL server for Node.js.
+
+![](https://imgur.com/eMpNw0e.png)
 
 ## Features
 
@@ -96,13 +96,11 @@ Access to the Graphcool API is secured by a secret. This also applies to the int
 1. Replace the `Key` at the bottom of the page with [your secret from the `.env` file](https://github.com/graphcool/graphql-boilerplate/blob/master/.env#L3)
 1. Click `Create signed JWT` and copy the obtained token
 1. Now, to access the schema, use the `Authorization: Bearer <token>` header, or in the GraphQL Playground set it as JSON:
-
   ```json
   {
     "Authorization": "Bearer <token>"
   }
   ```
-
 1. Reload the schema in the Playground (the _refresh_-button is located right next to the URL of the server)
 
 > Note: Currently, no content of the signed JWT is verified. This will be implemented [according to this proposal](https://github.com/graphcool/framework/issues/1365) at a later stage.
