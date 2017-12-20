@@ -6,8 +6,9 @@ Basic starter code for a scalable, production-ready GraphQL server for Node.js.
 
 ## Features
 
+- **Scalable GraphQL Server:** `graphql-yoga` based on Apollo Server & Express
+- **GraphQL-native database:** Includes GraphQL database binding to Graphcool (running on MySQL)
 - Simple data model – easy to adjust
-- Database with powerful CRUD API ([Graphcool](https://www.graph.cool/))
 - Preconfigured [`graphql-config`](https://github.com/graphcool/graphql-config) setup
 - Out-of-the-box support for [GraphQL Playground](https://github.com/graphcool/graphql-playground) & [Tracing](https://github.com/apollographql/apollo-tracing)
 
