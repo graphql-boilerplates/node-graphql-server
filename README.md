@@ -1,7 +1,5 @@
 # node-graphql-server
 
-![](https://imgur.com/LG6r1q1.png)
-
 Starter projects for GraphQL servers. This repository contains boilerplates for three different scenarios:
 
 - minimal (_coming soon_): Minimal boilerplate with basic "Hello World" functionality
