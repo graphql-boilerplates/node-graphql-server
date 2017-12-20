@@ -2,7 +2,7 @@
 
 🚀 Starter projects for GraphQL servers. This repository contains boilerplates for three different scenarios and use cases.
 
-![](https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png)
+![](https://imgur.com/ZgqdaZJ.png)
 
 ## Quickstart
 
