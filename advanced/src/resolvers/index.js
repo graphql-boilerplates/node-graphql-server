@@ -9,5 +9,5 @@ module.exports = {
     ...auth,
     ...post,
   },
-  AuthPayload
+  AuthPayload,
 }
