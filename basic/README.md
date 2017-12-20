@@ -1,6 +1,6 @@
 # node-basic
 
-🚀 Basic starter code for a scalable, production-ready GraphQL server for Node.js.
+Basic starter code for a scalable, production-ready GraphQL server for Node.js.
 
 ![](https://imgur.com/LG6r1q1.png)
 
