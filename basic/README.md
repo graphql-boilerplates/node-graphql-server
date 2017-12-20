@@ -15,10 +15,10 @@ Basic starter code for a scalable, production-ready GraphQL server for Node.js.
 
 You need to have the following things installed:
 
-* Node 8 (or higher)
+* Node 8+
 * Graphcool CLI: `npm i -g graphcool@beta`
 * GraphQL CLI: `npm i -g graphql-cli`
-* Optional: GraphQL Playground desktop app: [Download](https://github.com/graphcool/graphql-playground/releases)
+* GraphQL Playground desktop app (optional): [Download](https://github.com/graphcool/graphql-playground/releases)
 
 ## Getting Started
 
