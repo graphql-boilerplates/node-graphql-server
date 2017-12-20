@@ -1,6 +1,6 @@
 # node-basic
 
-Basic starter code for a scalable, production-ready GraphQL server for Node.js.
+🚀 Basic starter code for a scalable, production-ready GraphQL server for Node.js.
 
 ![](https://imgur.com/LG6r1q1.png)
 
@@ -21,11 +21,11 @@ You need to have the following things installed:
 * GraphQL CLI: `npm i -g graphql-cli`
 * GraphQL Playground desktop app (optional): [Download](https://github.com/graphcool/graphql-playground/releases)
 
-## Getting Started
+## Getting started
 
 ```sh
 # Bootstrap GraphQL server in directory `my-app`, based on `node-basic` boilerplate
-graphql create my-app -b node-basic
+graphql create my-app --boilerplate node-basic
 
 # Navigate to the new project
 cd my-app
@@ -41,6 +41,7 @@ yarn playground
 ```
 
 <details>
+
 <summary>Alternative: Clone repo</summary>
 
 ```sh
@@ -60,6 +61,7 @@ yarn start
 # Open Playground to explore GraphQL API
 yarn playground
 ```
+
 </details>
 
 ## Docs
@@ -87,7 +89,7 @@ yarn playground
 - [`src/schema.graphql`](src/schema.graphql) defines your **application schema**. It contains the GraphQL API that you want to expose to your client applications.
 - [`src/index.js`](src/index.js) is the entry point of your server, pulling everything together and starting the `GraphQLServer` from [`graphql-yoga`](https://github.com/graphcool/graphql-yoga).
 
-### Common Questions
+### Common questions
 
 #### I'm getting a 'Schema could not be fetched.' error after deploying, what gives?
 
