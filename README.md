@@ -2,7 +2,7 @@
 
 🚀 Starter projects for GraphQL servers. This repository contains boilerplates for three different scenarios and use cases.
 
-![](https://imgur.com/Nkqw5zW.png)
+![](https://imgur.com/D9K5hiQ.png)
 
 ## Quickstart
 
