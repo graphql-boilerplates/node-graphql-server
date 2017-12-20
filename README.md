@@ -14,7 +14,7 @@ All projects are based on [`graphql-yoga`](https://github.com/graphcool/graphql-
 
 * Node 8 (or higher)
 * Graphcool CLI (Get it via `npm i -g graphcool@beta`)
-* GraphQL CLI (Get it via `npm i -g graphql-cli@beta`)
+* GraphQL CLI (Get it via `npm i -g graphql-cli`)
 * Optional: GraphQL Playground desktop app (Download [here](https://github.com/graphcool/graphql-playground/releases))
 
 ## Contributing
