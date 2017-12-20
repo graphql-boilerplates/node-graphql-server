@@ -8,9 +8,9 @@
 
 - **Scalable GraphQL Server:** `graphql-yoga` based on Apollo Server & Express
 - **GraphQL-native database:** Includes GraphQL database binding to Graphcool (running on MySQL)
+- Out-of-the-box support for [GraphQL Playground](https://github.com/graphcool/graphql-playground) & [Tracing](https://github.com/apollographql/apollo-tracing)
 - Simple data model – easy to adjust
 - Preconfigured [`graphql-config`](https://github.com/graphcool/graphql-config) setup
-- Out-of-the-box support for [GraphQL Playground](https://github.com/graphcool/graphql-playground) & [Tracing](https://github.com/apollographql/apollo-tracing)
 - Authentication based on email & password
 - Realtime functionality with GraphQL subscriptions (_coming soon_)
 
