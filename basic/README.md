@@ -22,7 +22,7 @@
 
 #### 1. Setting up your project
 
-##### [Option A]: Via `graphql create` (recommended)
+##### [Option A] Via `graphql create` (recommended)
 
 ```sh
 # 1 Bootstrap GraphQL server in directory `my-app`, based on `node-basic` boilerplate
@@ -35,7 +35,7 @@ cd my-app
 graphcool deploy
 ```
 
-##### [Option B]: By cloning the repo
+##### [Option B] By cloning the repo
 
 ```sh
 # 1. Clone the repo and navigate into project directory
@@ -67,11 +67,11 @@ yarn playground
 * `yarn playground` opens the GraphQL Playground
 * `yarn deploy` deploys GraphQL server to [`now`](https://now.sh)
 
-### Project overview
+### Project structure
 
 #### `/` (_root directory_)
 
-- [`.graphqlconfig.yml`](https://github.com/graphcool/graphql-boilerplate/blob/master/.graphqlconfig.yml) GraphQL configuration file containing the endpoints and schema configuration. Used by the [`graphql-cli`](https://github.com/graphcool/graphql-cli) and the [GraphQL Playground](https://github.com/graphcool/graphql-playground). See [`graphql-config`](https://github.com/graphcool/graphql-config) for more information.
+- [`.graphqlconfig.yml`](./.graphqlconfig.yml) GraphQL configuration file containing the endpoints and schema configuration. Used by the [`graphql-cli`](https://github.com/graphcool/graphql-cli) and the [GraphQL Playground](https://github.com/graphcool/graphql-playground). See [`graphql-config`](https://github.com/graphcool/graphql-config) for more information.
 - [`graphcool.yml`](./graphcool.yml): The root configuration file for your database service ([documentation](https://www.graph.cool/docs/1.0/reference/graphcool.yml/overview-and-example-foatho8aip)).
 
 #### `/database`
@@ -91,7 +91,7 @@ yarn playground
 Access to the Graphcool API is secured by a secret. This also applies to the introspection query. Using the latest version of GraphQL Playground, the `Authorization` header should automatically be setup with a proper JWT signing the secret. If that's not the case, you can follow these steps to access your API:
 
 1. Visit http://jwtbuilder.jamiekurtz.com/
-1. Replace the `Key` at the bottom of the page with [your secret from the `.env` file](https://github.com/graphcool/graphql-boilerplate/blob/master/.env#L3)
+1. Replace the `Key` at the bottom of the page with your `secret` from the [`graphcool.yml`](./graphcool.yml#L5)
 1. Click `Create signed JWT` and copy the obtained token
 1. Now, to access the schema, use the `Authorization: Bearer <token>` header, or in the GraphQL Playground set it as JSON:
     ```json

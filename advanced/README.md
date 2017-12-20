@@ -1,15 +1,17 @@
-# graphql-boilerplate
+# node-advanced
+
+🚀 Advanced starter code for a scalable, production-ready GraphQL server for Node.js, including authentication and realtime functionality with GraphQL subscriptions.
 
 ![](https://imgur.com/eMpNw0e.png)
 
-Boilerplate for a scalable, production-ready GraphQL gateway server.
-
-A hosted demo is available at https://graphql-bp.now.sh
-
 ## Features
 
-* Database (via [Graphcool](https://graph.cool))
-* User authentication
+- Simple data model, easy to adjust
+- Database with powerful CRUD API (powered by [Graphcool](https://www.graph.cool/))
+- Preconfigured [`graphql-config`](https://github.com/graphcool/graphql-config)
+- Out-of-the-box support for [GraphQL Playground](https://github.com/graphcool/graphql-playground) & [Tracing](https://github.com/apollographql/apollo-tracing)
+- Authenticatoin based on email & password
+- Realtime functionality with GraphQL subscriptions (_coming soon_)
 
 ## Getting started
 
@@ -20,34 +22,36 @@ A hosted demo is available at https://graphql-bp.now.sh
 * GraphQL CLI (Get it via `npm i -g graphql-cli@beta`)
 * Optional: GraphQL Playground desktop app (Download [here](https://github.com/graphcool/graphql-playground/releases))
 
-#### Setting up your project
+#### 1. Setting up your project
 
-##### 1. Via `graphql-cli`
+##### [Option A] Via `graphql create` (recommended)
 
 ```sh
-# 1 .From your root directory of choice execute:
-graphql create [project-name]
+# 1 Bootstrap GraphQL server in directory `my-app`, based on `node-advanced` boilerplate
+graphql create my-app -b node-advanced
 
-# 2. Choose the "Basic (TypeScript, DB, Auth) option
-
-# 3. Navigate to the new project
-cd [project-name]
+# 2. Navigate to the new project
+cd my-app
 
 #4. Deploy the Graphcool database
 graphcool deploy
 ```
 
-##### 2. By cloning repo
+##### [Option B] By cloning the repo
 
 ```sh
-# 1. Clone the repo
-git clone https://github.com/graphcool/graphql-boilerplate.git
+# 1. Clone the repo and navigate into project directory
+git clone https://github.com/graphql-boilerplates/node-graphql-server.git
+cd node-graphql-server/advanced
 
 # 2. Deploy the Graphcool database
 graphcool deploy
+
+# 3. Install node dependencies
+yarn install
 ```
 
-#### Launch the local server
+#### 2. Start the local server
 
 ```sh
 # Start server (runs on http://localhost:4000)
@@ -67,19 +71,24 @@ yarn playground
 * `yarn build` builds the application
 * `yarn deploy` deploys GraphQL server to [`now`](https://now.sh)
 
-### Project Overview
-#### `/`
-- [`.env`](https://github.com/graphcool/graphql-boilerplate/blob/master/.env) Contains important environment variables for development. Read more about `.env` [here](https://github.com/motdotla/dotenv)
-- [`.graphqlconfig.yml`](https://github.com/graphcool/graphql-boilerplate/blob/master/.graphqlconfig.yml) GraphQL Config file containing the endpoints and schema configuration. Used by the [`graphql-cli`](https://github.com/graphcool/graphql-cli) and the [GraphQL Playground](https://github.com/graphcool/graphql-playground). See [graphql-config](https://github.com/graphcool/graphql-config) for more information.
+### Project structure
+
+#### `/` (_root directory_)
+
+- [`.env`](./.env) Contains important environment variables for development. Read more about `.env` [here](https://github.com/motdotla/dotenv)
+- [`.graphqlconfig.yml`](./.graphqlconfig.yml) GraphQL configuration file containing the endpoints and schema configuration. Used by the [`graphql-cli`](https://github.com/graphcool/graphql-cli) and the [GraphQL Playground](https://github.com/graphcool/graphql-playground). See [`graphql-config`](https://github.com/graphcool/graphql-config) for more information.
+- [`graphcool.yml`](./graphcool.yml): The root configuration file for your database service ([documentation](https://www.graph.cool/docs/1.0/reference/graphcool.yml/overview-and-example-foatho8aip)).
 
 #### `/database`
-- [`/database/datamodel.graphql`](https://github.com/graphcool/graphql-boilerplate/blob/master/database/datamodel.graphql) contains the Database model that you define
-- [`/database/schema.graphql`](https://github.com/graphcool/graphql-boilerplate/blob/master/database/schema.graphql) contains the database API that is being generated based on your `datamodel.graphql`
+
+- [`database/datamodel.graphql`](./database/datamodel.graphql) contains the data model that you define for the project (written in [SDL](https://blog.graph.cool/graphql-sdl-schema-definition-language-6755bcb9ce51)).
+- [`database/schema.generated.graphql`](./database/schema.generated.graphql) defines the **database schema**. It contains the definition of the CRUD API for the types in your data model and is generated based on your `datamodel.graphql`. **You should never edit this file manually**, but introduce changes only by altering `datamodel.graphql` and run `graphcool deploy`.
 
 #### `/src`
-- [`/src/schema.graphql`](https://github.com/graphcool/graphql-boilerplate/blob/master/src/schema.graphql) contains the GraphQL API of your application that is exposed to the world
-- [`/src/index.ts`](https://github.com/graphcool/graphql-boilerplate/blob/master/src/index.ts) is the entry point of your application, pulling everything together and starting the [`graphql-yoga`](https://github.com/graphcool/graphql-yoga) Server.
-- [`/src/resolvers/`](https://github.com/graphcool/graphql-boilerplate/tree/master/src/resolvers) includes the actual business logic of your application. In GraphQL you implement [resolvers](http://graphql.org/learn/execution/) that *resolve*  a specific query being requested
+
+- [`src/schema.graphql`](src/schema.graphql) defines your **application schema**. It contains the GraphQL API that you want to expose to your client applications.
+- [`src/index.js`](src/index.js) is the entry point of your server, pulling everything together and starting the `GraphQLServer` from [`graphql-yoga`](https://github.com/graphcool/graphql-yoga).
+- [`/src/resolvers/`](src/resolvers) contains the actual business logic of your application. In GraphQL, you implement [resolver functions](http://graphql.org/learn/execution/) that *resolve* a specific query being requested.
 
 ### Common Questions
 
@@ -87,31 +96,19 @@ yarn playground
 
 Access to the Graphcool API is secured by a secret. This also applies to the introspection query. Using the latest version of GraphQL Playground, the `Authorization` header should automatically be setup with a proper JWT signing the secret. If that's not the case, you can follow these steps to access your API:
 
-* Visit http://jwtbuilder.jamiekurtz.com/
-* Replace the `Key` at the bottom of the page with [your secret from the `.env` file](https://github.com/graphcool/graphql-boilerplate/blob/master/.env#L3)
-* Click `Create signed JWT` and copy the obtained token
-* Now, to access the schema, use the `Authorization: Bearer <token>` header, or in the GraphQL Playground set it as JSON:
+1. Visit http://jwtbuilder.jamiekurtz.com/
+1. Replace the `Key` at the bottom of the page with [your secret from the `.env` file](https://github.com/graphcool/graphql-boilerplate/blob/master/.env#L3)
+1. Click `Create signed JWT` and copy the obtained token
+1. Now, to access the schema, use the `Authorization: Bearer <token>` header, or in the GraphQL Playground set it as JSON:
+    ```json
+    {
+      "Authorization": "Bearer <token>"
+    }
+    ```
+1. Reload the schema in the Playground (the _refresh_-button is located right next to the URL of the server)
 
-```json
-{
-  "Authorization": "Bearer <token>"
-}
-```
-
-> Note: Currently, no content of the signed JWT is verified. This will be implemented [according to this proposal](https://github.com/graphcool/framework/issues/1365) at a later stage.
-
-## Community
-
-Graphcool has a community of thousands of amazing developers and contributors. Welcome, please join us! 👋
-
-* [Forum](https://www.graph.cool/forum)
-* [Slack](https://slack.graph.cool/)
-* [Stackoverflow](https://stackoverflow.com/questions/tagged/graphcool)
-* [Twitter](https://twitter.com/graphcool)
-* [Facebook](https://www.facebook.com/GraphcoolHQ)
-* [Meetup](https://www.meetup.com/graphql-berlin)
-* [Email](hello@graph.cool)
+> Note: Currently, no content of the signed JWT is verified by the database! This will be implemented [according to this proposal](https://github.com/graphcool/framework/issues/1365) at a later stage.
 
 ## Contributing
 
-Your feedback is **very helpful**, please share your opinion and thoughts!
+Your feedback is **very helpful**, please share your opinion and thoughts! If you have any questions, join the [`#graphql-boilerplate`](https://graphcool.slack.com/messages/graphql-boilerplate) channel on our [Slack](https://graphcool.slack.com/).
