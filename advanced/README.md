@@ -38,6 +38,7 @@ graphcool deploy
 ```
 
 ##### 2. By cloning repo
+
 ```sh
 # 1. Clone the repo
 git clone https://github.com/graphcool/graphql-boilerplate.git

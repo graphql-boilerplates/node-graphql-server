@@ -35,7 +35,7 @@ cd my-app
 graphcool deploy
 ```
 
-##### [**Option B**] By cloning the repo
+##### [**Option B**]: By cloning the repo
 
 ```sh
 # 1. Clone the repo and navigate into project directory
