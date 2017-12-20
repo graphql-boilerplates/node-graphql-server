@@ -80,7 +80,7 @@ yarn playground
 
 #### `/` (_root directory_)
 
-- [`.env`](./.env) Contains important environment variables for development. Read more about `.env` [here](https://github.com/motdotla/dotenv)
+- [`.env`](./.env) Contains important environment variables for development. Read about how it works [here](https://github.com/motdotla/dotenv).
 - [`.graphqlconfig.yml`](./.graphqlconfig.yml) GraphQL configuration file containing the endpoints and schema configuration. Used by the [`graphql-cli`](https://github.com/graphcool/graphql-cli) and the [GraphQL Playground](https://github.com/graphcool/graphql-playground). See [`graphql-config`](https://github.com/graphcool/graphql-config) for more information.
 - [`graphcool.yml`](./graphcool.yml): The root configuration file for your database service ([documentation](https://www.graph.cool/docs/1.0/reference/graphcool.yml/overview-and-example-foatho8aip)).
 
