@@ -101,9 +101,8 @@ Access to the Graphcool API is secured by a secret. This also applies to the int
     ```
 1. Reload the schema in the Playground (the _refresh_-button is located right next to the URL of the server)
 
-> Note: Currently, no content of the signed JWT is verified. This will be implemented [according to this proposal](https://github.com/graphcool/framework/issues/1365) at a later stage.
+> Note: Currently, no content of the signed JWT is verified by the database! This will be implemented [according to this proposal](https://github.com/graphcool/framework/issues/1365) at a later stage.
 
 ## Contributing
 
 Your feedback is **very helpful**, please share your opinion and thoughts! If you have any questions, join the [`#graphql-boilerplate`](https://graphcool.slack.com/messages/graphql-boilerplate) channel on our [Slack](https://graphcool.slack.com/).
-
