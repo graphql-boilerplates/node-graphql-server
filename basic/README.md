@@ -1,63 +1,66 @@
 # node-basic
 
-🚀 Basic starter code for a scalable, production-ready GraphQL server for Node.js.
+Basic starter code for a scalable, production-ready GraphQL server for Node.js.
 
-![](https://imgur.com/eMpNw0e.png)
+![](https://imgur.com/LG6r1q1.png)
 
 ## Features
 
-- Simple data model, easy to adjust
-- Database with powerful CRUD API (powered by [Graphcool](https://www.graph.cool/))
-- Preconfigured [`graphql-config`](https://github.com/graphcool/graphql-config)
+- **Scalable GraphQL Server:** `graphql-yoga` based on Apollo Server & Express
+- **GraphQL-native database:** Includes GraphQL database binding to Graphcool (running on MySQL)
+- Simple data model – easy to adjust
+- Preconfigured [`graphql-config`](https://github.com/graphcool/graphql-config) setup
 - Out-of-the-box support for [GraphQL Playground](https://github.com/graphcool/graphql-playground) & [Tracing](https://github.com/apollographql/apollo-tracing)
 
-## Getting started
+## Requirements
 
-#### Requirements
+You need to have the following things installed:
 
-* Node 8 (or higher)
-* Graphcool CLI (Get it via `npm i -g graphcool@beta`)
-* GraphQL CLI (Get it via `npm i -g graphql-cli`)
-* Optional: GraphQL Playground desktop app (Download [here](https://github.com/graphcool/graphql-playground/releases))
+* Node 8+
+* Graphcool CLI: `npm i -g graphcool@beta`
+* GraphQL CLI: `npm i -g graphql-cli`
+* GraphQL Playground desktop app (optional): [Download](https://github.com/graphcool/graphql-playground/releases)
 
-#### 1. Setting up your project
-
-##### [Option A] Via `graphql create` (recommended)
+## Getting Started
 
 ```sh
-# 1 Bootstrap GraphQL server in directory `my-app`, based on `node-basic` boilerplate
+# Bootstrap GraphQL server in directory `my-app`, based on `node-basic` boilerplate
 graphql create my-app -b node-basic
 
-# 2. Navigate to the new project
+# Navigate to the new project
 cd my-app
 
-#4. Deploy the Graphcool database
-graphcool deploy
-```
-
-##### [Option B] By cloning the repo
-
-```sh
-# 1. Clone the repo and navigate into project directory
-git clone https://github.com/graphql-boilerplates/node-graphql-server.git
-cd node-graphql-server/basic
-
-# 2. Deploy the Graphcool database
+# Deploy the Graphcool database
 graphcool deploy
 
-# 3. Install node dependencies
-yarn install
-```
-
-#### 2. Start the local server
-
-```sh
 # Start server (runs on http://localhost:4000)
 yarn start
 
 # Open Playground to explore GraphQL API
 yarn playground
 ```
+
+<details>
+<summary>Alternative: Clone repo</summary>
+
+```sh
+# Clone the repo and navigate into project directory
+git clone https://github.com/graphql-boilerplates/node-graphql-server.git
+cd node-graphql-server/basic
+
+# Deploy the Graphcool database
+graphcool deploy
+
+# Install node dependencies
+yarn install
+
+# Start server (runs on http://localhost:4000)
+yarn start
+
+# Open Playground to explore GraphQL API
+yarn playground
+```
+</details>
 
 ## Docs
 
