@@ -7,18 +7,18 @@
     "now-start": "node src/index.js"
   },
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "graphcool-binding": "^0.2.4",
-    "graphql-import": "^0.1.8",
-    "graphql-yoga": "^0.4.2",
-    "jsonwebtoken": "^8.1.0"
+    "bcryptjs": "2.4.3",
+    "graphcool-binding": "0.2.4",
+    "graphql-import": "0.1.8",
+    "graphql-yoga": "0.4.2",
+    "jsonwebtoken": "8.1.0"
   },
   "devDependencies": {
-    "dotenv-cli": "^1.4.0",
-    "graphql-cli": "^2.0.5",
-    "nodemon": "^1.13.3",
-    "now": "^8.5.4",
-    "rimraf": "^2.6.2"
+    "dotenv-cli": "1.4.0",
+    "graphql-cli": "2.1.0",
+    "nodemon": "1.13.3",
+    "now": "8.5.4",
+    "rimraf": "2.6.2"
   },
   "now": {
     "alias": "graphql-boilerplate"

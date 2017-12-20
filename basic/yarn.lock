@@ -430,7 +430,7 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
-graphcool-binding@^0.2.4:
+graphcool-binding@0.2.4:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/graphcool-binding/-/graphcool-binding-0.2.4.tgz#e3a7007223daaca7db1d8f6594d8d886385c7fec"
   dependencies:
@@ -492,6 +492,15 @@ graphql-extensions@^0.0.x:
     core-js "^2.5.1"
     source-map-support "^0.5.0"
 
+graphql-import@0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/graphql-import/-/graphql-import-0.1.8.tgz#403b9f9dd83a206a9808ae2ab6afab4040e0359d"
+  dependencies:
+    "@types/graphql" "0.11.7"
+    "@types/lodash" "^4.14.85"
+    graphql "^0.12.3"
+    lodash "^4.17.4"
+
 graphql-import@^0.1.5, graphql-import@^0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/graphql-import/-/graphql-import-0.1.7.tgz#78c25f9f402582e9d17a1ffda13a1d4a915a54be"
@@ -499,15 +508,6 @@ graphql-import@^0.1.5, graphql-import@^0.1.7:
     "@types/graphql" "0.11.7"
     "@types/lodash" "^4.14.85"
     graphql "^0.11.7"
-    lodash "^4.17.4"
-
-graphql-import@^0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/graphql-import/-/graphql-import-0.1.8.tgz#403b9f9dd83a206a9808ae2ab6afab4040e0359d"
-  dependencies:
-    "@types/graphql" "0.11.7"
-    "@types/lodash" "^4.14.85"
-    graphql "^0.12.3"
     lodash "^4.17.4"
 
 graphql-playground-html@^1.3.8-beta.1:
@@ -560,7 +560,7 @@ graphql-tools@^2.14.0:
     deprecated-decorator "^0.1.6"
     uuid "^3.1.0"
 
-graphql-yoga@^0.4.2:
+graphql-yoga@0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-0.4.2.tgz#4d426d85b9115001d87d2b0916d53f0410329ae0"
   dependencies:
@@ -660,7 +660,7 @@ jsonfile@^4.0.0:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-jsonwebtoken@^8.1.0:
+jsonwebtoken@8.1.0, jsonwebtoken@^8.1.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/jsonwebtoken/-/jsonwebtoken-8.1.0.tgz#c6397cd2e5fd583d65c007a83dc7bb78e6982b83"
   dependencies:
@@ -800,7 +800,7 @@ node-fetch@1.7.3, node-fetch@^1.0.1:
     encoding "^0.1.11"
     is-stream "^1.0.1"
 
-now@^8.5.4:
+now@8.5.4:
   version "8.5.4"
   resolved "https://registry.yarnpkg.com/now/-/now-8.5.4.tgz#48094ed25c54a9e50c1a0b087000872df7025dd8"
 
