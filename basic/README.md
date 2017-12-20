@@ -6,9 +6,9 @@ Basic starter code for a scalable, production-ready GraphQL server for Node.js.
 
 ## Features
 
-- Simple data model, easy to adjust
-- Database with powerful CRUD API (powered by [Graphcool](https://www.graph.cool/))
-- Preconfigured [`graphql-config`](https://github.com/graphcool/graphql-config)
+- Simple data model – easy to adjust
+- Database with powerful CRUD API ([Graphcool](https://www.graph.cool/))
+- Preconfigured [`graphql-config`](https://github.com/graphcool/graphql-config) setup
 - Out-of-the-box support for [GraphQL Playground](https://github.com/graphcool/graphql-playground) & [Tracing](https://github.com/apollographql/apollo-tracing)
 
 ## Requirements
