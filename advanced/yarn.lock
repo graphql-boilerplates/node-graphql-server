@@ -1251,19 +1251,20 @@ graceful-fs@~3.0.2:
   dependencies:
     natives "^1.1.0"
 
-graphcool-binding@0.2.4:
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/graphcool-binding/-/graphcool-binding-0.2.4.tgz#e3a7007223daaca7db1d8f6594d8d886385c7fec"
+graphcool-binding@0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/graphcool-binding/-/graphcool-binding-0.3.2.tgz#6251269e99f3024e448d931aaa67cb0b20fd2e6c"
   dependencies:
     "@types/jsonwebtoken" "^7.2.4"
     apollo-link "^1.0.7"
     apollo-link-http "^1.3.2"
     cross-fetch "^1.1.1"
     graphql "^0.12.3"
-    graphql-import "^0.1.7"
+    graphql-binding "^0.1.1"
+    graphql-import "^0.1.8"
     graphql-request "^1.4.0"
     graphql-schema-cache "^0.3.2"
-    graphql-tools "^2.14.0"
+    graphql-tools "^2.14.1"
     jsonwebtoken "^8.1.0"
 
 graphcool-json-schema@^1.0.1-alpha.2:
@@ -1310,6 +1311,15 @@ graphcool-yml@^0.0.6:
     replaceall "^0.1.6"
     scuid "^1.0.2"
     yaml-ast-parser "^0.0.40"
+
+graphql-binding@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/graphql-binding/-/graphql-binding-0.1.1.tgz#e9a8fc0f4c26754638f1ca4400762a018540ba6f"
+  dependencies:
+    "@types/graphql" "0.11.7"
+    apollo-link "^1.0.7"
+    graphql "^0.12.3"
+    graphql-tools "^2.14.1"
 
 graphql-cli@2.1.0:
   version "2.1.0"
@@ -1384,7 +1394,7 @@ graphql-extensions@^0.0.x:
     core-js "^2.5.1"
     source-map-support "^0.5.0"
 
-graphql-import@0.1.8:
+graphql-import@0.1.8, graphql-import@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/graphql-import/-/graphql-import-0.1.8.tgz#403b9f9dd83a206a9808ae2ab6afab4040e0359d"
   dependencies:
@@ -1484,6 +1494,14 @@ graphql-subscriptions@^0.5.6:
 graphql-tools@^2.14.0:
   version "2.14.0"
   resolved "https://registry.yarnpkg.com/graphql-tools/-/graphql-tools-2.14.0.tgz#9a8e6d89724f68f8c5aea220ee634a690b62f670"
+  dependencies:
+    apollo-utilities "^1.0.1"
+    deprecated-decorator "^0.1.6"
+    uuid "^3.1.0"
+
+graphql-tools@^2.14.1:
+  version "2.14.1"
+  resolved "https://registry.yarnpkg.com/graphql-tools/-/graphql-tools-2.14.1.tgz#15f96683d7f178042baddcfc17d73dcfeee67356"
   dependencies:
     apollo-utilities "^1.0.1"
     deprecated-decorator "^0.1.6"
