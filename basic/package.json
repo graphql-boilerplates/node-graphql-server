@@ -12,7 +12,7 @@
     "jsonwebtoken": "8.1.0"
   },
   "devDependencies": {
-    "now": "8.5.4"
+    "now": "9.0.1"
   },
   "now": {
     "alias": "graphql-template-node"
