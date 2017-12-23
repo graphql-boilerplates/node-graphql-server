@@ -430,18 +430,17 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
-graphcool-binding@0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/graphcool-binding/-/graphcool-binding-0.3.2.tgz#6251269e99f3024e448d931aaa67cb0b20fd2e6c"
+graphcool-binding@0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/graphcool-binding/-/graphcool-binding-0.3.4.tgz#69ab39c73da2c4cff5a22484633cc2c1e883bcd3"
   dependencies:
     "@types/jsonwebtoken" "^7.2.4"
     apollo-link "^1.0.7"
     apollo-link-http "^1.3.2"
     cross-fetch "^1.1.1"
     graphql "^0.12.3"
-    graphql-binding "^0.1.1"
+    graphql-binding "^0.2.0"
     graphql-import "^0.1.8"
-    graphql-request "^1.4.0"
     graphql-schema-cache "^0.3.2"
     graphql-tools "^2.14.1"
     jsonwebtoken "^8.1.0"
@@ -469,12 +468,11 @@ graphcool-yml@^0.0.22:
     scuid "^1.0.2"
     yaml-ast-parser "^0.0.40"
 
-graphql-binding@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/graphql-binding/-/graphql-binding-0.1.1.tgz#e9a8fc0f4c26754638f1ca4400762a018540ba6f"
+graphql-binding@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/graphql-binding/-/graphql-binding-0.2.0.tgz#5964ed83cb3c30bc3750a08b848c4cac3600b9dd"
   dependencies:
     "@types/graphql" "0.11.7"
-    apollo-link "^1.0.7"
     graphql "^0.12.3"
     graphql-tools "^2.14.1"
 
