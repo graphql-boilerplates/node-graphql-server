@@ -1139,9 +1139,9 @@ graphql-binding@0.2.1:
     graphql "^0.12.3"
     graphql-tools "^2.14.1"
 
-graphql-cli@2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/graphql-cli/-/graphql-cli-2.2.2.tgz#fbea8ea382269222fc3742f774fe3ddf1ac814d9"
+graphql-cli@2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/graphql-cli/-/graphql-cli-2.2.3.tgz#dc16caefefa91f385812414d1181a2b4ef2ed6b2"
   dependencies:
     adm-zip "^0.4.7"
     chalk "^2.3.0"
@@ -1153,6 +1153,7 @@ graphql-cli@2.2.2:
     express-request-proxy "^2.0.0"
     graphql "0.12.3"
     graphql-config "1.1.4"
+    graphql-config-extension-graphcool "0.3.1"
     graphql-playground-middleware-express "1.3.13"
     graphql-schema-linter "0.0.25"
     inquirer "^4.0.1"
@@ -1166,6 +1167,13 @@ graphql-cli@2.2.2:
     request "^2.83.0"
     yargs "^10.0.3"
 
+graphql-config-extension-graphcool@0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/graphql-config-extension-graphcool/-/graphql-config-extension-graphcool-0.3.1.tgz#87ca71f6d9e91a8670fc81eff7831dc6b68b1066"
+  dependencies:
+    graphcool-yml "^0.1.7"
+    graphql-config "^1.1.4"
+
 graphql-config-extension-graphcool@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/graphql-config-extension-graphcool/-/graphql-config-extension-graphcool-0.2.0.tgz#ac5b70bb88bb56ce6897ae4ce56d6189cae360c1"
@@ -1173,7 +1181,7 @@ graphql-config-extension-graphcool@^0.2.0:
     graphcool-yml "^0.1.7"
     graphql-config "^1.1.1"
 
-graphql-config@1.1.4, graphql-config@^1.0.0, graphql-config@^1.1.1:
+graphql-config@1.1.4, graphql-config@^1.0.0, graphql-config@^1.1.1, graphql-config@^1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/graphql-config/-/graphql-config-1.1.4.tgz#af09659f877b96451838de456e4e4f4be45be6dd"
   dependencies:
