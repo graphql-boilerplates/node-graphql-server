@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "dotenv-cli": "1.4.0",
-    "graphql-cli": "2.2.3",
+    "graphql-cli": "2.2.4",
     "nodemon": "1.14.7",
     "now": "9.0.1",
     "rimraf": "2.6.2"

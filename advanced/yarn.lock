@@ -1139,9 +1139,9 @@ graphql-binding@0.2.1:
     graphql "^0.12.3"
     graphql-tools "^2.14.1"
 
-graphql-cli@2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/graphql-cli/-/graphql-cli-2.2.3.tgz#dc16caefefa91f385812414d1181a2b4ef2ed6b2"
+graphql-cli@2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/graphql-cli/-/graphql-cli-2.2.4.tgz#f7560b0f77df4d39aba4a30f7a226706ddf0d250"
   dependencies:
     adm-zip "^0.4.7"
     chalk "^2.3.0"
