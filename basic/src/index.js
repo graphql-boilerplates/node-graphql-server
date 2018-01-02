@@ -33,7 +33,7 @@ const server = new GraphQLServer({
   context: req => ({
     ...req,
     db: new Graphcool({
-      typeDefs: './database/schema.generated.graphql',
+      typeDefs: 'src/generated/database.graphql',
       endpoint: 'http://localhost:60000/graphql-boilerplate/dev',
       secret: 'mysecret123',
     }),

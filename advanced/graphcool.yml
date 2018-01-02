@@ -2,4 +2,4 @@ service: graphql-boilerplate
 
 datamodel: database/datamodel.graphql
 
-secret: mysecret123
+secret: ${env:GRAPHCOOL_SECRET}
