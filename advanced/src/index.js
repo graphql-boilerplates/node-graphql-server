@@ -3,12 +3,12 @@ const { Graphcool } = require('graphcool-binding')
 const resolvers = require('./resolvers')
 
 const server = new GraphQLServer({
-  typeDefs: './src/schema.graphql',
+  typeDefs: 'src/schema.graphql',
   resolvers,
   context: req => ({
     ...req,
     db: new Graphcool({
-      typeDefs: './database/schema.generated.graphql',
+      typeDefs: 'src/generated/database.graphql',
       endpoint: process.env.GRAPHCOOL_ENDPOINT,
       secret: process.env.GRAPHCOOL_SECRET,
     }),

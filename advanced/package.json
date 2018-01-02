@@ -1,19 +1,19 @@
 {
   "name": "graphql-boilerplate",
   "scripts": {
-    "start": "dotenv -- nodemon src/index.js",
+    "start": "nodemon -x 'node -r dotenv/config' src/index.js",
     "playground": "graphql playground",
     "deploy": "now --public --dotenv .env.prod && now alias && now rm --yes --safe graphql-boilerplate",
     "now-start": "node src/index.js"
   },
   "dependencies": {
     "bcryptjs": "2.4.3",
-    "graphcool-binding": "0.4.3",
+    "graphcool-binding": "1.0.0",
     "graphql-yoga": "0.8.0",
     "jsonwebtoken": "8.1.0"
   },
   "devDependencies": {
-    "dotenv-cli": "1.4.0",
+    "dotenv": "^4.0.0",
     "graphql-cli": "2.4.0",
     "nodemon": "1.14.7",
     "now": "9.0.1",
