@@ -102,7 +102,7 @@ yarn playground
 Access to the Graphcool API is secured by a secret. This also applies to the introspection query. Using the latest version of GraphQL Playground, the `Authorization` header should automatically be setup with a proper JWT signing the secret. If that's not the case, you can follow these steps to access your API:
 
 1. Visit http://jwtbuilder.jamiekurtz.com/
-1. Replace the `Key` at the bottom of the page with [your secret from the `.env` file](https://github.com/graphcool/graphql-boilerplate/blob/master/.env#L3)
+1. Replace the `Key` at the bottom of the page with [your secret from the `.env` file](https://github.com/graphql-boilerplates/node-graphql-server/blob/master/advanced/.env)
 1. Click `Create signed JWT` and copy the obtained token
 1. Now, to access the schema, use the `Authorization: Bearer <token>` header, or in the GraphQL Playground set it as JSON:
     ```json
