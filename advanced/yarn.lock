@@ -1173,9 +1173,9 @@ graphql-cli-prepare@1.4.3:
     graphql-static-binding "0.5.0"
     lodash "4.17.4"
 
-graphql-cli@2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/graphql-cli/-/graphql-cli-2.5.0.tgz#21f3acdd969f0393070a83ef27f443dc70e3fa09"
+graphql-cli@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/graphql-cli/-/graphql-cli-2.6.0.tgz#fb1ccffa6947235d3c5f36b8e2277dc5af681bf5"
   dependencies:
     adm-zip "^0.4.7"
     chalk "^2.3.0"
