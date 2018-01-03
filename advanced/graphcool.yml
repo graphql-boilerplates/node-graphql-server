@@ -2,8 +2,8 @@
 service: graphql-boilerplate
 
 # the cluster and stage the service is deployed to
-stage: dev
-cluster: local
+stage: ${env:GRAPHCOOL_STAGE}
+cluster: ${env:GRAPHCOOL_CLUSTER}
 
 # the file path pointing to your data model
 datamodel: database/datamodel.graphql
