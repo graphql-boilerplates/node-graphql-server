@@ -9,7 +9,7 @@
   "dependencies": {
     "bcryptjs": "2.4.3",
     "graphcool-binding": "1.2.2",
-    "graphql-yoga": "0.8.3",
+    "graphql-yoga": "0.8.4",
     "jsonwebtoken": "8.1.0"
   },
   "devDependencies": {
