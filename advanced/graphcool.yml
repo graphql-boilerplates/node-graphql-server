@@ -5,9 +5,9 @@ service: graphql-boilerplate
 stage: ${env:GRAPHCOOL_STAGE}
 cluster: ${env:GRAPHCOOL_CLUSTER}
 
-# the file path pointing to your data model
-datamodel: database/datamodel.graphql
-
 # to disable authentication:
 # disableAuth: true
 secret: ${env:GRAPHCOOL_SECRET}
+
+# the file path pointing to your data model
+datamodel: database/datamodel.graphql
