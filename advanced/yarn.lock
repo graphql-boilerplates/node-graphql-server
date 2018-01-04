@@ -1169,6 +1169,25 @@ graphcool-yml@0.2.1:
     scuid "^1.0.2"
     yaml-ast-parser "^0.0.40"
 
+graphcool-yml@0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/graphcool-yml/-/graphcool-yml-0.2.2.tgz#b9f67b6581e149d573f631afdd938cb5f44f9813"
+  dependencies:
+    ajv "^5.5.1"
+    bluebird "^3.5.1"
+    debug "^3.1.0"
+    dotenv "^4.0.0"
+    fs-extra "^4.0.3"
+    graphcool-json-schema "1.2.0"
+    isomorphic-fetch "^2.2.1"
+    js-yaml "^3.10.0"
+    json-stable-stringify "^1.0.1"
+    jsonwebtoken "^8.1.0"
+    lodash "^4.17.4"
+    replaceall "^0.1.6"
+    scuid "^1.0.2"
+    yaml-ast-parser "^0.0.40"
+
 graphql-binding@0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/graphql-binding/-/graphql-binding-0.5.0.tgz#2ec068197ca003ea19024f9e617e053fc3afaffa"
@@ -1188,9 +1207,9 @@ graphql-cli-prepare@1.4.5:
     graphql-static-binding "0.6.0"
     lodash "4.17.4"
 
-graphql-cli@2.9.2:
-  version "2.9.2"
-  resolved "https://registry.yarnpkg.com/graphql-cli/-/graphql-cli-2.9.2.tgz#5cedbbb9ca027fe0775d483151edaefec5290ad4"
+graphql-cli@2.9.3:
+  version "2.9.3"
+  resolved "https://registry.yarnpkg.com/graphql-cli/-/graphql-cli-2.9.3.tgz#8a9ff588147b5188618ba044385a4aebbb070cf6"
   dependencies:
     adm-zip "^0.4.7"
     chalk "^2.3.0"
@@ -1203,7 +1222,7 @@ graphql-cli@2.9.2:
     graphql "0.12.3"
     graphql-cli-prepare "1.4.5"
     graphql-config "1.1.4"
-    graphql-config-extension-graphcool "1.0.0"
+    graphql-config-extension-graphcool "1.0.1"
     graphql-playground-middleware-express "1.4.3"
     graphql-schema-linter "0.0.25"
     inquirer "^4.0.1"
@@ -1218,7 +1237,14 @@ graphql-cli@2.9.2:
     request "^2.83.0"
     yargs "^10.0.3"
 
-graphql-config-extension-graphcool@1.0.0, graphql-config-extension-graphcool@^1.0.0:
+graphql-config-extension-graphcool@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/graphql-config-extension-graphcool/-/graphql-config-extension-graphcool-1.0.1.tgz#841210ddac9ea43d97a3c1faf65555ec5fb6fcbf"
+  dependencies:
+    graphcool-yml "0.2.2"
+    graphql-config "^1.1.4"
+
+graphql-config-extension-graphcool@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/graphql-config-extension-graphcool/-/graphql-config-extension-graphcool-1.0.0.tgz#aeac68bc54126f17f263058893b556529ec46f94"
   dependencies:
