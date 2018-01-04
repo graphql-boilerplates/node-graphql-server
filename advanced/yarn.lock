@@ -1625,19 +1625,19 @@ graphql-binding@0.4.0:
     graphql-tools "2.16.0"
     iterall "^1.1.3"
 
-graphql-cli-prepare@1.4.4:
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/graphql-cli-prepare/-/graphql-cli-prepare-1.4.4.tgz#16284b2d3cf8c4e0c4c86f177541a038522330cd"
+graphql-cli-prepare@1.4.5:
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/graphql-cli-prepare/-/graphql-cli-prepare-1.4.5.tgz#acbb67fc3b85bb7707502176b8d1ecc5bc6c6caf"
   dependencies:
     chalk "2.3.0"
     fs-extra "5.0.0"
     graphql-import "0.1.9"
-    graphql-static-binding "0.5.0"
+    graphql-static-binding "0.6.0"
     lodash "4.17.4"
 
-graphql-cli@2.9.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/graphql-cli/-/graphql-cli-2.9.0.tgz#a85a64a585a44ab63e9805c11e5c55bfb2caefd5"
+graphql-cli@2.9.2:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/graphql-cli/-/graphql-cli-2.9.2.tgz#5cedbbb9ca027fe0775d483151edaefec5290ad4"
   dependencies:
     adm-zip "^0.4.7"
     chalk "^2.3.0"
@@ -1648,7 +1648,7 @@ graphql-cli@2.9.0:
     express "^4.16.2"
     express-request-proxy "^2.0.0"
     graphql "0.12.3"
-    graphql-cli-prepare "1.4.4"
+    graphql-cli-prepare "1.4.5"
     graphql-config "1.1.4"
     graphql-config-extension-graphcool "1.0.0"
     graphql-playground-middleware-express "1.4.3"
@@ -1835,9 +1835,9 @@ graphql-schema-linter@0.0.25:
     graphql "^0.10.1"
     graphql-config "^1.0.0"
 
-graphql-static-binding@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/graphql-static-binding/-/graphql-static-binding-0.5.0.tgz#2aecdcd289800bb60b95f7785ec42ab6117eef6b"
+graphql-static-binding@0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/graphql-static-binding/-/graphql-static-binding-0.6.0.tgz#9990a11f445a6fde798d71f49611d6cd97a407e6"
   dependencies:
     cucumber-html-reporter "^3.0.4"
     graphql "0.12.3"
