@@ -8,6 +8,6 @@ cluster: local
 # the file path pointing to your data model
 datamodel: database/datamodel.graphql
 
-# to enable authentication, provide
-# secret: mysecret123
-disableAuth: true
+# to disable authentication:
+# disableAuth: true
+secret: mysecret123
