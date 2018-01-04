@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "bcryptjs": "2.4.3",
-    "graphcool-binding": "1.1.1",
+    "graphcool-binding": "1.2.0",
     "graphql-yoga": "0.8.3",
     "jsonwebtoken": "8.1.0"
   },
