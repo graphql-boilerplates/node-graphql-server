@@ -8,7 +8,6 @@ const post = {
         data: {
           title,
           text,
-          isPublished: true,
           author: {
             connect: { id: authorId },
           },
