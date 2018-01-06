@@ -1,0 +1,8 @@
+{
+  "name": "install",
+  "version": "0.0.0",
+  "devDependencies": {
+    "cross-spawn": "^5.1.0",
+    "graphcool": "^1.0.0-beta3.3.1"
+  }
+}

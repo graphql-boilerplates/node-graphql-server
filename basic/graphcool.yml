@@ -1,9 +1,8 @@
 # the name for the service (will be part of the service's HTTP endpoint)
-service: graphql-boilerplate
+service: graphql-boilerplatexyza
 
 # the cluster and stage the service is deployed to
 stage: dev
-cluster: local
 
 # to disable authentication:
 # disableAuth: true

@@ -33,6 +33,12 @@ type Mutation {
   resetData: Boolean
 }
 
+enum MutationType {
+  CREATED
+  UPDATED
+  DELETED
+}
+
 interface Node {
   id: ID!
 }
@@ -46,7 +52,7 @@ type PageInfo {
 
 type PostConnection {
   pageInfo: PageInfo!
-  edges: [PostEdge!]
+  edges: [PostEdge]!
 }
 
 input PostCreateInput {
@@ -73,6 +79,30 @@ enum PostOrderByInput {
   updatedAt_DESC
   createdAt_ASC
   createdAt_DESC
+}
+
+type PostPreviousValues {
+  id: ID!
+  isPublished: Boolean!
+  title: String!
+  text: String!
+}
+
+type PostSubscriptionPayload {
+  mutation: MutationType!
+  node: Post
+  updatedFields: [String!]
+  previousValues: PostPreviousValues
+}
+
+input PostSubscriptionWhereInput {
+  AND: [PostSubscriptionWhereInput!]
+  OR: [PostSubscriptionWhereInput!]
+  mutation_in: [MutationType!]
+  updatedFields_contains: String
+  updatedFields_contains_every: [String!]
+  updatedFields_contains_some: [String!]
+  node: PostWhereInput
 }
 
 input PostUpdateInput {
@@ -139,4 +169,8 @@ type Query {
   post(where: PostWhereUniqueInput!): Post
   postsConnection(where: PostWhereInput, orderBy: PostOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): PostConnection!
   node(id: ID!): Node
+}
+
+type Subscription {
+  post(where: PostSubscriptionWhereInput): PostSubscriptionPayload
 }
