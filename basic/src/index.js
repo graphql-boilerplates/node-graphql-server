@@ -34,8 +34,8 @@ const server = new GraphQLServer({
     ...req,
     db: new Graphcool({
       typeDefs: 'src/generated/database.graphql',
-      endpoint: 'http://localhost:60000/graphql-boilerplate/dev',
-      secret: 'mysecret123',
+      endpoint: '__GRAPHCOOL_ENDPOINT__',
+      secret: '__SERVER_SECRET__',
     }),
   }),
 })

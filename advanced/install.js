@@ -12,8 +12,9 @@ Next steps:
 
   1. Change directory: \`cd ${project}\`
   2. Deploy database service: \`graphcool deploy\`
-  3. Start local server: \`yarn start\`
-  4. Open Playground: \`yarn playground\`
+  3. Copy the GraphQL endpoint to \`GRAPHCOOL_ENDPOINT\` in the \`.env\` file
+  4. Start local server: \`yarn start\`
+  5. Open Playground: \`yarn playground\`
   `)
 }
 
