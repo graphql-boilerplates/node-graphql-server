@@ -2,9 +2,9 @@ const fs = require('fs')
 
 module.exports = ({ project }) => {
   const templateName = 'graphql-boilerplate'
-  replaceInFile('src/index.js', templateName, project)
-  replaceInFile('package.json', templateName, project)
-  replaceInFile('graphcool.yml', templateName, project)
+  replaceInFile('../src/index.js', templateName, project)
+  replaceInFile('../package.json', templateName, project)
+  replaceInFile('../graphcool.yml', templateName, project)
 
   console.log(`\
 Next steps:
