@@ -27,5 +27,3 @@ function replaceInFile(filePath, searchValue, replaceValue) {
   )
   fs.writeFileSync(filePath, newContents)
 }
-
-run()
