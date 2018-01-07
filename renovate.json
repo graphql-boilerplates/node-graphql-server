@@ -3,6 +3,10 @@
     "config:base",
     ":skipStatusChecks"
   ],
+  "packageRules": [{
+    "packageNames": ["graphcool"],
+    "pinVersions": false
+  }],
   "automerge": true,
   "major": {
     "automerge": false
