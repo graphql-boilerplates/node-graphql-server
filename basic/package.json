@@ -2,7 +2,7 @@
   "name": "graphql-boilerplate",
   "scripts": {
     "start": "NODE_ENV=dev node src/index.js",
-    "migrate": "graphcool deploy",
+    "graphcool": "graphcool",
     "playground": "graphcool playground"
   },
   "dependencies": {
