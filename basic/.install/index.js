@@ -9,10 +9,13 @@ module.exports = async ({ project }) => {
   replaceInFile('graphcool.yml', templateName, project)
 
   spawn.sync('.install/node_modules/.bin/graphcool', ['deploy'], { stdio: 'inherit'})
+  await new Promise(r => setTimeout(r, 2000))
+
   const info = spawn('.install/node_modules/.bin/graphcool', ['info', '--current', '--json'], { stdio: [0, 'pipe', 2]})
   var stdout = ''
   info.stdout.on('data', function(buf) { stdout += buf })
   info.on('close', function() {
+    await new Promise(r => setTimeout(r, 2000))
     console.log(stdout)
     const endpointInfo = JSON.parse(stdout)
     fs.writeFileSync('.env', `GRAPHCOOL_SECRET=mysecret123
