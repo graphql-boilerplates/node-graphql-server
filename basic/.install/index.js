@@ -9,7 +9,7 @@ module.exports = async ({ project }) => {
   replaceInFile('graphcool.yml', templateName, project)
 
   spawn.sync('.install/node_modules/.bin/graphcool', ['deploy'], { stdio: 'inherit'})
-  const info = spawn('.install/node_modules/.bin/graphcool', ['info', '--current', '--json'], { stdio: [0, 'pipe', 'pipe']})
+  const info = spawn('.install/node_modules/.bin/graphcool', ['info', '--current', '--json'], { stdio: [0, 'pipe', 2]})
   var stdout = ''
   info.stdout.on('data', function(buf) { stdout += buf })
   info.on('close', function() {
