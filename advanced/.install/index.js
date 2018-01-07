@@ -25,6 +25,6 @@ module.exports = async ({ project }) => {
 Next steps:
   1. Change directory: \`cd ${project}\`
   2. Start local server: \`yarn start\`
-  3. Open Playground: http://localhost:4000
+  3. Open Playground: \`yarn playground\`
 `)
 }
