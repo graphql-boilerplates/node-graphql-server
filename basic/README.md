@@ -33,6 +33,8 @@ cd my-app
 # Deploy the Graphcool database
 graphcool deploy
 
+# Replace __GRAPHCOOL_ENDPOINT__ and __SERVER_SECRET__ in `src/index.js`
+
 # Start server (runs on http://localhost:4000)
 yarn start
 

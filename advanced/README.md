@@ -35,6 +35,8 @@ cd my-app
 # Deploy the Graphcool database
 graphcool deploy
 
+# Confirm that GraphQL endpoint matches `GRAPHCOOL_ENDPOINT` in `.env`
+
 # Start server (runs on http://localhost:4000)
 yarn start
 

@@ -11,8 +11,9 @@ Next steps:
 
   1. Change directory: \`cd ${project}\`
   2. Deploy database service: \`graphcool deploy\`
-  3. Start local server: \`yarn start\`
-  4. Open Playground: http://localhost:4000
+  3. Replace __GRAPHCOOL_ENDPOINT__ and __SERVER_SECRET__ in src/index.js
+  4. Start local server: \`yarn start\`
+  5. Open Playground: http://localhost:4000
   `)
 }
 
