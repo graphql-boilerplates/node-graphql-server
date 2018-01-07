@@ -7,5 +7,4 @@ projects:
   database:
     schemaPath: "src/generated/database.graphql"
     extensions:
-      graphcool: graphcool.yml
-
+      graphcool: database/graphcool.yml
