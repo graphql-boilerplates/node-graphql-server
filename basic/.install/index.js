@@ -10,15 +10,14 @@ module.exports = async ({ project }) => {
   await deploy(false)
   await writeEnv()
 
-    console.log(`\
+  console.log(`\
 Next steps:
 
   1. Change directory: \`cd ${project}\`
   2. Start local server: \`yarn start\`
   3. Open Playground: http://localhost:4000
 `
-    )
-   });
+  )
 }
 
 function replaceInFile(filePath, searchValue, replaceValue) {
