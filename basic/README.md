@@ -14,12 +14,7 @@
 
 ## Requirements
 
-You need to have the following things installed:
-
-* Node 8+
-* Graphcool CLI: `npm i -g graphcool@beta`
-* GraphQL CLI: `npm i -g graphql-cli`
-* GraphQL Playground desktop app (optional): [Download](https://github.com/graphcool/graphql-playground/releases)
+You need to have the following things installed: Node 8 (or higher) and the [GraphQL CLI](https://github.com/graphql-cli/graphql-cli) `npm i -g graphql-cli`
 
 ## Getting started
 
@@ -31,7 +26,7 @@ graphql create my-app --boilerplate node-basic
 cd my-app
 
 # Deploy the Graphcool database
-graphcool deploy
+yarn graphcool deploy
 
 # Start server (runs on http://localhost:4000)
 yarn start
