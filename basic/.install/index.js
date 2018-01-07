@@ -8,7 +8,7 @@ module.exports = async ({ project }) => {
   replaceInFile('package.json', templateName, project)
   replaceInFile('graphcool.yml', templateName, project)
 
-  spawn.sync('./node_modules/.bin/graphcool', ['deploy'], { stdio: 'inherit'})
+  spawn.sync('node_modules/.bin/graphcool', ['deploy'], { stdio: 'inherit'})
 
   console.log(`\
 Next steps:
