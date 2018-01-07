@@ -1,27 +1,14 @@
 const fs = require('fs')
 var spawn = require('cross-spawn')
+const { replaceInFiles, deploy, writeEnv } = require('graphql-boilerplate-install')
 
 module.exports = async ({ project }) => {
   const templateName = 'graphql-boilerplate'
 
-  replaceInFile('src/index.js', templateName, project)
-  replaceInFile('package.json', templateName, project)
-  replaceInFile('graphcool.yml', templateName, project)
+  replaceInFiles(['src/index.js','package.json','graphcool.yml'], templateName, project)
 
-  spawn.sync('.install/node_modules/.bin/graphcool', ['deploy'], { stdio: 'inherit'})
-  await new Promise(r => setTimeout(r, 2000))
-
-  const info = spawn('.install/node_modules/.bin/graphcool', ['info', '--current', '--json'], { stdio: [0, 'pipe', 2]})
-  var stdout = ''
-  info.stdout.on('data', function(buf) { stdout += buf })
-  info.on('close', function() {
-    await new Promise(r => setTimeout(r, 2000))
-    console.log(stdout)
-    const endpointInfo = JSON.parse(stdout)
-    fs.writeFileSync('.env', `GRAPHCOOL_SECRET=mysecret123
-GRAPHCOOL_STAGE=${endpointInfo.stage}
-GRAPHCOOL_CLUSTER=${endpointInfo.cluster}
-GRAPHCOOL_ENDPOINT=${endpointInfo.httpEndpoint}`)
+  await deploy(false)
+  await writeEnv()
 
     console.log(`\
 Next steps:

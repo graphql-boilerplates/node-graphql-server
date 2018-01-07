@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "devDependencies": {
     "cross-spawn": "^5.1.0",
-    "graphcool": "1.0.0-alpha3.3.5"
+    "graphcool": "1.0.0-alpha3.3.5",
+    "graphql-boilerplate-install": "^0.1.0"
   }
 }
