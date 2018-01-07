@@ -13,6 +13,7 @@ module.exports = async ({ project }) => {
   var stdout = ''
   info.stdout.on('data', function(buf) { stdout += buf })
   info.on('close', function() {
+    console.log(stdout)
     const endpointInfo = JSON.parse(stdout)
     fs.writeFileSync('.env', `GRAPHCOOL_SECRET=mysecret123
 GRAPHCOOL_STAGE=${endpointInfo.stage}
