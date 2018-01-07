@@ -7,8 +7,11 @@ module.exports = async ({ project }) => {
 
   replaceInFiles(['src/index.js','package.json','graphcool.yml'], templateName, project)
 
+  console.log('Running $ graphcool deploy...')
   await deploy(false)
-  await writeEnv()
+  const info = await getInfo()
+  replaceInFile('src/index.js','__GRAPHCOOL_ENDPOINT__', info.httpEndpoint)
+  replaceInFile('src/index.js','__GRAPHCOOL_SECRET__', info.secret)
 
   console.log(`\
 Next steps:
