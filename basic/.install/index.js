@@ -1,6 +1,6 @@
 const fs = require('fs')
 var spawn = require('cross-spawn')
-const { replaceInFiles, deploy, writeEnv } = require('graphql-boilerplate-install')
+const { replaceInFiles, deploy, writeEnv, getInfo } = require('graphql-boilerplate-install')
 
 module.exports = async ({ project }) => {
   const templateName = 'graphql-boilerplate'
