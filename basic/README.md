@@ -14,7 +14,7 @@
 
 ## Requirements
 
-You need to have the following things installed: Node 8 (or higher) and the [GraphQL CLI](https://github.com/graphql-cli/graphql-cli) (get via `npm i -g graphql-cli`)
+You need to have the following things installed: Node 8 (or higher) and the [GraphQL CLI](https://github.com/graphql-cli/graphql-cli) (via `npm i -g graphql-cli`)
 
 ## Getting started
 
