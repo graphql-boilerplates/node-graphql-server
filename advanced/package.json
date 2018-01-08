@@ -2,9 +2,8 @@
   "name": "graphql-boilerplate",
   "scripts": {
     "start": "nodemon -x 'node -r dotenv/config' src/index.js",
-    "playground": "graphql playground",
-    "deploy": "now --public --dotenv .env.prod && now alias && now rm --yes --safe graphql-boilerplate",
-    "now-start": "node src/index.js"
+    "graphcool": "graphcool",
+    "playground": "graphql playground"
   },
   "dependencies": {
     "bcryptjs": "2.4.3",
@@ -14,12 +13,8 @@
   },
   "devDependencies": {
     "dotenv": "4.0.0",
-    "graphql-cli": "2.10.0",
+    "graphcool": "1.0.0-alpha3.3.7",
     "nodemon": "1.14.8",
-    "now": "9.0.1",
     "rimraf": "2.6.2"
-  },
-  "now": {
-    "alias": "graphql-boilerplate"
   }
 }
