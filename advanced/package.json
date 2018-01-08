@@ -1,7 +1,8 @@
 {
   "name": "graphql-boilerplate",
   "scripts": {
-    "start": "nodemon -x 'node -r dotenv/config' src/index.js",
+    "start": "nodemon -e js,graphql -x node -r dotenv/config src/index.js",
+    "debug": "nodemon -e js,graphql -x node --inspect -r dotenv/config src/index.js",
     "graphcool": "graphcool",
     "playground": "graphql playground"
   },
@@ -14,7 +15,6 @@
   "devDependencies": {
     "dotenv": "4.0.0",
     "graphcool": "1.0.0-alpha3.3.7",
-    "nodemon": "1.14.8",
-    "rimraf": "2.6.2"
+    "nodemon": "1.14.8"
   }
 }
