@@ -18,7 +18,7 @@ module.exports = async ({ project }) => {
   console.log('Running $ graphcool deploy...')
   await deploy(false)
 
-  const info = getInfo()
+  const info = await getInfo()
 
   replaceInFiles(['.env'], '__GRAPHCOOL_ENDPOINT__', info.httpEndpoint)
 
