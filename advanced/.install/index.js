@@ -17,7 +17,22 @@ module.exports = async ({ project }) => {
 
   console.log('Running $ graphcool deploy...')
   await deploy(false)
-  await writeEnv()
+
+  const info = getInfo()
+
+  replaceInFiles(['.env'], '__GRAPHCOOL_ENDPOINT__', info.httpEndpoint)
+
+  replaceInFiles(
+    ['.env'],
+    `__GRAPHCOOL_CLUSTER__`,
+    info.cluster
+  )
+  replaceInFiles(
+    ['database/graphcool.yml'],
+    `cluster: ${info.cluster}`,
+    'cluster: ${env:GRAPHCOOL_CLUSTER}'
+  )
+
 
   fs.appendFileSync('.gitignore', '.env*\n')
 
