@@ -58,7 +58,7 @@ yarn playground
 
 #### `/database` - datamodel
 
-- [`database/graphcool.yml`](./database/graphcool.yml) The root configuration file for your database service ([documentation](https://www.graph.cool/docs/1.0/reference/graphcool.yml/overview-and-example-foatho8aip)).
+- [`database/graphcool.yml`](./database/graphcool.yml) The configuration file for your database service ([documentation](https://www.graph.cool/docs/1.0/reference/graphcool.yml/overview-and-example-foatho8aip)).
 - [`database/datamodel.graphql`](./database/datamodel.graphql) contains the data model that you define for your database service (written in [SDL](https://blog.graph.cool/graphql-sdl-schema-definition-language-6755bcb9ce51)).
 
 #### `/src` - application server
