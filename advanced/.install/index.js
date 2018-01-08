@@ -19,17 +19,14 @@ module.exports = async ({ project }) => {
   await deploy(false)
 
   const info = await getInfo()
+  const cluster = info.workspace ? `${info.workspace}/${info.cluster}` : info.cluster
 
   replaceInFiles(['.env'], '__GRAPHCOOL_ENDPOINT__', info.httpEndpoint)
 
-  replaceInFiles(
-    ['.env'],
-    `__GRAPHCOOL_CLUSTER__`,
-    info.cluster
-  )
+  replaceInFiles(['.env'], `__GRAPHCOOL_CLUSTER__`, cluster)
   replaceInFiles(
     ['database/graphcool.yml'],
-    `cluster: ${info.cluster}`,
+    `cluster: ${cluster}`,
     'cluster: ${env:GRAPHCOOL_CLUSTER}'
   )
 
