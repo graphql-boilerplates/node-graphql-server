@@ -10,3 +10,7 @@ secret: ${env:GRAPHCOOL_SECRET}
 
 # the file path pointing to your data model
 datamodel: datamodel.graphql
+
+# seeding your service with initial data
+seed:
+  import: database/seed.graphql
