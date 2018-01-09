@@ -1361,9 +1361,9 @@ graphcool-binding@1.3.3:
     jsonwebtoken "^8.1.0"
     subscriptions-transport-ws "0.9.4"
 
-graphcool-cli-core@1.14.6:
-  version "1.14.6"
-  resolved "https://registry.yarnpkg.com/graphcool-cli-core/-/graphcool-cli-core-1.14.6.tgz#31e69b716cfbd51c633ed2b743f62d88cf4b4220"
+graphcool-cli-core@1.14.10:
+  version "1.14.10"
+  resolved "https://registry.yarnpkg.com/graphcool-cli-core/-/graphcool-cli-core-1.14.10.tgz#e41b5ed6995c8b0a515e745b093e34d32d886b70"
   dependencies:
     archiver "^2.0.3"
     callsites "^2.0.0"
@@ -1521,12 +1521,12 @@ graphcool-yml@0.4.8:
     scuid "^1.0.2"
     yaml-ast-parser "^0.0.40"
 
-graphcool@1.0.0-beta4.0.3:
-  version "1.0.0-beta4.0.3"
-  resolved "https://registry.yarnpkg.com/graphcool/-/graphcool-1.0.0-beta4.0.3.tgz#7a9790be43e661b15b7e6c977564866fc1c13b1d"
+graphcool@1.0.0-beta4.0.6:
+  version "1.0.0-beta4.0.6"
+  resolved "https://registry.yarnpkg.com/graphcool/-/graphcool-1.0.0-beta4.0.6.tgz#cea35e3568160a1709eefd77a25295867f980482"
   dependencies:
     fs-extra "^4.0.1"
-    graphcool-cli-core "1.14.6"
+    graphcool-cli-core "1.14.10"
     graphcool-cli-engine "0.9.3"
     semver "^5.4.1"
     source-map-support "^0.4.18"
@@ -2403,15 +2403,16 @@ node-pre-gyp@^0.6.39:
     tar "^2.2.1"
     tar-pack "^3.4.0"
 
-nodemon@1.14.9:
-  version "1.14.9"
-  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-1.14.9.tgz#eec45a916db61503264037b4233c0f8a15d69802"
+nodemon@1.14.10:
+  version "1.14.10"
+  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-1.14.10.tgz#836d33ff0f89ad111b8d49e5e3b3cb872e36304e"
   dependencies:
     chokidar "^1.7.0"
     debug "^2.6.8"
     ignore-by-default "^1.0.1"
     minimatch "^3.0.4"
     pstree.remy "^1.1.0"
+    semver "^5.4.1"
     touch "^3.1.0"
     undefsafe "0.0.3"
     update-notifier "^2.3.0"
