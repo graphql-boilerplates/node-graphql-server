@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "dotenv": "4.0.0",
-    "graphcool": "1.0.0-beta4.0.3",
+    "graphcool": "1.0.0-beta4.0.6",
     "nodemon": "1.14.9"
   }
 }
