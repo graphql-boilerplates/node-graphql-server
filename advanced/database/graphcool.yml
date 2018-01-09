@@ -13,4 +13,4 @@ datamodel: datamodel.graphql
 
 # seeding your service with initial data
 seed:
-  import: database/seed.graphql
+  import: seed.graphql
