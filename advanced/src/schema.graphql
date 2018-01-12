@@ -2,13 +2,15 @@
 
 type Query {
   feed: [Post!]!
+  drafts: [Post!]!
   me: User
 }
 
 type Mutation {
   signup(email: String!, password: String!, name: String!): AuthPayload!
   login(email: String!, password: String!): AuthPayload!
-  writePost(title: String!, text: String!): Post!
+  createDraft(title: String!, text: String!): Post!
+  publish(id: ID!): Post!
   deletePost(id: ID!): Post!
 }
 
