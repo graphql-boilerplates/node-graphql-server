@@ -165,7 +165,7 @@ apollo-link-http@1.3.2:
   dependencies:
     apollo-link "^1.0.7"
 
-apollo-link-ws@^1.0.4:
+apollo-link-ws@1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/apollo-link-ws/-/apollo-link-ws-1.0.4.tgz#d0067aa0204470dbd3955aa5204f8dd72d389350"
   dependencies:
@@ -876,7 +876,7 @@ create-error-class@^3.0.0:
   dependencies:
     capture-stack-trace "^1.0.0"
 
-cross-fetch@1.1.1, cross-fetch@^1.1.1:
+cross-fetch@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-1.1.1.tgz#dede6865ae30f37eae62ac90ebb7bdac002b05a0"
   dependencies:
@@ -1720,21 +1720,21 @@ graceful-fs@~3.0.2:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
 
-graphcool-binding@1.3.3:
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/graphcool-binding/-/graphcool-binding-1.3.3.tgz#232a98a92b38724cb99a1e179cb20e81fc9af2e9"
+graphcool-binding@1.3.5:
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/graphcool-binding/-/graphcool-binding-1.3.5.tgz#dcd284c4e3d3d14df8cc6e27286b0934101e55ed"
   dependencies:
     apollo-link "1.0.7"
     apollo-link-error "1.0.3"
     apollo-link-http "1.3.2"
-    apollo-link-ws "^1.0.4"
-    cross-fetch "^1.1.1"
+    apollo-link-ws "1.0.4"
+    cross-fetch "1.1.1"
     graphql "0.12.3"
-    graphql-binding "0.5.0"
-    graphql-import "0.3.0"
-    graphql-tools "2.16.0"
+    graphql-binding "1.2.0"
+    graphql-import "0.3.1"
+    graphql-tools "2.18.0"
     jsonwebtoken "^8.1.0"
-    subscriptions-transport-ws "0.9.4"
+    subscriptions-transport-ws "0.9.5"
 
 graphcool-cli-core@1.14.23:
   version "1.14.23"
@@ -1931,14 +1931,13 @@ graphcool@1.0.0-beta4.1.1:
     semver "^5.4.1"
     source-map-support "^0.4.18"
 
-graphql-binding@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/graphql-binding/-/graphql-binding-0.5.0.tgz#2ec068197ca003ea19024f9e617e053fc3afaffa"
+graphql-binding@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/graphql-binding/-/graphql-binding-1.2.0.tgz#0876318735fb469631586d7721a2189eff7a8532"
   dependencies:
-    "@types/graphql" "0.11.7"
     graphql "0.12.3"
-    graphql-tools "2.16.0"
-    iterall "^1.1.3"
+    graphql-tools "2.18.0"
+    iterall "1.1.3"
 
 graphql-cli-prepare@1.4.7:
   version "1.4.7"
@@ -2027,6 +2026,13 @@ graphql-extensions@^0.0.x:
 graphql-import@0.3.0, graphql-import@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/graphql-import/-/graphql-import-0.3.0.tgz#4eb2c8aabac7fdb535fd1507b565336f4f707a64"
+  dependencies:
+    graphql "^0.12.3"
+    lodash "^4.17.4"
+
+graphql-import@0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/graphql-import/-/graphql-import-0.3.1.tgz#953f31323e851b5246602ea8e3d36a95b8fc47b5"
   dependencies:
     graphql "^0.12.3"
     lodash "^4.17.4"
@@ -2121,7 +2127,17 @@ graphql-subscriptions@^0.5.6:
     es6-promise "^4.1.1"
     iterall "^1.1.3"
 
-graphql-tools@2.16.0, graphql-tools@^2.16.0:
+graphql-tools@2.18.0:
+  version "2.18.0"
+  resolved "https://registry.yarnpkg.com/graphql-tools/-/graphql-tools-2.18.0.tgz#8e2d6436f9adba1d579c1a1710ae95e7f5e7248b"
+  dependencies:
+    apollo-link "^1.0.0"
+    apollo-utilities "^1.0.1"
+    deprecated-decorator "^0.1.6"
+    graphql-subscriptions "^0.5.6"
+    uuid "^3.1.0"
+
+graphql-tools@^2.16.0:
   version "2.16.0"
   resolved "https://registry.yarnpkg.com/graphql-tools/-/graphql-tools-2.16.0.tgz#689e46ce8b4570e01214cb7fda4a0c9338c0459f"
   dependencies:
@@ -4175,7 +4191,20 @@ strip-outer@^1.0.0:
   dependencies:
     escape-string-regexp "^1.0.2"
 
-subscriptions-transport-ws@0.9.4, subscriptions-transport-ws@^0.9.4:
+subscriptions-transport-ws@0.9.5:
+  version "0.9.5"
+  resolved "https://registry.yarnpkg.com/subscriptions-transport-ws/-/subscriptions-transport-ws-0.9.5.tgz#faa9eb1230d5f2efe355368cd973b867e4483c53"
+  dependencies:
+    backo2 "^1.0.2"
+    eventemitter3 "^2.0.3"
+    iterall "^1.1.1"
+    lodash.assign "^4.2.0"
+    lodash.isobject "^3.0.2"
+    lodash.isstring "^4.0.1"
+    symbol-observable "^1.0.4"
+    ws "^3.0.0"
+
+subscriptions-transport-ws@^0.9.4:
   version "0.9.4"
   resolved "https://registry.yarnpkg.com/subscriptions-transport-ws/-/subscriptions-transport-ws-0.9.4.tgz#2671c7339c17389c0ff47c73cd749949576d3dd5"
   dependencies:
