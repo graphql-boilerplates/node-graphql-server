@@ -30,7 +30,6 @@ type Mutation {
   upsertPost(where: PostWhereUniqueInput!, create: PostCreateInput!, update: PostUpdateInput!): Post!
   updateManyPosts(data: PostUpdateInput!, where: PostWhereInput!): BatchPayload!
   deleteManyPosts(where: PostWhereInput!): BatchPayload!
-  resetData: Boolean
 }
 
 enum MutationType {
