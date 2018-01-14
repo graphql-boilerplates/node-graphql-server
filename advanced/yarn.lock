@@ -3536,7 +3536,7 @@ prisma-cli-engine@0.0.10:
     validator "^8.2.0"
     yaml-ast-parser "^0.0.34"
 
-prisma-cli@1.0.0-beta.4.1.2:
+prisma-cli@beta:
   version "1.0.0-beta.4.1.2"
   resolved "https://registry.yarnpkg.com/prisma-cli/-/prisma-cli-1.0.0-beta.4.1.2.tgz#49b0074cab492a3566fd07d2bcfdaaf93b5f95cc"
   dependencies:
