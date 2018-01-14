@@ -2,7 +2,7 @@ const { getUserId, Context } = require('../../utils')
 
 const post = {
   async createDraft(parent, { title, text }, ctx, info) {
-    const authorId = getUserId(ctx)
+    const userId = getUserId(ctx)
     return ctx.db.mutation.createPost(
       {
         data: {
@@ -10,7 +10,7 @@ const post = {
           text,
           isPublished: false,
           author: {
-            connect: { id: authorId },
+            connect: { id: userId },
           },
         },
       },
@@ -19,10 +19,10 @@ const post = {
   },
 
   async publish(parent, { id }, ctx, info) {
-    const authorId = getUserId(ctx)
+    const userId = getUserId(ctx)
     const postExists = await ctx.db.exists.Post({
       id,
-      author: { id: authorId },
+      author: { id: userId },
     })
     if (!postExists) {
       throw new Error(`Post not found or you're not the author`)
@@ -38,10 +38,10 @@ const post = {
   },
 
   async deletePost(parent, { id }, ctx, info) {
-    const authorId = getUserId(ctx)
+    const userId = getUserId(ctx)
     const postExists = await ctx.db.exists.Post({
       id,
-      author: { id: authorId },
+      author: { id: userId },
     })
     if (!postExists) {
       throw new Error(`Post not found or you're not the author`)
