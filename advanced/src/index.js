@@ -1,5 +1,5 @@
 const { GraphQLServer } = require('graphql-yoga')
-const { Graphcool } = require('graphcool-binding')
+const { Prisma } = require('prisma-binding')
 const resolvers = require('./resolvers')
 
 const server = new GraphQLServer({
@@ -7,10 +7,10 @@ const server = new GraphQLServer({
   resolvers,
   context: req => ({
     ...req,
-    db: new Graphcool({
-      typeDefs: 'src/generated/graphcool.graphql',
-      endpoint: process.env.GRAPHCOOL_ENDPOINT,
-      secret: process.env.GRAPHCOOL_SECRET,
+    db: new Prisma({
+      typeDefs: 'src/generated/prisma.graphql',
+      endpoint: process.env.PRISMA_ENDPOINT,
+      secret: process.env.PRISMA_SECRET,
       debug: true,
     }),
   }),

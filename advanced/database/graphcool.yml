@@ -2,11 +2,11 @@
 service: graphql-boilerplate
 
 # the cluster and stage the service is deployed to
-stage: ${env:GRAPHCOOL_STAGE}
+stage: ${env:PRISMA_STAGE}
 
 # to disable authentication:
 # disableAuth: true
-secret: ${env:GRAPHCOOL_SECRET}
+secret: ${env:PRISMA_SECRET}
 
 # the file path pointing to your data model
 datamodel: datamodel.graphql

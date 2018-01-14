@@ -10,16 +10,16 @@ module.exports = async ({ project, projectDir }) => {
   const templateName = 'graphql-boilerplate'
 
   replaceInFiles(
-    ['src/index.js', 'package.json', 'database/graphcool.yml'],
+    ['src/index.js', 'package.json', 'database/prisma.yml'],
     templateName,
     project,
   )
 
-  console.log('Running $ graphcool deploy...')
+  console.log('Running $ prisma deploy...')
   await deploy(false)
   const info = await getInfo()
 
-  replaceInFiles(['src/index.js'], '__GRAPHCOOL_ENDPOINT__', info.httpEndpoint)
+  replaceInFiles(['src/index.js'], '__PRISMA_ENDPOINT__', info.httpEndpoint)
 
   console.log(`\
 Next steps:

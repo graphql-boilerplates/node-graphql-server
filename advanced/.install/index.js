@@ -10,12 +10,12 @@ module.exports = async ({ project, projectDir }) => {
   const templateName = 'graphql-boilerplate'
 
   replaceInFiles(
-    ['src/index.js', 'package.json', 'database/graphcool.yml'],
+    ['src/index.js', 'package.json', 'database/prisma.yml'],
     templateName,
     project,
   )
 
-  console.log('Running $ graphcool deploy...')
+  console.log('Running $ prisma deploy...')
   await deploy(false)
 
   const info = await getInfo()
@@ -23,13 +23,13 @@ module.exports = async ({ project, projectDir }) => {
     ? `${info.workspace}/${info.cluster}`
     : info.cluster
 
-  replaceInFiles(['.env'], '__GRAPHCOOL_ENDPOINT__', info.httpEndpoint)
+  replaceInFiles(['.env'], '__PRISMA_ENDPOINT__', info.httpEndpoint)
 
-  replaceInFiles(['.env'], `__GRAPHCOOL_CLUSTER__`, cluster)
+  replaceInFiles(['.env'], `__PRISMA_CLUSTER__`, cluster)
   replaceInFiles(
-    ['database/graphcool.yml'],
+    ['database/prisma.yml'],
     `cluster: ${cluster}`,
-    'cluster: ${env:GRAPHCOOL_CLUSTER}',
+    'cluster: ${env:PRISMA_CLUSTER}',
   )
 
   fs.appendFileSync('.gitignore', '.env*\n')
