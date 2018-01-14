@@ -3418,9 +3418,9 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prisma-binding@1.3.6:
-  version "1.3.6"
-  resolved "https://registry.yarnpkg.com/prisma-binding/-/prisma-binding-1.3.6.tgz#35aaee2a4b4e9f59bcfecff5be7a7570890b2cde"
+prisma-binding@1.3.7:
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/prisma-binding/-/prisma-binding-1.3.7.tgz#f182d3a1cfd4bea0e4033d82eb67fbab709f467c"
   dependencies:
     apollo-link "1.0.7"
     apollo-link-error "1.0.3"
@@ -3536,7 +3536,7 @@ prisma-cli-engine@0.0.10:
     validator "^8.2.0"
     yaml-ast-parser "^0.0.34"
 
-prisma-cli@1.0.0-beta.4.1.2:
+prisma-cli@beta:
   version "1.0.0-beta.4.1.2"
   resolved "https://registry.yarnpkg.com/prisma-cli/-/prisma-cli-1.0.0-beta.4.1.2.tgz#49b0074cab492a3566fd07d2bcfdaaf93b5f95cc"
   dependencies:
