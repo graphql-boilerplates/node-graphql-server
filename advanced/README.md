@@ -28,7 +28,7 @@ You need to have the following things installed:
 # Bootstrap GraphQL server in directory `my-app`, based on `node-advanced` boilerplate
 graphql create my-app --boilerplate node-advanced
 
-# choose the Prisma cluster you want to deploy to
+# Choose the Prisma cluster you want to deploy to
 # e.g. prisma-eu1 or prisma-us1 to deploy to a public cluster (recommended)
 # or locally (requires Docker)
 
