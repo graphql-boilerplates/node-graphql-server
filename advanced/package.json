@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "dotenv": "4.0.0",
-    "prisma-cli": "1.0.0-beta.4.1.2",
+    "prisma-cli": "beta",
     "nodemon": "1.14.11"
   }
 }
