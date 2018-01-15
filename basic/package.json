@@ -2,7 +2,7 @@
   "name": "graphql-boilerplate",
   "scripts": {
     "start": "NODE_ENV=dev node src/index.js",
-    "playground": "prisma playground"
+    "playground": "graphql playground"
   },
   "dependencies": {
     "graphql-yoga": "1.1.7",
