@@ -24,6 +24,6 @@ module.exports = async ({ project, projectDir }) => {
   console.log(`\
 Next steps:
   1. Change directory: \`cd ${projectDir}\`
-  2. Start local server: \`yarn dev\`
+  2. Start local server and open Playground: \`yarn dev\`
 `)
 }
