@@ -36,20 +36,22 @@ graphql create my-app --boilerplate node-advanced
 cd my-app
 
 # 4. Start server (runs on http://localhost:4000)
-yarn start
-
-# 5. Open Playground to explore GraphQL API
-yarn playground
+yarn dev
+# or
+# yarn start # (only starts the server, no access to the Prisma API)
 ```
+
+> **Note**: We recommend that you're using `yarn dev` during development as it will give you access to the GraphQL API or your server (defined by the **application schema**) as well as to the Prisma API directly (defined by the **Prisma schema**). If you're starting the server with `yarn start`, you'll only be able to access the API for the application schema.
 
 ## Docs
 
 ### Commands
 
-* `yarn start` starts GraphQL server
-* `yarn debug` starts GraphQL server in debug mode (open [chrome://inspect/#devices](chrome://inspect/#devices) to debug)
-* `yarn playground` opens the GraphQL Playground
-* `yarn prisma` access to local version of the Prisma CLI
+* `yarn start` starts GraphQL server on `http://localhost:4000` (only allows access to the _appl)
+* `yarn debug` starts GraphQL server in debug mode (open [chrome://inspect/#devices](chrome://inspect/#devices) to debug
+* `yarn dev` starts GraphQL server opens the GraphQL Playground for the `projects` defined in [`.graphqlconfig.yml`](./.graphqlconfig.yml)
+* `yarn playground` opens the GraphQL Playground for the `projects` defined in [`.graphqlconfig.yml`](./.graphqlconfig.yml)
+* `yarn prisma <subcommand>` access to local version of Prisma CLI (e.g. `yarn prisma deploy`)
 
 ### Project structure
 

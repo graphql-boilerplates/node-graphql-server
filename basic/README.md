@@ -31,9 +31,8 @@ cd my-app
 
 # 4. Start server (runs on http://localhost:4000) and open GraphQL Playground
 yarn dev
-
-# 5. Open Playground to explore GraphQL API
-yarn playground
+# or
+# yarn start # (only starts the server, no access to the Prisma API)
 ```
 
 > **Note**: We recommend that you're using `yarn dev` during development as it will give you access to the GraphQL API or your server (defined by the **application schema**) as well as to the Prisma API directly (defined by the **Prisma schema**). If you're starting the server with `yarn start`, you'll only be able to access the API for the application schema.
