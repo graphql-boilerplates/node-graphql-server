@@ -21,13 +21,13 @@ const resolvers = {
             title,
             text,
             isPublished: false,
-          }
+          },
         },
         info,
       )
     },
     deletePost(parent, { id }, ctx, info) {
-      return ctx.db.mutation.deletePost({where: { id } }, info)
+      return ctx.db.mutation.deletePost({ where: { id } }, info)
     },
     publish(parent, { id }, ctx, info) {
       return ctx.db.mutation.updatePost(
@@ -48,9 +48,9 @@ const server = new GraphQLServer({
     ...req,
     db: new Prisma({
       typeDefs: 'src/generated/prisma.graphql',
-      endpoint: '__PRISMA_ENDPOINT__',
-      secret: 'mysecret123',
-      debug: true,
+      endpoint: '__PRISMA_ENDPOINT__', // the endpoint of the Prisma DB service
+      secret: 'mysecret123', // specified in database/prisma.yml
+      debug: true, // log all GraphQL queryies & mutations
     }),
   }),
 })

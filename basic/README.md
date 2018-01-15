@@ -19,20 +19,20 @@ You need to have the following things installed: Node 8 (or higher) and the [Gra
 ## Getting started
 
 ```sh
-# Bootstrap GraphQL server in directory `my-app`, based on `node-basic` boilerplate
+# 1. Bootstrap GraphQL server in directory `my-app`, based on `node-basic` boilerplate
 graphql create my-app --boilerplate node-basic
 
-# Choose the Prisma cluster you want to deploy to
-# e.g. prisma-eu1 or prisma-eu2 to deploy to a public cluster (recommended)
+# 2. When prompted, choose the Prisma cluster you want to deploy to
+# e.g. prisma-eu1 or prisma-us1 to deploy to a public cluster (recommended)
 # or locally (requires Docker)
 
-# Navigate to the new project
+# 3. Navigate to the new project
 cd my-app
 
-# Start server (runs on http://localhost:4000)
+# 4. Start server (runs on http://localhost:4000)
 yarn start
 
-# Open Playground to explore GraphQL API
+# 5. Open Playground to explore GraphQL API
 yarn playground
 ```
 
