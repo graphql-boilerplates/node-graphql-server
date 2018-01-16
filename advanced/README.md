@@ -2,8 +2,6 @@
 
 🚀 Advanced starter code for a scalable, production-ready GraphQL server for Node.js, including authentication and realtime functionality with GraphQL subscriptions.
 
-![](https://imgur.com/LG6r1q1.png)
-
 ## Features
 
 - **Scalable GraphQL Server:** `graphql-yoga` based on Apollo Server & Express
