@@ -1,6 +1,6 @@
-Node.js GraphQL Server Boilerplate
+# Node.js GraphQL Server Boilerplate
 
-🚀 Starter projects for GraphQL servers. This repository contains boilerplates for three different scenarios.
+Starter projects for GraphQL servers. This repository contains boilerplates for three different scenarios.
 
 ![](https://imgur.com/D9K5hiQ.png)
 
