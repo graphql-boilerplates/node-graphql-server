@@ -2,8 +2,6 @@
 
 🚀 Basic starter code for a scalable, production-ready GraphQL server for Node.js.
 
-![](https://imgur.com/LG6r1q1.png)
-
 ## Features
 
 - **Scalable GraphQL Server:** `graphql-yoga` based on Apollo Server & Express
@@ -68,4 +66,4 @@ yarn dev
 
 ## Contributing
 
-Your feedback is **very helpful**, please share your opinion and thoughts! If you have any questions, join the [`#graphql-boilerplate`](https://prisma.slack.com/messages/graphql-boilerplate) channel on our [Slack](https://prisma.slack.com/).
+Your feedback is **very helpful**, please share your opinion and thoughts! If you have any questions, join the [`#graphql-boilerplates`](https://prisma.slack.com/messages/graphql-boilerplates) channel on our [Slack](https://prisma.slack.com/).
