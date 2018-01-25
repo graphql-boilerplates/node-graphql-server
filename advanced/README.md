@@ -36,6 +36,8 @@ cd my-app
 yarn dev
 ```
 
+![](https://imgur.com/hElq68i.png)
+
 ## Documentation
 
 ### Commands

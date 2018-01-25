@@ -23,16 +23,20 @@ You need to have the [GraphQL CLI](https://github.com/graphql-cli/graphql-cli) i
 npm install -g graphql-cli
 ```
 
+![](https://imgur.com/hElq68i.png)
+
 ## Getting started
 
 ```sh
 # 1. Bootstrap GraphQL server in directory `my-app`, based on `node-basic` boilerplate
 graphql create my-app --boilerplate node-basic
 
-# 2. Navigate to the new project
+# 2. When prompted, deploy the Prisma service to a _public cluster_
+
+# 3. Navigate to the new project
 cd my-app
 
-# 3. Start server (runs on http://localhost:4000) and open GraphQL Playground
+# 4. Start server (runs on http://localhost:4000) and open GraphQL Playground
 yarn dev
 ```
 
