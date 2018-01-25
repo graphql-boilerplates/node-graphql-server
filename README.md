@@ -1,8 +1,7 @@
-# Node.js GraphQL Server Boilerplate
+<h1 align="center"><strong>GraphQL Server Boilerplates for Node.js</strong></h1>
 
 ![](https://imgur.com/lIi4YrZ.png)
 
-<br />
 
 <div align="center"><strong>Bootstrap your GraphQL server within seconds</strong></div>
 <div align="center">GraphQL boilerplates provide the perfect foundation for your GraphQL server, no matter if you're just getting started with GraphQL or aim to build a fully-fledged application.</div>
