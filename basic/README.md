@@ -23,8 +23,6 @@ You need to have the [GraphQL CLI](https://github.com/graphql-cli/graphql-cli) i
 npm install -g graphql-cli
 ```
 
-![](https://imgur.com/hElq68i.png)
-
 ## Getting started
 
 ```sh
@@ -39,6 +37,8 @@ cd my-app
 # 4. Start server (runs on http://localhost:4000) and open GraphQL Playground
 yarn dev
 ```
+
+![](https://imgur.com/hElq68i.png)
 
 ## Documentation
 
