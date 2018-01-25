@@ -1,6 +1,6 @@
 # Node.js GraphQL Server Boilerplate
 
-![](https://imgur.com/D9K5hiQ.png)
+![](https://imgur.com/lIi4YrZ.png)
 
 <br />
 
