@@ -63,7 +63,9 @@ yarn dev
 | `　　└── generated` (_directory_) | Contains generated files |
 | `　　　　└── prisma.grapghql` | The **Prisma database schema** defining the Prisma GraphQL API  |
 
-
 ## Contributing
 
-Your feedback is **very helpful**, please share your opinion and thoughts! If you have any questions, join the [`#graphql-boilerplates`](https://prisma.slack.com/messages/graphql-boilerplates) channel on our [Slack](https://prisma.slack.com/).
+The GraphQL boilerplates are maintained by the GraphQL community, with official support from the [Apollo](https://dev-blog.apollodata.com) & [Graphcool](https://blog.graph.cool/) teams.
+
+Your feedback is **very helpful**, please share your opinion and thoughts! If you have any questions or want to contribute yourself, join the [`#graphql-boilerplate`](https://graphcool.slack.com/messages/graphql-boilerplate) channel on our [Slack](https://graphcool.slack.com/).
+
