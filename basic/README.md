@@ -1,4 +1,4 @@
-<h1 align="center"><strong>Boilerplate for a basic GraphQL server</strong></h1>
+<h1 align="center"><strong>Boilerplate for a Basic GraphQL Server</strong></h1>
 
 <br />
 
