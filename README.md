@@ -14,7 +14,7 @@
 
 - **Rapid scaffolding**: Simply use `graphql create` (from the [GraphQL CLI](https://github.com/graphql-cli/graphql-cli)) to download the boilerplate you want.
 - **Easily extensible**: A boilerplate only provides the minimum setup so you can tailor the server to your use case.
-- **Best practices**: Each boilerplate incorporates best practices from the GraphQL community.
+- **Best practices**: Each boilerplate incorporates best practices from the GraphQL community and ecosystem.
 
 ## Quickstart
 
