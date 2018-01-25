@@ -55,14 +55,14 @@ yarn dev
 | :--  | :--         |
 | `├── .env` | Defines environment variables |
 | `├── .graphqlconfig.yml` | GraphQL configuration file based on[`graphql-config`](https://github.com/prisma/graphql-config) (used by the GraphQL CLI and the GraphQL Playground).|
-| `└── database ` (_directory_) | Contains all files that are related to the Prisma database service |\
+| `└── database ` (_directory_) | _Contains all files that are related to the Prisma database service_ |\
 | `　　├── prisma.yml` | The root configuration file for your Prisma database service ([documentation](https://www.prismagraphql.com/docs/reference/prisma.yml/overview-and-example-foatho8aip)) |
 | `　　└── datamodel.graphql` | Defines your data model (written in [GraphQL SDL](https://blog.graph.cool/graphql-sdl-schema-definition-language-6755bcb9ce51)) |
-| `└── src ` (_directory_) | Contains the source files for your GraphQL server |
+| `└── src ` (_directory_) | _Contains the source files for your GraphQL server_ |
 | `　　├── index.js` | The entry point for your GraphQL server |
 | `　　├── schema.graphql` | The **application schema** defining the API exposed to your client applications  |
-| `　　├── resolvers` (_directory_) | Contains the implementation of the resolvers for the application schema |
-| `　　└── generated` (_directory_) | Contains generated files |
+| `　　├── resolvers` (_directory_) | _Contains the implementation of the resolvers for the application schema_ |
+| `　　└── generated` (_directory_) | _Contains generated files_ |
 | `　　　　└── prisma.grapghql` | The **Prisma database schema** defining the Prisma GraphQL API  |
 
 ## Contributing
