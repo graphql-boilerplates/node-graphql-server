@@ -59,7 +59,7 @@ yarn dev
 | `　　└── datamodel.graphql` | Defines your data model (written in [GraphQL SDL](https://blog.graph.cool/graphql-sdl-schema-definition-language-6755bcb9ce51)) |
 | `└── src ` (_directory_) | Contains the source files for your GraphQL server |
 | `　　├── index.js` | The entry point for your GraphQL server |
-| `　　├── schema.graphql` | The **application schema** defining the API that's exposed to your client applications  |
+| `　　├── schema.graphql` | The **application schema** defining the API exposed to your client applications  |
 | `　　└── generated` (_directory_) | Contains generated files |
 | `　　　　└── prisma.grapghql` | The **Prisma database schema** defining the Prisma GraphQL API  |
 
