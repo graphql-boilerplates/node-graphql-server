@@ -57,7 +57,7 @@ yarn dev
 
 | File name 　　　　　　　　　　　　　　| Description 　　　　　　　　<br><br>| 
 | :--  | :--         |
-| `├── .graphqlconfig.yml` | GraphQL configuration file based on [`graphql-config`](https://github.com/prisma/graphql-config) (e.g. used by GraphQL Playground).|
+| `├── .graphqlconfig.yml` | Config file based on [`graphql-config`](https://github.com/prisma/graphql-config) (e.g. used by GraphQL Playground).|
 | `└── database ` (_directory_) | _Contains all files that are related to the Prisma database service_ |\
 | `　　├── prisma.yml` | The root configuration file for your Prisma database service ([documentation](https://www.prismagraphql.com/docs/reference/prisma.yml/overview-and-example-foatho8aip)) |
 | `　　└── datamodel.graphql` | Defines your data model (written in [GraphQL SDL](https://blog.graph.cool/graphql-sdl-schema-definition-language-6755bcb9ce51)) |
