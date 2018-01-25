@@ -11,9 +11,9 @@
 
 - **Scalable GraphQL server:** `graphql-yoga` based on Apollo Server & Express
 - **GraphQL database:** Includes GraphQL database binding to [Prisma](https://www.prismagraphql.com) (running on MySQL)
-- Out-of-the-box support for [GraphQL Playground](https://github.com/prisma/graphql-playground) & [query performance tracing](https://github.com/apollographql/apollo-tracing)
-- Simple and flexible data model – easy to adjust
-- Preconfigured [`graphql-config`](https://github.com/prisma/graphql-config) setup
+- **Tooling**: Out-of-the-box support for [GraphQL Playground](https://github.com/prisma/graphql-playground) & [query performance tracing](https://github.com/apollographql/apollo-tracing)
+- **Extensible**: Simple and flexible data model – easy to adjust
+- **No configuration overhead**: Preconfigured [`graphql-config`](https://github.com/prisma/graphql-config) setup
 
 ## Requirements
 
