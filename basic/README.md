@@ -49,6 +49,8 @@ yarn dev
 
 ### Project structure
 
+![](https://imgur.com/95faUsa.png)
+
 #### `/` - configuration files
 
 - [`.graphqlconfig.yml`](.graphqlconfig.yml) GraphQL configuration file containing the endpoints and schema configuration. Used by the [`graphql-cli`](https://github.com/prisma/graphql-cli) and the [GraphQL Playground](https://github.com/prisma/graphql-playground). See [`graphql-config`](https://github.com/prisma/graphql-config) for more information.
