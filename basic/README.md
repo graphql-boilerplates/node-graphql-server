@@ -5,7 +5,7 @@
 ![](https://imgur.com/lIi4YrZ.png)
 
 <div align="center"><strong>🚀 Bootstrap your GraphQL server within seconds</strong></div>
-<div align="center">Basic starter kit for a flexible GraphQL server for Node.js, based on best practices from the GraphQL community.</div>
+<div align="center">Basic starter kit for a flexible GraphQL server for Node.js - based on best practices from the GraphQL community.</div>
 
 ## Features
 
