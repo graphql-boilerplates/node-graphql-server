@@ -1,75 +1,72 @@
-# node-advanced
+<h1 align="center"><strong>Boilerplate for an advanced GraphQL server</strong></h1>
 
-🚀 Advanced starter code for a scalable, production-ready GraphQL server for Node.js, including authentication and realtime functionality with GraphQL subscriptions.
+<br />
+
+![](https://imgur.com/lIi4YrZ.png)
+
+<div align="center"><strong>🚀 Bootstrap your GraphQL server within seconds</strong></div>
+<div align="center">Advanced starter kit for a flexible GraphQL server for Node.js - based on best practices from the GraphQL community.</div>
 
 ## Features
 
-- **Scalable GraphQL Server:** `graphql-yoga` based on Apollo Server & Express
-- **GraphQL-native database:** Includes GraphQL database binding to Prisma (running on MySQL)
-- Out-of-the-box support for [GraphQL Playground](https://github.com/prisma/graphql-playground) & [Tracing](https://github.com/apollographql/apollo-tracing)
-- Simple data model – easy to adjust
-- Preconfigured [`graphql-config`](https://github.com/prisma/graphql-config) setup
-- Authentication based on email & password
-- Realtime functionality with GraphQL subscriptions (_coming soon_)
+- **Scalable GraphQL server:** The server uses [`graphql-yoga`](https://github.com/prisma/graphql-yoga) which is based on Apollo Server & Express
+- **GraphQL database:** Includes GraphQL database binding to [Prisma](https://www.prismagraphql.com) (running on MySQL)
+- **Tooling**: Out-of-the-box support for [GraphQL Playground](https://github.com/prisma/graphql-playground) & [query performance tracing](https://github.com/apollographql/apollo-tracing)
+- **Extensible**: Simple and flexible [data model](./database/datamodel.graphql) – easy to adjust and extend
+- **No configuration overhead**: Preconfigured [`graphql-config`](https://github.com/prisma/graphql-config) setup
 
 ## Requirements
 
-You need to have the following things installed:
+You need to have the [GraphQL CLI](https://github.com/graphql-cli/graphql-cli) installed to bootstrap your GraphQL server using `graphql create`:
 
-* Node 8+
-* GraphQL CLI: `npm i -g graphql-cli`
-* GraphQL Playground desktop app (optional): [Download](https://github.com/prisma/graphql-playground/releases)
+```sh
+npm install -g graphql-cli
+```
 
 ## Getting started
 
 ```sh
-# 1. Bootstrap GraphQL server in directory `my-app`, based on `node-advanced` boilerplate
-graphql create my-app --boilerplate node-advanced
+# 1. Bootstrap GraphQL server in directory `my-app`, based on `node-basic` boilerplate
+graphql create my-app --boilerplate node-basic
 
-# 2. When prompted, choose the Prisma cluster you want to deploy to
-# e.g. prisma-eu1 or prisma-us1 to deploy to a public cluster (recommended)
-# or locally (requires Docker)
-
-# 3. Navigate to the new project
+# 2. Navigate to the new project
 cd my-app
 
-# 4. Start server (runs on http://localhost:4000)
+# 3. Start server (runs on http://localhost:4000) and open GraphQL Playground
 yarn dev
-# or
-# yarn start # (only starts the server, no access to the Prisma API)
 ```
 
-> **Note**: We recommend that you're using `yarn dev` during development as it will give you access to the GraphQL API or your server (defined by the **application schema**) as well as to the Prisma API directly (defined by the **Prisma schema**). If you're starting the server with `yarn start`, you'll only be able to access the API for the application schema.
+> **Note**: We recommend that you're using `yarn dev` during development as it will give you access to the GraphQL API or your server (defined by the [application schema](./src/schema.graphql)) as well as to the Prisma API directly (defined by the [Prisma database schema](./generated/prisma.graphql)). If you're starting the server with `yarn start`, you'll only be able to access the API of the application schema.
 
-## Docs
+## Documentation
 
 ### Commands
 
-* `yarn start` starts GraphQL server on `http://localhost:4000` (only allows access to the _appl)
-* `yarn debug` starts GraphQL server in debug mode (open [chrome://inspect/#devices](chrome://inspect/#devices) to debug
-* `yarn dev` starts GraphQL server opens the GraphQL Playground for the `projects` defined in [`.graphqlconfig.yml`](./.graphqlconfig.yml)
-* `yarn playground` opens the GraphQL Playground for the `projects` defined in [`.graphqlconfig.yml`](./.graphqlconfig.yml)
-* `yarn prisma <subcommand>` access to local version of Prisma CLI (e.g. `yarn prisma deploy`)
+* `yarn start` starts GraphQL server on `http://localhost:4000`
+* `yarn dev` starts GraphQL server on `http://localhost:4000` _and_ opens GraphQL Playground
+* `yarn playground` opens the GraphQL Playground for the `projects` from [`.graphqlconfig.yml`](./.graphqlconfig.yml)
+* `yarn prisma <subcommand>` gives access to local version of Prisma CLI (e.g. `yarn prisma deploy`)
 
 ### Project structure
 
-#### `/` - configuration files
+![](https://imgur.com/95faUsa.png)
 
-- [`.env`](./.env) Contains important environment variables for development. Read about how it works [here](https://github.com/motdotla/dotenv).
-- [`.graphqlconfig.yml`](./.graphqlconfig.yml) GraphQL configuration file containing the endpoints and schema configuration. Used by the [`graphql-cli`](https://github.com/prisma/graphql-cli) and the [GraphQL Playground](https://github.com/prisma/graphql-playground). See [`graphql-config`](https://github.com/prisma/graphql-config) for more information.
-
-#### `/database` - Prisma service
-
-- [`database/prisma.yml`](./database/prisma.yml) The configuration file for your database service ([documentation](https://www.prismagraphql.com/docs/reference/prisma.yml/overview-and-example-foatho8aip)).
-- [`database/datamodel.graphql`](./database/datamodel.graphql) contains the data model that you define for your database service (written in [SDL](https://blog.graph.cool/graphql-sdl-schema-definition-language-6755bcb9ce51)).
-
-#### `/src` - application server
-
-- [`src/schema.graphql`](src/schema.graphql) defines your **application schema**. It contains the GraphQL API that you want to expose to your client applications.
-- [`src/index.js`](src/index.js) is the entry point of your server, putting everything together and starting the `GraphQLServer` from [`graphql-yoga`](https://github.com/prisma/graphql-yoga).
-- [`src/resolvers/`](src/resolvers) contains the actual business logic of your application. In GraphQL, you implement [resolver functions](http://graphql.org/learn/execution/) that *resolve* a specific query being requested.
-- [`src/generated/prisma.graphql`](src/generated/prisma.graphql) defines the **database schema**. It contains the GraphQL API exposed by the Prisma Database. This file is automatically generated every time `yarn prisma deploy` is executed, according to the datamodel in `database/datamodel.graphql`.
+| File name 　　　　　　　　　　　　　　| Description 　　　　　　　　<br><br>|
+| :--  | :--         |
+| `├── .env` | Defines environment variables |
+| `├── .graphqlconfig.yml` | GraphQL configuration file based on[`graphql-config`](https://github.com/prisma/graphql-config) (used by the GraphQL CLI and the GraphQL Playground).|
+| `└── database ` (_directory_) | Contains all files that are related to the Prisma database service |\
+| `　　├── prisma.yml` | The root configuration file for your Prisma database service ([documentation](https://www.prismagraphql.com/docs/reference/prisma.yml/overview-and-example-foatho8aip)) |
+| `　　└── datamodel.graphql` | Defines your data model (written in [GraphQL SDL](https://blog.graph.cool/graphql-sdl-schema-definition-language-6755bcb9ce51)) |
+| `└── src ` (_directory_) | Contains the source files for your GraphQL server |
+| `　　├── index.js` | The entry point for your GraphQL server |
+| `　　├── schema.graphql` | The **application schema** defining the API that's exposed to your client applications  |
+| `　　├── resolvers` (_directory_) | Contains the implementation of the resolvers for the application schema |
+| `　　└── generated` (_directory_) | Contains generated files |
+| `　　　　└── prisma.grapghql` | The **Prisma database schema** defining the Prisma GraphQL API  |
 
 ## Contributing
 
-Your feedback is **very helpful**, please share your opinion and thoughts! If you have any questions, join the [`#graphql-boilerplates`](https://prisma.slack.com/messages/graphql-boilerplates) channel on our [Slack](https://prisma.slack.com/).
+The GraphQL boilerplates are maintained by the GraphQL community, with official support from the [Apollo](https://dev-blog.apollodata.com) & [Graphcool](https://blog.graph.cool/) teams.
+
+Your feedback is **very helpful**, please share your opinion and thoughts! If you have any questions or want to contribute yourself, join the [`#graphql-boilerplate`](https://graphcool.slack.com/messages/graphql-boilerplate) channel on our [Slack](https://graphcool.slack.com/).
