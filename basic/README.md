@@ -17,7 +17,11 @@
 
 ## Requirements
 
-You need to have the following things installed: Node 8 (or higher) and the [GraphQL CLI](https://github.com/graphql-cli/graphql-cli) (via `npm i -g graphql-cli`)
+You need to have the [GraphQL CLI](https://github.com/graphql-cli/graphql-cli) installed to bootstrap your GraphQL server using `graphql create`:
+
+```sh
+npm install -g graphql-cli
+```
 
 ## Getting started
 
@@ -25,20 +29,14 @@ You need to have the following things installed: Node 8 (or higher) and the [Gra
 # 1. Bootstrap GraphQL server in directory `my-app`, based on `node-basic` boilerplate
 graphql create my-app --boilerplate node-basic
 
-# 2. When prompted, choose the Prisma cluster you want to deploy to
-# e.g. prisma-eu1 or prisma-us1 to deploy to a public cluster (recommended)
-# or locally (requires Docker)
-
-# 3. Navigate to the new project
+# 2. Navigate to the new project
 cd my-app
 
-# 4. Start server (runs on http://localhost:4000) and open GraphQL Playground
+# 3. Start server (runs on http://localhost:4000) and open GraphQL Playground
 yarn dev
-# or
-# yarn start # (only starts the server, no access to the Prisma API)
 ```
 
-> **Note**: We recommend that you're using `yarn dev` during development as it will give you access to the GraphQL API or your server (defined by the **application schema**) as well as to the Prisma API directly (defined by the **Prisma schema**). If you're starting the server with `yarn start`, you'll only be able to access the API for the application schema.
+> **Note**: We recommend that you're using `yarn dev` during development as it will give you access to the GraphQL API or your server (defined by the [application schema](./src/schema.graphql)) as well as to the Prisma API directly (defined by the [Prisma database schema](./generated/prisma.graphql)). If you're starting the server with `yarn start`, you'll only be able to access the API of the application schema.
 
 ## Docs
 
