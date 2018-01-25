@@ -1,6 +1,11 @@
-# node-basic
+<h1 align="center"><strong>Boilerplate for a basic GraphQL server with Node.js</strong></h1>
 
-🚀 Basic starter code for a scalable, production-ready GraphQL server for Node.js.
+<br />
+
+![](https://imgur.com/lIi4YrZ.png)
+
+<div align="center"><strong>Bootstrap your GraphQL server within seconds</strong></div>
+<div align="center">🚀 Basic starter kit for a <strong>flexible</strong> &amp; <strong>scalable</strong> GraphQL server for Node.js, based on <strong>best practices</strong> from the GraphQL community.</div>
 
 ## Features
 
