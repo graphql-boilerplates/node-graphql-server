@@ -44,7 +44,7 @@ yarn dev
 
 * `yarn start` starts GraphQL server on `http://localhost:4000`
 * `yarn dev` starts GraphQL server on `http://localhost:4000` _and_ opens GraphQL Playground
-* `yarn playground` opens the GraphQL Playground for `projects` from [`.graphqlconfig.yml`](./.graphqlconfig.yml)
+* `yarn playground` opens the GraphQL Playground for the `projects` from [`.graphqlconfig.yml`](./.graphqlconfig.yml)
 * `yarn prisma <subcommand>` access to local version of Prisma CLI (e.g. `yarn prisma deploy`)
 
 ### Project structure
