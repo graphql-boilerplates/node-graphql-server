@@ -1,8 +1,6 @@
 <h1 align="center"><strong>GraphQL Server Boilerplates for Node.js</strong></h1>
 
 <br />
-<br />
-
 
 ![](https://imgur.com/lIi4YrZ.png)
 
