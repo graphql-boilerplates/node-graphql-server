@@ -12,7 +12,7 @@
 
 ## Features
 
-- **Rapid scaffolding**: You don't have to clone this repo and mess around with the project setup, simply use `graphql create` (from the [GraphQL CLI](https://github.com/graphql-cli/graphql-cli)) to download the boilerplate you want, e.g. `graphql create --boilerplate node-basic`.
+- **Rapid scaffolding**: You don't have to clone this repo and mess around with the project setup, simply use `graphql create` (from the [GraphQL CLI](https://github.com/graphql-cli/graphql-cli)) to download the boilerplate you want.
 - **Easily extensible**: A boilerplate only provides the minimum setup that demonstrates how to use GraphQL in the context of a specific scenario.
 - **Best practices**: The boilerplate projects are up-to-date and incorporate best practices from the GraphQL community.
 
