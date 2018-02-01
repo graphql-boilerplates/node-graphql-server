@@ -15,6 +15,8 @@
 - **Extensible**: Simple and flexible [data model](./database/datamodel.graphql) – easy to adjust and extend
 - **No configuration overhead**: Preconfigured [`graphql-config`](https://github.com/prisma/graphql-config) setup
 
+> For a fully-fledged **GraphQL & Node.js tutorial**, visit [How to GraphQL](https://www.howtographql.com/graphql-js/0-introduction/).
+
 ## Requirements
 
 You need to have the [GraphQL CLI](https://github.com/graphql-cli/graphql-cli) installed to bootstrap your GraphQL server using `graphql create`:

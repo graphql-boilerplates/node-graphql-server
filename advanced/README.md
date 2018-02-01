@@ -17,6 +17,8 @@
 - **No configuration overhead**: Preconfigured [`graphql-config`](https://github.com/prisma/graphql-config) setup
 - **Realtime updates**: Support for GraphQL subscriptions (_coming soon_)
 
+> For a fully-fledged **GraphQL & Node.js tutorial**, visit [How to GraphQL](https://www.howtographql.com/graphql-js/0-introduction/).
+
 ## Requirements
 
 You need to have the [GraphQL CLI](https://github.com/graphql-cli/graphql-cli) installed to bootstrap your GraphQL server using `graphql create`:

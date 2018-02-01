@@ -25,6 +25,8 @@ Select a boilerplate and follow the instructions in the belonging README to get 
 
 All projects are based on [`graphql-yoga`](https://github.com/graphcool/graphql-yoga/), a fully-featured GraphQL server library with focus on easy setup, performance & great developer experience.
 
+> For a fully-fledged **GraphQL & Node.js tutorial**, visit [How to GraphQL](https://www.howtographql.com/graphql-js/0-introduction/).
+
 ## Contributing
 
 The GraphQL boilerplates are maintained by the GraphQL community, with official support from the [Apollo](https://dev-blog.apollodata.com) & [Graphcool](https://blog.graph.cool/) teams.
