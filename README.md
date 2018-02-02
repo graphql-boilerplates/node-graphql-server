@@ -15,6 +15,8 @@
 - **Easily extensible**: A boilerplate only provides the minimum setup so you can tailor the API to your use case.
 - **Best practices**: Each boilerplate incorporates best practices from the GraphQL community.
 
+For a fully-fledged **GraphQL & Node.js tutorial**, visit [How to GraphQL](https://www.howtographql.com/graphql-js/0-introduction/). You can more learn about the idea behind GraphQL boilerplates [here](https://blog.graph.cool/graphql-boilerplates-graphql-create-how-to-setup-a-graphql-project-6428be2f3a5).
+
 ## Quickstart
 
 Select a boilerplate and follow the instructions in the belonging README to get started:
@@ -24,8 +26,6 @@ Select a boilerplate and follow the instructions in the belonging README to get 
 - [`advanced`](./advanced): Advanced boilerplate with a GraphQL database, authentication and realtime subscriptions
 
 All projects are based on [`graphql-yoga`](https://github.com/graphcool/graphql-yoga/), a fully-featured GraphQL server library with focus on easy setup, performance & great developer experience.
-
-> For a fully-fledged **GraphQL & Node.js tutorial**, visit [How to GraphQL](https://www.howtographql.com/graphql-js/0-introduction/).
 
 ## Contributing
 
