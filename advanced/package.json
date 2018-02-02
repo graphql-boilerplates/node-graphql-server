@@ -10,12 +10,12 @@
     "bcryptjs": "2.4.3",
     "graphql-yoga": "1.2.1",
     "jsonwebtoken": "8.1.1",
-    "prisma-binding": "1.4.0"
+    "prisma-binding": "1.5.0"
   },
   "devDependencies": {
     "dotenv": "5.0.0",
     "graphql-cli": "2.13.0",
-    "nodemon": "1.14.11",
+    "nodemon": "1.14.12",
     "npm-run-all": "4.1.2",
     "prisma": "1.1.2"
   }

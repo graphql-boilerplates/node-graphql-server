@@ -3212,9 +3212,9 @@ node-request-by-swagger@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/node-request-by-swagger/-/node-request-by-swagger-1.0.6.tgz#3129510e33232e4d37be4cce94c704670bc5b135"
 
-nodemon@1.14.11:
-  version "1.14.11"
-  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-1.14.11.tgz#cc0009dd8d82f126f3aba50ace7e753827a8cebc"
+nodemon@1.14.12:
+  version "1.14.12"
+  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-1.14.12.tgz#fe059424b15ebdb107696287a558d9cf53a63999"
   dependencies:
     chokidar "^2.0.0"
     debug "^3.1.0"
@@ -3633,9 +3633,9 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prisma-binding@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/prisma-binding/-/prisma-binding-1.4.0.tgz#8f30791ecba4669ef13ba31b9ae2766f8c7b7fe6"
+prisma-binding@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/prisma-binding/-/prisma-binding-1.5.0.tgz#f232579b231ed3f256be98b2d0251909e969a68a"
   dependencies:
     apollo-link "1.0.7"
     apollo-link-error "1.0.3"
