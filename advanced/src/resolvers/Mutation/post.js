@@ -1,4 +1,4 @@
-const { getUserId, Context } = require('../../utils')
+const { getUserId } = require('../../utils')
 
 const post = {
   async createDraft(parent, { title, text }, ctx, info) {

@@ -1,4 +1,4 @@
-const { getUserId, Context } = require('../utils')
+const { getUserId } = require('../utils')
 
 const Query = {
   feed(parent, args, ctx, info) {
