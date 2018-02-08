@@ -2,8 +2,6 @@
 
 <br />
 
-![alt text](https://i.imgur.com/yjkt0mQ.png) ![alt text](https://i.imgur.com/Ym06T2Y.png)
-
 <div align="center"><strong>🚀 Bootstrap your GraphQL server within seconds</strong></div>
 <div align="center">Basic starter kit for a flexible GraphQL server for Node.js - based on best practices from the GraphQL community.</div>
 
@@ -14,7 +12,7 @@
 
 ## Getting started
 
-![alt text](https://imgur.com/hElq68i.png)
+![alt text](https://i.imgur.com/yjkt0mQ.png) ![alt text](https://i.imgur.com/Ym06T2Y.png)
 
 ## Documentation
 
@@ -26,11 +24,10 @@
 
 ### Project structure
 
-![](https://imgur.com/95faUsa.png)
+![](https://i.imgur.com/uD2fqZo.png)
 
 | File name 　　　　　　　　　　　　　　| Description 　　　　　　　　<br><br>| 
 | :--  | :--         |
-(https://blog.graph.cool/graphql-sdl-schema-definition-language-6755bcb9ce51)) |
 | `└── src ` (_directory_) | _Contains the source files for your GraphQL server_ |
 | `　　├── index.js` | The entry point for your GraphQL server |
 
