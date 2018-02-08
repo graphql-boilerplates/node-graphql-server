@@ -9,9 +9,15 @@
 
 - **Scalable GraphQL server:** The server uses [`graphql-yoga`](https://github.com/prisma/graphql-yoga) which is based on Apollo Server & Express
 
-
+- **Simple Hello World example:** Where it either returns Hello <name>! or Hello World! if no name argument is provided.
+  
 ## Getting started
 
+```sh
+# 1. Navigate to the folder
+# 2. Run yarn install or npm install
+# 3. Start server yarn run start or npm start (runs on http://localhost:4000) and open in GraphQL Playground
+```
 ![alt text](https://i.imgur.com/yjkt0mQ.png) ![alt text](https://i.imgur.com/Ym06T2Y.png)
 
 ## Documentation
