@@ -21,7 +21,7 @@ For a fully-fledged **GraphQL & Node.js tutorial**, visit [How to GraphQL](https
 
 Select a boilerplate and follow the instructions in the belonging README to get started:
 
-- `minimal` (_coming soon_): Minimal boilerplate with basic "Hello World" functionality
+- [`minimal`](./minimal): Minimal boilerplate with basic "Hello World" functionality
 - [`basic`](./basic): Basic boilerplate based on a simple data model and with a GraphQL database
 - [`advanced`](./advanced): Advanced boilerplate with a GraphQL database, authentication and realtime subscriptions
 
