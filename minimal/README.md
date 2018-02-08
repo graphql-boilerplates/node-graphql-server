@@ -9,7 +9,7 @@
 
 - **Scalable GraphQL server:** The server uses [`graphql-yoga`](https://github.com/prisma/graphql-yoga) which is based on Apollo Server & Express
 
-- **Simple Hello World example:** Where it either returns Hello <name>! or Hello World! if no name argument is provided.
+- **Simple Hello World example:** Where it either returns `Hello <name>!` or `Hello World!` if no name argument is provided.
   
 ## Getting started
 
