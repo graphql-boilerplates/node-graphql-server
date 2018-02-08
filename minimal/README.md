@@ -28,7 +28,7 @@ npm install -g graphql-cli
 
 ### Commands
 
-* `yarn start` starts GraphQL server on `http://localhost:4000`
+* `yarn start` or `npm run start` starts GraphQL server on `http://localhost:4000`
 * `yarn dev` starts GraphQL server on `http://localhost:4000` _and_ opens GraphQL Playground
 * `yarn playground` opens the GraphQL Playground for the `projects` from [`.graphqlconfig.yml`](./.graphqlconfig.yml)
 * `yarn prisma <subcommand>` gives access to local version of Prisma CLI (e.g. `yarn prisma deploy`)
