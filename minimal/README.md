@@ -26,6 +26,13 @@
 
 ### Project structure
 
+![](https://imgur.com/95faUsa.png)
+
+| File name 　　　　　　　　　　　　　　| Description 　　　　　　　　<br><br>| 
+| :--  | :--         |
+(https://blog.graph.cool/graphql-sdl-schema-definition-language-6755bcb9ce51)) |
+| `└── src ` (_directory_) | _Contains the source files for your GraphQL server_ |
+| `　　├── index.js` | The entry point for your GraphQL server |
 
 
 ## Contributing
