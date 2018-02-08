@@ -2,7 +2,7 @@
 
 <br />
 
-![](https://imgur.com/lIi4YrZ.png)
+![alt text](https://i.imgur.com/yjkt0mQ.png) ![alt text](https://i.imgur.com/Ym06T2Y.png)
 
 <div align="center"><strong>🚀 Bootstrap your GraphQL server within seconds</strong></div>
 <div align="center">Basic starter kit for a flexible GraphQL server for Node.js - based on best practices from the GraphQL community.</div>
@@ -14,7 +14,7 @@
 
 ## Getting started
 
-![](https://imgur.com/hElq68i.png)
+![alt text](https://imgur.com/hElq68i.png)
 
 ## Documentation
 
