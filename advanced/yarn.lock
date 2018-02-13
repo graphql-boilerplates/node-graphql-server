@@ -3688,9 +3688,9 @@ prisma-binding@1.5.9:
     jsonwebtoken "^8.1.0"
     subscriptions-transport-ws "0.9.5"
 
-prisma-cli-core@1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/prisma-cli-core/-/prisma-cli-core-1.0.11.tgz#3e34e79eaf33fe2dac654579847daf7404492df3"
+prisma-cli-core@1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/prisma-cli-core/-/prisma-cli-core-1.0.12.tgz#8fa68d22f8e43eafc4afe8b8373a18a04671d11d"
   dependencies:
     adm-zip "^0.4.7"
     archiver "^2.0.3"
@@ -3721,7 +3721,7 @@ prisma-cli-core@1.0.11:
     pause "^0.1.0"
     portfinder "^1.0.13"
     prisma-json-schema "^0.0.1"
-    prisma-yml "1.0.20"
+    prisma-yml "1.0.21"
     scuid "^1.0.2"
     semver "^5.4.1"
     sillyname "^0.1.0"
@@ -3730,9 +3730,9 @@ prisma-cli-core@1.0.11:
     util.promisify "^1.0.0"
     validator "^8.2.0"
 
-prisma-cli-engine@1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/prisma-cli-engine/-/prisma-cli-engine-1.0.9.tgz#5b63c1bde778bf61adc28d8463a34104f85cad9e"
+prisma-cli-engine@1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/prisma-cli-engine/-/prisma-cli-engine-1.0.10.tgz#d3b7a4e9feb535add13a4189547ca5a9dee8752b"
   dependencies:
     "@heroku/linewrap" "^1.0.0"
     ajv "5"
@@ -3774,7 +3774,7 @@ prisma-cli-engine@1.0.9:
     memfs "^2.5.3"
     opn "^5.1.0"
     prisma-json-schema "^0.0.1"
-    prisma-yml "1.0.20"
+    prisma-yml "1.0.21"
     raven "2.3.0"
     replaceall "^0.1.6"
     rwlockfile "^1.4.8"
@@ -3834,9 +3834,9 @@ prisma-yml@1.0.16:
     scuid "^1.0.2"
     yaml-ast-parser "^0.0.40"
 
-prisma-yml@1.0.20:
-  version "1.0.20"
-  resolved "https://registry.yarnpkg.com/prisma-yml/-/prisma-yml-1.0.20.tgz#2951693c16a0cb1d0203c2ca46cd7172b1fca4e5"
+prisma-yml@1.0.21:
+  version "1.0.21"
+  resolved "https://registry.yarnpkg.com/prisma-yml/-/prisma-yml-1.0.21.tgz#dbf0b7a1ae70ca6af880662d8fd97a14fa1c2dca"
   dependencies:
     ajv "5"
     bluebird "^3.5.1"
@@ -3854,13 +3854,13 @@ prisma-yml@1.0.20:
     scuid "^1.0.2"
     yaml-ast-parser "^0.0.40"
 
-prisma@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/prisma/-/prisma-1.2.0.tgz#0d8c242614973a1291eb11ee4bc740b507451630"
+prisma@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/prisma/-/prisma-1.2.1.tgz#fdb125b93414f94aa776dc55ef7b1cd634e1d288"
   dependencies:
     fs-extra "^5.0.0"
-    prisma-cli-core "1.0.11"
-    prisma-cli-engine "1.0.9"
+    prisma-cli-core "1.0.12"
+    prisma-cli-engine "1.0.10"
     semver "^5.4.1"
     source-map-support "^0.4.18"
 
