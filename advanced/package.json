@@ -18,8 +18,5 @@
     "nodemon": "1.15.1",
     "npm-run-all": "4.1.2",
     "prisma": "1.2.7"
-  },
-  "resolutions": {
-    "graphql": "0.13.1"
   }
 }
