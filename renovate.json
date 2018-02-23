@@ -3,7 +3,6 @@
     "config:base",
     ":skipStatusChecks"
   ],
-  "ignoreDeps": ["prisma-cli"],
   "automerge": true,
   "major": {
     "automerge": false
