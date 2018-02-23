@@ -17,6 +17,6 @@
     "graphql-cli": "2.15.5",
     "nodemon": "1.15.1",
     "npm-run-all": "4.1.2",
-    "prisma": "1.2.7"
+    "prisma": "1.2.8"
   }
 }
