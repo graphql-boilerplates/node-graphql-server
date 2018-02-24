@@ -15,6 +15,11 @@ type Mutation {
   deletePost(id: ID!): Post!
 }
 
+# Realtime Subscription block
+type Subscription {
+  feedSubscription: PostSubscriptionPayload!
+}
+
 type AuthPayload {
   token: String!
   user: User!
