@@ -1774,9 +1774,9 @@ graphql-cli@2.15.4:
     update-notifier "^2.3.0"
     yargs "11.0.0"
 
-graphql-cli@2.15.6:
-  version "2.15.6"
-  resolved "https://registry.yarnpkg.com/graphql-cli/-/graphql-cli-2.15.6.tgz#4a5240cdaf8a01f964982e4be3bad91dc07b7ae1"
+graphql-cli@2.15.7:
+  version "2.15.7"
+  resolved "https://registry.yarnpkg.com/graphql-cli/-/graphql-cli-2.15.7.tgz#d75f255809eb640ac38812de32b936093db35eb8"
   dependencies:
     adm-zip "^0.4.7"
     chalk "^2.3.1"
@@ -1786,12 +1786,12 @@ graphql-cli@2.15.6:
     dotenv "^5.0.0"
     express "^4.16.2"
     express-request-proxy "^2.0.0"
-    graphql "0.13.1"
+    graphql "^0.11.0 || ^0.12.0 || ^0.13.0"
     graphql-cli-prepare "1.4.17"
-    graphql-config "2.0.0"
-    graphql-config-extension-graphcool "1.0.7"
-    graphql-config-extension-openapi "1.0.5"
-    graphql-config-extension-prisma "0.0.7"
+    graphql-config "2.0.1"
+    graphql-config-extension-graphcool "1.0.8"
+    graphql-config-extension-openapi "1.0.6"
+    graphql-config-extension-prisma "0.0.9"
     graphql-playground-middleware-express "1.5.7"
     graphql-schema-linter "0.1.1"
     inquirer "5.1.0"
@@ -1816,6 +1816,13 @@ graphql-config-extension-graphcool@1.0.7:
     graphcool-yml "0.4.15"
     graphql-config "2.0.0"
 
+graphql-config-extension-graphcool@1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/graphql-config-extension-graphcool/-/graphql-config-extension-graphcool-1.0.8.tgz#320bf4572b207183fb069d155f4102fdf61b7f63"
+  dependencies:
+    graphcool-yml "0.4.15"
+    graphql-config "^2.0.1"
+
 graphql-config-extension-openapi@1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/graphql-config-extension-openapi/-/graphql-config-extension-openapi-1.0.4.tgz#268a533e2489c7fbeb91f15ad4bbfb45deaa96de"
@@ -1823,12 +1830,12 @@ graphql-config-extension-openapi@1.0.4:
     "@kbrandwijk/swagger-to-graphql" "2.4.2"
     graphql-config "2.0.0"
 
-graphql-config-extension-openapi@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/graphql-config-extension-openapi/-/graphql-config-extension-openapi-1.0.5.tgz#6877d31832eb7586c541c1b9686aae8c2de9986c"
+graphql-config-extension-openapi@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/graphql-config-extension-openapi/-/graphql-config-extension-openapi-1.0.6.tgz#d18cfc9d0905c2fa95dce15de316cd2bee166be1"
   dependencies:
     "@kbrandwijk/swagger-to-graphql" "2.4.3"
-    graphql-config "2.0.0"
+    graphql-config "2.0.1"
 
 graphql-config-extension-prisma@0.0.7:
   version "0.0.7"
@@ -1836,6 +1843,13 @@ graphql-config-extension-prisma@0.0.7:
   dependencies:
     graphql-config "^2.0.0"
     prisma-yml "1.0.25"
+
+graphql-config-extension-prisma@0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/graphql-config-extension-prisma/-/graphql-config-extension-prisma-0.0.9.tgz#239aaa9e1fec5a98573b635bc2c41aeff914d16c"
+  dependencies:
+    graphql-config "^2.0.1"
+    prisma-yml "1.0.28"
 
 graphql-config@1.1.7:
   version "1.1.7"
@@ -1853,6 +1867,16 @@ graphql-config@2.0.0, graphql-config@^2.0.0:
   dependencies:
     graphql-import "^0.4.0"
     graphql-request "^1.4.0"
+    js-yaml "^3.10.0"
+    lodash "^4.17.4"
+    minimatch "^3.0.4"
+
+graphql-config@2.0.1, graphql-config@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/graphql-config/-/graphql-config-2.0.1.tgz#d34a9bdf1d7360af7b01db9b20260a342ddc7390"
+  dependencies:
+    graphql-import "^0.4.4"
+    graphql-request "^1.5.0"
     js-yaml "^3.10.0"
     lodash "^4.17.4"
     minimatch "^3.0.4"
@@ -2010,7 +2034,7 @@ graphql-yoga@1.4.2:
     graphql-tools "^2.18.0"
     subscriptions-transport-ws "^0.9.6"
 
-graphql@0.13.1, graphql@^0.13.0, graphql@^0.13.1:
+graphql@0.13.1, "graphql@^0.11.0 || ^0.12.0 || ^0.13.0", graphql@^0.13.0, graphql@^0.13.1:
   version "0.13.1"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.13.1.tgz#9b3db3d8e40d1827e4172404bfdd2e4e17a58b55"
   dependencies:
