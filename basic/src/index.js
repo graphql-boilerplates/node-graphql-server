@@ -20,7 +20,6 @@ const resolvers = {
           data: {
             title,
             text,
-            isPublished: false,
           },
         },
         info,
