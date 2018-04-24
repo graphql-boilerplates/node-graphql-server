@@ -13,12 +13,12 @@ module.exports = async ({ project, projectDir }) => {
   const endpoint = await makeSandboxEndpoint(project)
 
   replaceInFiles(
-    ['src/index.ts', 'package.json', 'database/prisma.yml'],
+    ['src/index.js', 'package.json', 'database/prisma.yml'],
     templateName,
     project,
   )
 
-  replaceInFiles(['src/index.ts'], '__PRISMA_ENDPOINT__', endpoint)
+  replaceInFiles(['src/index.js'], '__PRISMA_ENDPOINT__', endpoint)
   replaceInFiles(['database/prisma.yml'], '__PRISMA_ENDPOINT__', endpoint)
 
   console.log('Running $ prisma deploy...')
