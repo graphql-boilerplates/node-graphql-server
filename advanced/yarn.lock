@@ -2042,41 +2042,6 @@ graphql-cli@2.15.10:
     update-notifier "^2.3.0"
     yargs "11.0.0"
 
-graphql-cli@2.15.7:
-  version "2.15.7"
-  resolved "https://registry.yarnpkg.com/graphql-cli/-/graphql-cli-2.15.7.tgz#d75f255809eb640ac38812de32b936093db35eb8"
-  dependencies:
-    adm-zip "^0.4.7"
-    chalk "^2.3.1"
-    command-exists "^1.2.2"
-    cross-spawn "^6.0.4"
-    disparity "^2.0.0"
-    dotenv "^5.0.0"
-    express "^4.16.2"
-    express-request-proxy "^2.0.0"
-    graphql "^0.11.0 || ^0.12.0 || ^0.13.0"
-    graphql-cli-prepare "1.4.17"
-    graphql-config "2.0.1"
-    graphql-config-extension-graphcool "1.0.8"
-    graphql-config-extension-openapi "1.0.6"
-    graphql-config-extension-prisma "0.0.9"
-    graphql-playground-middleware-express "1.5.7"
-    graphql-schema-linter "0.1.1"
-    inquirer "5.1.0"
-    is-url-superb "2.0.0"
-    js-yaml "^3.10.0"
-    lodash "^4.17.5"
-    node-fetch "^2.0.0"
-    npm-paths "^1.0.0"
-    opn "^5.2.0"
-    ora "^1.4.0"
-    parse-github-url "^1.0.2"
-    request "^2.83.0"
-    rimraf "2.6.2"
-    source-map-support "^0.5.3"
-    update-notifier "^2.3.0"
-    yargs "11.0.0"
-
 graphql-config-extension-graphcool@1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/graphql-config-extension-graphcool/-/graphql-config-extension-graphcool-1.0.8.tgz#320bf4572b207183fb069d155f4102fdf61b7f63"
@@ -2097,13 +2062,6 @@ graphql-config-extension-prisma@0.0.10:
   dependencies:
     graphql-config "^2.0.1"
     prisma-yml "1.0.47"
-
-graphql-config-extension-prisma@0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/graphql-config-extension-prisma/-/graphql-config-extension-prisma-0.0.9.tgz#239aaa9e1fec5a98573b635bc2c41aeff914d16c"
-  dependencies:
-    graphql-config "^2.0.1"
-    prisma-yml "1.0.28"
 
 graphql-config@2.0.0:
   version "2.0.0"
@@ -2168,12 +2126,6 @@ graphql-playground-html@1.5.5:
   resolved "https://registry.yarnpkg.com/graphql-playground-html/-/graphql-playground-html-1.5.5.tgz#e2aca543eb66b435ead495b45244b2604d6b2d48"
   dependencies:
     graphql-config "2.0.0"
-
-graphql-playground-middleware-express@1.5.7:
-  version "1.5.7"
-  resolved "https://registry.yarnpkg.com/graphql-playground-middleware-express/-/graphql-playground-middleware-express-1.5.7.tgz#a07418791d9f3728b2bda18fc2c6edcaf997cc93"
-  dependencies:
-    graphql-playground-html "1.5.5"
 
 graphql-playground-middleware-express@1.6.1:
   version "1.6.1"
@@ -3910,9 +3862,9 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prisma-binding@1.5.17:
-  version "1.5.17"
-  resolved "https://registry.yarnpkg.com/prisma-binding/-/prisma-binding-1.5.17.tgz#ed18ed3e7b8e4001270a96b162e687b7682e88cd"
+prisma-binding@1.5.18:
+  version "1.5.18"
+  resolved "https://registry.yarnpkg.com/prisma-binding/-/prisma-binding-1.5.18.tgz#cbdfb7bb8c1599542fc83c84fef51621cba376ca"
   dependencies:
     apollo-link "1.2.1"
     apollo-link-error "1.0.7"
@@ -4056,27 +4008,6 @@ prisma-json-schema@0.0.4:
 prisma-json-schema@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/prisma-json-schema/-/prisma-json-schema-0.0.1.tgz#0802e156a293faefdf21e5e41beb8d3681f45cb1"
-
-prisma-yml@1.0.28:
-  version "1.0.28"
-  resolved "https://registry.yarnpkg.com/prisma-yml/-/prisma-yml-1.0.28.tgz#5dd9bb99353cf2fba5bb12880b25faaaf72b9f5e"
-  dependencies:
-    ajv "5"
-    bluebird "^3.5.1"
-    chalk "^2.3.0"
-    debug "^3.1.0"
-    dotenv "^4.0.0"
-    fs-extra "^5.0.0"
-    graphql-request "^1.5.0"
-    isomorphic-fetch "^2.2.1"
-    js-yaml "^3.10.0"
-    json-stable-stringify "^1.0.1"
-    jsonwebtoken "^8.1.0"
-    lodash "^4.17.4"
-    prisma-json-schema "^0.0.1"
-    replaceall "^0.1.6"
-    scuid "^1.0.2"
-    yaml-ast-parser "^0.0.40"
 
 prisma-yml@1.0.47:
   version "1.0.47"
