@@ -8,7 +8,7 @@ const Subscription = {
 
 // This is the same subscription as above but only fires for 
 // posts that have been published.
-// This feature is not yet live due to a gub in Prisma:
+// This feature is not yet live due to a bug in Prisma:
 // https://github.com/graphcool/prisma/issues/1734
 // const Subscription = {
 //   feedSubscription: {
