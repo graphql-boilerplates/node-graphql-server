@@ -3610,9 +3610,9 @@ prisma-binding@2.1.5:
     subscriptions-transport-ws "0.9.8"
     yargs "12.0.1"
 
-prisma-cli-core@1.0.74:
-  version "1.0.74"
-  resolved "https://registry.yarnpkg.com/prisma-cli-core/-/prisma-cli-core-1.0.74.tgz#6493ab540ce7692a40d5b65f5400b9c6dcda17a7"
+prisma-cli-core@1.0.75:
+  version "1.0.75"
+  resolved "https://registry.yarnpkg.com/prisma-cli-core/-/prisma-cli-core-1.0.75.tgz#7a65f859a1c8d7a89397349d5d35eb622ed26e62"
   dependencies:
     adm-zip "^0.4.7"
     archiver "^2.0.3"
@@ -3645,9 +3645,9 @@ prisma-cli-core@1.0.74:
     opn "^5.1.0"
     pause "^0.1.0"
     portfinder "^1.0.13"
-    prisma-db-introspection "0.0.44"
+    prisma-db-introspection "0.0.45"
     prisma-json-schema "0.0.4"
-    prisma-yml "1.0.89"
+    prisma-yml "1.0.90"
     scuid "^1.0.2"
     semver "^5.4.1"
     sillyname "^0.1.0"
@@ -3656,9 +3656,9 @@ prisma-cli-core@1.0.74:
     util.promisify "^1.0.0"
     validator "^8.2.0"
 
-prisma-cli-engine@1.0.77:
-  version "1.0.77"
-  resolved "https://registry.yarnpkg.com/prisma-cli-engine/-/prisma-cli-engine-1.0.77.tgz#924d98e39229183f75e57af72f7fa13d40c3e881"
+prisma-cli-engine@1.0.78:
+  version "1.0.78"
+  resolved "https://registry.yarnpkg.com/prisma-cli-engine/-/prisma-cli-engine-1.0.78.tgz#ec1cbf20cc5a6e17561d38283515c64d61a07d44"
   dependencies:
     "@heroku/linewrap" "^1.0.0"
     ajv "5"
@@ -3700,7 +3700,7 @@ prisma-cli-engine@1.0.77:
     memfs "^2.5.3"
     opn "^5.1.0"
     prisma-json-schema "0.0.4"
-    prisma-yml "1.0.89"
+    prisma-yml "1.0.90"
     raven "2.3.0"
     replaceall "^0.1.6"
     rwlockfile "^1.4.8"
@@ -3715,9 +3715,9 @@ prisma-cli-engine@1.0.77:
     update-notifier "^2.3.0"
     validator "^8.2.0"
 
-prisma-db-introspection@0.0.44:
-  version "0.0.44"
-  resolved "https://registry.yarnpkg.com/prisma-db-introspection/-/prisma-db-introspection-0.0.44.tgz#8a4cf23ac0db9e1fd3707167222304d2d699f6a7"
+prisma-db-introspection@0.0.45:
+  version "0.0.45"
+  resolved "https://registry.yarnpkg.com/prisma-db-introspection/-/prisma-db-introspection-0.0.45.tgz#3a0094643881df76c66bccdf97d8dc38f05cd692"
   dependencies:
     ajv "5"
     bluebird "^3.5.1"
@@ -3770,9 +3770,9 @@ prisma-yml@1.0.50:
     scuid "^1.0.2"
     yaml-ast-parser "^0.0.40"
 
-prisma-yml@1.0.89:
-  version "1.0.89"
-  resolved "https://registry.yarnpkg.com/prisma-yml/-/prisma-yml-1.0.89.tgz#d636a690c67b98b36ab2e5d4c8e323656671eed3"
+prisma-yml@1.0.90:
+  version "1.0.90"
+  resolved "https://registry.yarnpkg.com/prisma-yml/-/prisma-yml-1.0.90.tgz#dd9464145e5190ad90a1f028fc81a339cff4d03e"
   dependencies:
     ajv "5"
     bluebird "^3.5.1"
@@ -3793,13 +3793,13 @@ prisma-yml@1.0.89:
     scuid "^1.0.2"
     yaml-ast-parser "^0.0.40"
 
-prisma@1.15.2:
-  version "1.15.2"
-  resolved "https://registry.yarnpkg.com/prisma/-/prisma-1.15.2.tgz#fc708670de66b079f667624890479914ec499336"
+prisma@1.15.3:
+  version "1.15.3"
+  resolved "https://registry.yarnpkg.com/prisma/-/prisma-1.15.3.tgz#e532a53ed3c5e4ba8ae99f6e456933c2e9f4852d"
   dependencies:
     fs-extra "^5.0.0"
-    prisma-cli-core "1.0.74"
-    prisma-cli-engine "1.0.77"
+    prisma-cli-core "1.0.75"
+    prisma-cli-engine "1.0.78"
     semver "^5.4.1"
     source-map-support "^0.4.18"
 
