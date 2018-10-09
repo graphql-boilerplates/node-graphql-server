@@ -13,7 +13,7 @@
     "prisma-binding": "2.1.6"
   },
   "devDependencies": {
-    "dotenv": "6.0.0",
+    "dotenv": "6.1.0",
     "graphql-cli": "2.16.7",
     "nodemon": "1.18.4",
     "npm-run-all": "4.1.3",
