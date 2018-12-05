@@ -9,11 +9,11 @@
 
 ## Features
 
-- **Scalable GraphQL server:** The server uses [`graphql-yoga`](https://github.com/prisma/graphql-yoga) which is based on Apollo Server & Express
+- **Scalable GraphQL server:** The server uses [`graphql-yoga`](https://github.com/prismagraphql/graphql-yoga) which is based on Apollo Server & Express
 - **GraphQL database:** Includes GraphQL database binding to [Prisma](https://www.prismagraphql.com) (running on MySQL)
-- **Tooling**: Out-of-the-box support for [GraphQL Playground](https://github.com/prisma/graphql-playground) & [query performance tracing](https://github.com/apollographql/apollo-tracing)
+- **Tooling**: Out-of-the-box support for [GraphQL Playground](https://github.com/prismagraphql/graphql-playground) & [query performance tracing](https://github.com/apollographql/apollo-tracing)
 - **Extensible**: Simple and flexible [data model](./database/datamodel.graphql) – easy to adjust and extend
-- **No configuration overhead**: Preconfigured [`graphql-config`](https://github.com/prisma/graphql-config) setup
+- **No configuration overhead**: Preconfigured [`graphql-config`](https://github.com/prismagraphql/graphql-config) setup
 
 For a fully-fledged **GraphQL & Node.js tutorial**, visit [How to GraphQL](https://www.howtographql.com/graphql-js/0-introduction/). You can more learn about the idea behind GraphQL boilerplates [here](https://blog.graph.cool/graphql-boilerplates-graphql-create-how-to-setup-a-graphql-project-6428be2f3a5).
 
@@ -59,7 +59,7 @@ yarn dev
 
 | File name 　　　　　　　　　　　　　　| Description 　　　　　　　　<br><br>| 
 | :--  | :--         |
-| `├── .graphqlconfig.yml` | Configuration file based on [`graphql-config`](https://github.com/prisma/graphql-config) (e.g. used by GraphQL Playground).|
+| `├── .graphqlconfig.yml` | Configuration file based on [`graphql-config`](https://github.com/prismagraphql/graphql-config) (e.g. used by GraphQL Playground).|
 | `└── database ` (_directory_) | _Contains all files that are related to the Prisma database service_ |\
 | `　　├── prisma.yml` | The root configuration file for your Prisma database service ([docs](https://www.prismagraphql.com/docs/reference/prisma.yml/overview-and-example-foatho8aip)) |
 | `　　└── datamodel.graphql` | Defines your data model (written in [GraphQL SDL](https://blog.graph.cool/graphql-sdl-schema-definition-language-6755bcb9ce51)) |
