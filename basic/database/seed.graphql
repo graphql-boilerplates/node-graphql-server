@@ -8,8 +8,8 @@ mutation {
   }
   
   second: createPost(data: {
-    title: "Join us at GraphQL Europe 🇪🇺 "
-    text: "Get a 10%-discount with this promo code on graphql-europe.org: gql-boilerplates"
+    title: "Join us at GraphQL Europe 🇪🇺"
+    text: "Get a 10%-discount with this promo code on graphql-europe.org: gql-boilerplates."
     isPublished: true
   }) {
     id
