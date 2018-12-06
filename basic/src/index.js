@@ -6,7 +6,7 @@ const resolvers = {
     feed: (parent, args, context) => {
       return context.prisma.posts({ where: { published: true } })
     },
-    feed: (parent, args, context) => {
+    drafts: (parent, args, context) => {
       return context.prisma.posts({ where: { published: false } })
     },
     post: (parent, { id }, context) => {
