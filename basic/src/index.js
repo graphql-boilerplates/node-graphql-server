@@ -17,7 +17,7 @@ const resolvers = {
     createDraft(parent, { title, content }, context) {
       return context.prisma.createPost({
         title,
-        conent,
+        content,
       })
     },
     deletePost(parent, { id }, context) {
