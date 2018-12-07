@@ -9,6 +9,7 @@ generate:
   - generator: javascript-client
     output: ../src/generated/prisma-client
 
+# Seed your service with initial data based on `seed.graphql`.
 seed:
   import: seed.graphql
 
