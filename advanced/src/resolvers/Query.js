@@ -15,11 +15,11 @@ const Query = {
     return context.prisma.posts({ where })
   },
   post(parent, { id }, context) {
-    return context.prisma.post({ where: { id } })
+    return context.prisma.post({ id })
   },
   me(parent, args, context) {
     const id = getUserId(context)
-    return context.prisma.user({ where: { id } })
+    return context.prisma.user({ id })
   },
 }
 
