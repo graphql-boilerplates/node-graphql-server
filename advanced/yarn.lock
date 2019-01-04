@@ -2873,9 +2873,9 @@ prisma-client-lib@1.23.2:
     ws "^6.1.0"
     zen-observable "^0.8.10"
 
-prisma-client-lib@1.23.3:
-  version "1.23.3"
-  resolved "https://registry.yarnpkg.com/prisma-client-lib/-/prisma-client-lib-1.23.3.tgz#38fb144f9913493193c8075e4cc499863b1a4460"
+prisma-client-lib@1.23.4:
+  version "1.23.4"
+  resolved "https://registry.yarnpkg.com/prisma-client-lib/-/prisma-client-lib-1.23.4.tgz#7437daf9ffd91384de652e1f2575ec42b866900d"
   dependencies:
     "@types/node" "^10.12.0"
     "@types/prettier" "^1.13.2"
@@ -2886,8 +2886,8 @@ prisma-client-lib@1.23.3:
     jsonwebtoken "^8.3.0"
     lodash.flatten "^4.4.0"
     prettier "^1.14.3"
-    prisma-datamodel "1.23.3"
-    prisma-generate-schema "1.23.3"
+    prisma-datamodel "1.23.4"
+    prisma-generate-schema "1.23.4"
     subscriptions-transport-ws "^0.9.15"
     uppercamelcase "^3.0.0"
     ws "^6.1.0"
@@ -2901,9 +2901,9 @@ prisma-datamodel@1.23.2:
     pluralize "^7.0.0"
     popsicle "10"
 
-prisma-datamodel@1.23.3:
-  version "1.23.3"
-  resolved "https://registry.yarnpkg.com/prisma-datamodel/-/prisma-datamodel-1.23.3.tgz#6bebd0135a3d64e18d55a6e4ca51f96cbc94df37"
+prisma-datamodel@1.23.4:
+  version "1.23.4"
+  resolved "https://registry.yarnpkg.com/prisma-datamodel/-/prisma-datamodel-1.23.4.tgz#c206770f10f5d2f20ae3c838afa4c1d7bf6ff6bf"
   dependencies:
     graphql "^14.0.2"
     pluralize "^7.0.0"
@@ -2933,14 +2933,14 @@ prisma-generate-schema@1.23.2:
     popsicle "10"
     prisma-datamodel "1.23.2"
 
-prisma-generate-schema@1.23.3:
-  version "1.23.3"
-  resolved "https://registry.yarnpkg.com/prisma-generate-schema/-/prisma-generate-schema-1.23.3.tgz#7bc7b09643d9ad5bbe7a824d5d757a8af4f1de8d"
+prisma-generate-schema@1.23.4:
+  version "1.23.4"
+  resolved "https://registry.yarnpkg.com/prisma-generate-schema/-/prisma-generate-schema-1.23.4.tgz#bdd6c17bbc4860d77b81d3dbef4198a1ddf044db"
   dependencies:
     graphql "^14.0.2"
     pluralize "^7.0.0"
     popsicle "10"
-    prisma-datamodel "1.23.3"
+    prisma-datamodel "1.23.4"
 
 prisma-json-schema@0.1.3:
   version "0.1.3"
