@@ -9,6 +9,6 @@
     "prisma-client-lib": "1.28.4"
   },
   "devDependencies": {
-    "prisma": "1.28.3"
+    "prisma": "1.28.4"
   }
 }
