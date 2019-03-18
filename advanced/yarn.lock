@@ -1028,6 +1028,12 @@ ecdsa-sig-formatter@1.0.10:
   dependencies:
     safe-buffer "^5.0.1"
 
+ecdsa-sig-formatter@1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.11.tgz#ae0f0fa2d85045ef14a817daa3ce9acd0489e5bf"
+  dependencies:
+    safe-buffer "^5.0.1"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -1994,11 +2000,11 @@ jsonify@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
 
-jsonwebtoken@8.5.0:
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/jsonwebtoken/-/jsonwebtoken-8.5.0.tgz#ebd0ca2a69797816e1c5af65b6c759787252947e"
+jsonwebtoken@8.5.1:
+  version "8.5.1"
+  resolved "https://registry.yarnpkg.com/jsonwebtoken/-/jsonwebtoken-8.5.1.tgz#00e71e0b8df54c2121a1f26137df2280673bcc0d"
   dependencies:
-    jws "^3.2.1"
+    jws "^3.2.2"
     lodash.includes "^4.3.0"
     lodash.isboolean "^3.0.3"
     lodash.isinteger "^4.0.4"
@@ -2040,12 +2046,12 @@ jwa@^1.1.5:
     ecdsa-sig-formatter "1.0.10"
     safe-buffer "^5.0.1"
 
-jwa@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/jwa/-/jwa-1.2.0.tgz#606da70c1c6d425cad329c77c99f2df2a981489a"
+jwa@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/jwa/-/jwa-1.4.1.tgz#743c32985cb9e98655530d53641b66c8645b039a"
   dependencies:
     buffer-equal-constant-time "1.0.1"
-    ecdsa-sig-formatter "1.0.10"
+    ecdsa-sig-formatter "1.0.11"
     safe-buffer "^5.0.1"
 
 jws@^3.1.5:
@@ -2055,11 +2061,11 @@ jws@^3.1.5:
     jwa "^1.1.5"
     safe-buffer "^5.0.1"
 
-jws@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/jws/-/jws-3.2.1.tgz#d79d4216a62c9afa0a3d5e8b5356d75abdeb2be5"
+jws@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/jws/-/jws-3.2.2.tgz#001099f3639468c9414000e99995fa52fb478304"
   dependencies:
-    jwa "^1.2.0"
+    jwa "^1.4.1"
     safe-buffer "^5.0.1"
 
 kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
@@ -2911,26 +2917,6 @@ prisma-cli-engine@1.28.5:
     treeify "^1.0.1"
     update-notifier "^2.3.0"
 
-prisma-client-lib@1.28.4:
-  version "1.28.4"
-  resolved "https://registry.yarnpkg.com/prisma-client-lib/-/prisma-client-lib-1.28.4.tgz#36e07c666aab8c02ae105e3df066e59649040e6c"
-  dependencies:
-    "@types/node" "^10.12.0"
-    "@types/prettier" "^1.13.2"
-    debug "^4.1.0"
-    flow-bin "^0.87.0"
-    graphql-tag "^2.10.0"
-    http-link-dataloader "^0.1.6"
-    jsonwebtoken "^8.3.0"
-    lodash.flatten "^4.4.0"
-    prettier "1.14.3"
-    prisma-datamodel "1.28.4"
-    prisma-generate-schema "1.28.4"
-    subscriptions-transport-ws "^0.9.15"
-    uppercamelcase "^3.0.0"
-    ws "^6.1.0"
-    zen-observable "^0.8.10"
-
 prisma-client-lib@1.28.5:
   version "1.28.5"
   resolved "https://registry.yarnpkg.com/prisma-client-lib/-/prisma-client-lib-1.28.5.tgz#b0efccbbd83e57294c0a851f2657dd21603c961c"
@@ -2950,14 +2936,6 @@ prisma-client-lib@1.28.5:
     uppercamelcase "^3.0.0"
     ws "^6.1.0"
     zen-observable "^0.8.10"
-
-prisma-datamodel@1.28.4:
-  version "1.28.4"
-  resolved "https://registry.yarnpkg.com/prisma-datamodel/-/prisma-datamodel-1.28.4.tgz#c91c79005259b544c4535a84ae6120521ad7f43f"
-  dependencies:
-    graphql "^14.0.2"
-    pluralize "^7.0.0"
-    popsicle "10"
 
 prisma-datamodel@1.28.5:
   version "1.28.5"
@@ -2983,15 +2961,6 @@ prisma-db-introspection@1.28.5:
     prisma-yml "1.28.5"
     scuid "^1.0.2"
     uppercamelcase "^3.0.0"
-
-prisma-generate-schema@1.28.4:
-  version "1.28.4"
-  resolved "https://registry.yarnpkg.com/prisma-generate-schema/-/prisma-generate-schema-1.28.4.tgz#96c2088bc79ef26b502d8516b877aac0c16e9609"
-  dependencies:
-    graphql "^14.0.2"
-    pluralize "^7.0.0"
-    popsicle "10"
-    prisma-datamodel "1.28.4"
 
 prisma-generate-schema@1.28.5:
   version "1.28.5"
