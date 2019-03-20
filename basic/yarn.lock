@@ -68,6 +68,14 @@
     "@types/express-serve-static-core" "*"
     "@types/serve-static" "*"
 
+"@types/express@^4.16.1":
+  version "4.16.1"
+  resolved "https://registry.yarnpkg.com/@types/express/-/express-4.16.1.tgz#d756bd1a85c34d87eaf44c888bad27ba8a4b7cf0"
+  dependencies:
+    "@types/body-parser" "*"
+    "@types/express-serve-static-core" "*"
+    "@types/serve-static" "*"
+
 "@types/form-data@0.0.33":
   version "0.0.33"
   resolved "https://registry.yarnpkg.com/@types/form-data/-/form-data-0.0.33.tgz#c9ac85b2a5fd18435b8c85d9ecb50e6d6c893ff8"
@@ -2588,10 +2596,11 @@ prettier@1.14.3:
   version "1.14.3"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.14.3.tgz#90238dd4c0684b7edce5f83b0fb7328e48bd0895"
 
-prisma-cli-core@1.28.5:
-  version "1.28.5"
-  resolved "https://registry.yarnpkg.com/prisma-cli-core/-/prisma-cli-core-1.28.5.tgz#5d7df5584b375b526ba78ec3f60247115d7622c9"
+prisma-cli-core@1.29.0:
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/prisma-cli-core/-/prisma-cli-core-1.29.0.tgz#4e9e3b6de64cc8a291e11301378a631317f36069"
   dependencies:
+    "@types/express" "^4.16.1"
     adm-zip "^0.4.7"
     archiver "^2.0.3"
     callsites "^2.0.0"
@@ -2617,19 +2626,20 @@ prisma-cli-core@1.28.5:
     node-forge "^0.7.1"
     npm-run "4.1.2"
     opn "^5.1.0"
-    prisma-client-lib "1.28.5"
-    prisma-datamodel "1.28.5"
-    prisma-db-introspection "1.28.5"
-    prisma-generate-schema "1.28.5"
-    prisma-yml "1.28.5"
+    prisma-client-lib "1.29.0"
+    prisma-datamodel "1.29.0"
+    prisma-db-introspection "1.29.0"
+    prisma-generate-schema "1.29.0"
+    prisma-yml "1.29.0"
     scuid "^1.0.2"
+    semver "^5.6.0"
     sillyname "^0.1.0"
     source-map-support "^0.4.18"
     table "^4.0.1"
 
-prisma-cli-engine@1.28.5:
-  version "1.28.5"
-  resolved "https://registry.yarnpkg.com/prisma-cli-engine/-/prisma-cli-engine-1.28.5.tgz#41781388d67b708fbe41201f1ce37351e75d433b"
+prisma-cli-engine@1.29.0:
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/prisma-cli-engine/-/prisma-cli-engine-1.29.0.tgz#6516aec0a2d0dde397c3572cbc37790cb625fe5d"
   dependencies:
     "@heroku/linewrap" "^1.0.0"
     ansi-escapes "^3.0.0"
@@ -2665,7 +2675,7 @@ prisma-cli-engine@1.28.5:
     mkdirp "^0.5.1"
     opn "^5.1.0"
     prisma-json-schema "0.1.3"
-    prisma-yml "1.28.5"
+    prisma-yml "1.29.0"
     raven "2.6.4"
     rwlockfile "^1.4.8"
     scuid "^1.0.2"
@@ -2676,26 +2686,6 @@ prisma-cli-engine@1.28.5:
     supports-color "^4.4.0"
     treeify "^1.0.1"
     update-notifier "^2.3.0"
-
-prisma-client-lib@1.28.5:
-  version "1.28.5"
-  resolved "https://registry.yarnpkg.com/prisma-client-lib/-/prisma-client-lib-1.28.5.tgz#b0efccbbd83e57294c0a851f2657dd21603c961c"
-  dependencies:
-    "@types/node" "^10.12.0"
-    "@types/prettier" "^1.13.2"
-    debug "^4.1.0"
-    flow-bin "^0.87.0"
-    graphql-tag "^2.10.0"
-    http-link-dataloader "^0.1.6"
-    jsonwebtoken "^8.3.0"
-    lodash.flatten "^4.4.0"
-    prettier "1.14.3"
-    prisma-datamodel "1.28.5"
-    prisma-generate-schema "1.28.5"
-    subscriptions-transport-ws "^0.9.15"
-    uppercamelcase "^3.0.0"
-    ws "^6.1.0"
-    zen-observable "^0.8.10"
 
 prisma-client-lib@1.29.0:
   version "1.29.0"
@@ -2717,14 +2707,6 @@ prisma-client-lib@1.29.0:
     ws "^6.1.0"
     zen-observable "^0.8.10"
 
-prisma-datamodel@1.28.5:
-  version "1.28.5"
-  resolved "https://registry.yarnpkg.com/prisma-datamodel/-/prisma-datamodel-1.28.5.tgz#f6a7dfcc367f026881823986be9d671b0abdb1ce"
-  dependencies:
-    graphql "^14.0.2"
-    pluralize "^7.0.0"
-    popsicle "10"
-
 prisma-datamodel@1.29.0:
   version "1.29.0"
   resolved "https://registry.yarnpkg.com/prisma-datamodel/-/prisma-datamodel-1.29.0.tgz#78c7ca35c8eb71dff331a97de37104c2215277a2"
@@ -2733,9 +2715,9 @@ prisma-datamodel@1.29.0:
     pluralize "^7.0.0"
     popsicle "10"
 
-prisma-db-introspection@1.28.5:
-  version "1.28.5"
-  resolved "https://registry.yarnpkg.com/prisma-db-introspection/-/prisma-db-introspection-1.28.5.tgz#9786bd6c66ee0069fbae6b042d105d73ea67ea44"
+prisma-db-introspection@1.29.0:
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/prisma-db-introspection/-/prisma-db-introspection-1.29.0.tgz#d10d4de077d5e65bb6eaf4ed1c7057b329186100"
   dependencies:
     "@types/mongodb" "^3.1.14"
     "@types/mysql" "^2.15.5"
@@ -2745,19 +2727,10 @@ prisma-db-introspection@1.28.5:
     mysql "^2.16.0"
     pg "^7.4.1"
     pluralize "^7.0.0"
-    prisma-datamodel "1.28.5"
-    prisma-yml "1.28.5"
+    prisma-datamodel "1.29.0"
+    prisma-yml "1.29.0"
     scuid "^1.0.2"
     uppercamelcase "^3.0.0"
-
-prisma-generate-schema@1.28.5:
-  version "1.28.5"
-  resolved "https://registry.yarnpkg.com/prisma-generate-schema/-/prisma-generate-schema-1.28.5.tgz#186cf8a0940e06667ee39f937dac7859e8fdd962"
-  dependencies:
-    graphql "^14.0.2"
-    pluralize "^7.0.0"
-    popsicle "10"
-    prisma-datamodel "1.28.5"
 
 prisma-generate-schema@1.29.0:
   version "1.29.0"
@@ -2795,9 +2768,9 @@ prisma-yml@1.20.0-beta.18:
     scuid "^1.0.2"
     yaml-ast-parser "^0.0.40"
 
-prisma-yml@1.28.5:
-  version "1.28.5"
-  resolved "https://registry.yarnpkg.com/prisma-yml/-/prisma-yml-1.28.5.tgz#750dcaa7dbd6ff32bbb25fc504aecca17b6d30d1"
+prisma-yml@1.29.0:
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/prisma-yml/-/prisma-yml-1.29.0.tgz#9af183ec0e2ec3cf6ac16dd54ae849dc905fee88"
   dependencies:
     ajv "5"
     bluebird "^3.5.1"
@@ -2818,13 +2791,13 @@ prisma-yml@1.28.5:
     scuid "^1.0.2"
     yaml-ast-parser "^0.0.40"
 
-prisma@1.28.5:
-  version "1.28.5"
-  resolved "https://registry.yarnpkg.com/prisma/-/prisma-1.28.5.tgz#0b137d1046c614b3d81f5d69916521587c1c553a"
+prisma@1.29.0:
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/prisma/-/prisma-1.29.0.tgz#59369e655d8634b8f6282558fb782cbc39dce97a"
   dependencies:
     fs-extra "^7.0.0"
-    prisma-cli-core "1.28.5"
-    prisma-cli-engine "1.28.5"
+    prisma-cli-core "1.29.0"
+    prisma-cli-engine "1.29.0"
     semver "^5.4.1"
     source-map-support "^0.4.18"
 
@@ -3111,6 +3084,10 @@ semver@4.3.2:
 semver@^5.0.3, semver@^5.1.0, semver@^5.4.1:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.0.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
+
+semver@^5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.6.0.tgz#7e74256fbaa49c75aa7c7a205cc22799cac80004"
 
 send@0.16.2:
   version "0.16.2"
