@@ -2927,26 +2927,6 @@ prisma-cli-engine@1.32.0:
     treeify "^1.0.1"
     update-notifier "^2.3.0"
 
-prisma-client-lib@1.31.2:
-  version "1.31.2"
-  resolved "https://registry.yarnpkg.com/prisma-client-lib/-/prisma-client-lib-1.31.2.tgz#dec2707c6c17d23e1b87093c8811e7a7d7013fc1"
-  dependencies:
-    "@types/node" "^10.12.0"
-    "@types/prettier" "^1.13.2"
-    debug "^4.1.0"
-    flow-bin "^0.87.0"
-    graphql-tag "^2.10.0"
-    http-link-dataloader "^0.1.6"
-    jsonwebtoken "^8.3.0"
-    lodash.flatten "^4.4.0"
-    prettier "1.16.4"
-    prisma-datamodel "1.31.2"
-    prisma-generate-schema "1.31.2"
-    subscriptions-transport-ws "^0.9.15"
-    uppercamelcase "^3.0.0"
-    ws "^6.1.0"
-    zen-observable "^0.8.10"
-
 prisma-client-lib@1.32.0:
   version "1.32.0"
   resolved "https://registry.yarnpkg.com/prisma-client-lib/-/prisma-client-lib-1.32.0.tgz#17d6a4b56aa03db3e2e58a2948cc1a9e2d617790"
@@ -2966,14 +2946,6 @@ prisma-client-lib@1.32.0:
     uppercamelcase "^3.0.0"
     ws "^6.1.0"
     zen-observable "^0.8.10"
-
-prisma-datamodel@1.31.2:
-  version "1.31.2"
-  resolved "https://registry.yarnpkg.com/prisma-datamodel/-/prisma-datamodel-1.31.2.tgz#5fad3dc7b5e0236cfbc20504356821173604d118"
-  dependencies:
-    graphql "^14.0.2"
-    pluralize "^7.0.0"
-    popsicle "10"
 
 prisma-datamodel@1.32.0:
   version "1.32.0"
@@ -2998,15 +2970,6 @@ prisma-db-introspection@1.32.0:
     prisma-datamodel "1.32.0"
     prisma-yml "1.32.0"
     scuid "^1.0.2"
-
-prisma-generate-schema@1.31.2:
-  version "1.31.2"
-  resolved "https://registry.yarnpkg.com/prisma-generate-schema/-/prisma-generate-schema-1.31.2.tgz#00ba38e765e6f5747774322e32fe40600233221d"
-  dependencies:
-    graphql "^14.0.2"
-    pluralize "^7.0.0"
-    popsicle "10"
-    prisma-datamodel "1.31.2"
 
 prisma-generate-schema@1.32.0:
   version "1.32.0"
