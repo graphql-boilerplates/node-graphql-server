@@ -2588,9 +2588,9 @@ prettier@1.16.4:
   version "1.16.4"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.16.4.tgz#73e37e73e018ad2db9c76742e2647e21790c9717"
 
-prisma-cli-core@1.34.2:
-  version "1.34.2"
-  resolved "https://registry.yarnpkg.com/prisma-cli-core/-/prisma-cli-core-1.34.2.tgz#7f5196084787922c8e02651be87c49c3f5da90c0"
+prisma-cli-core@1.34.3:
+  version "1.34.3"
+  resolved "https://registry.yarnpkg.com/prisma-cli-core/-/prisma-cli-core-1.34.3.tgz#012d40dc67a5921e4e457f0e478521ea771e734a"
   dependencies:
     "@types/express" "^4.16.1"
     adm-zip "^0.4.7"
@@ -2618,20 +2618,20 @@ prisma-cli-core@1.34.2:
     node-forge "^0.7.1"
     npm-run "4.1.2"
     opn "^5.1.0"
-    prisma-client-lib "1.34.2"
-    prisma-datamodel "1.34.2"
-    prisma-db-introspection "1.34.2"
-    prisma-generate-schema "1.34.2"
-    prisma-yml "1.34.2"
+    prisma-client-lib "1.34.3"
+    prisma-datamodel "1.34.3"
+    prisma-db-introspection "1.34.3"
+    prisma-generate-schema "1.34.3"
+    prisma-yml "1.34.3"
     scuid "^1.0.2"
     semver "^5.6.0"
     sillyname "^0.1.0"
     source-map-support "^0.4.18"
     table "^4.0.1"
 
-prisma-cli-engine@1.34.2:
-  version "1.34.2"
-  resolved "https://registry.yarnpkg.com/prisma-cli-engine/-/prisma-cli-engine-1.34.2.tgz#61d2ca1191551c49ac3b4a78a747f5a8c8416487"
+prisma-cli-engine@1.34.3:
+  version "1.34.3"
+  resolved "https://registry.yarnpkg.com/prisma-cli-engine/-/prisma-cli-engine-1.34.3.tgz#0eb0be5b8d96ad26e88c2ea33ef019fc33fb0839"
   dependencies:
     "@heroku/linewrap" "^1.0.0"
     ansi-escapes "^3.0.0"
@@ -2667,7 +2667,7 @@ prisma-cli-engine@1.34.2:
     mkdirp "^0.5.1"
     opn "^5.1.0"
     prisma-json-schema "0.1.3"
-    prisma-yml "1.34.2"
+    prisma-yml "1.34.3"
     raven "2.6.4"
     rwlockfile "^1.4.8"
     scuid "^1.0.2"
@@ -2678,26 +2678,6 @@ prisma-cli-engine@1.34.2:
     supports-color "^4.4.0"
     treeify "^1.0.1"
     update-notifier "^2.3.0"
-
-prisma-client-lib@1.34.2:
-  version "1.34.2"
-  resolved "https://registry.yarnpkg.com/prisma-client-lib/-/prisma-client-lib-1.34.2.tgz#a4fb1f4ffb033e6231b234dced0ccab3f0f9d9fc"
-  dependencies:
-    "@types/node" "^10.12.0"
-    "@types/prettier" "^1.13.2"
-    debug "^4.1.0"
-    flow-bin "^0.87.0"
-    graphql-tag "^2.10.0"
-    http-link-dataloader "^0.1.6"
-    jsonwebtoken "^8.3.0"
-    lodash.flatten "^4.4.0"
-    prettier "1.16.4"
-    prisma-datamodel "1.34.2"
-    prisma-generate-schema "1.34.2"
-    subscriptions-transport-ws "^0.9.15"
-    uppercamelcase "^3.0.0"
-    ws "^6.1.0"
-    zen-observable "^0.8.10"
 
 prisma-client-lib@1.34.3:
   version "1.34.3"
@@ -2719,14 +2699,6 @@ prisma-client-lib@1.34.3:
     ws "^6.1.0"
     zen-observable "^0.8.10"
 
-prisma-datamodel@1.34.2:
-  version "1.34.2"
-  resolved "https://registry.yarnpkg.com/prisma-datamodel/-/prisma-datamodel-1.34.2.tgz#b8e89c4fa5481fb54efa869147c1201e668e0ac1"
-  dependencies:
-    graphql "^14.3.0"
-    pluralize "^7.0.0"
-    popsicle "10"
-
 prisma-datamodel@1.34.3:
   version "1.34.3"
   resolved "https://registry.yarnpkg.com/prisma-datamodel/-/prisma-datamodel-1.34.3.tgz#932f97af3099ccc235a9f48c5d9e111751248c8e"
@@ -2735,9 +2707,9 @@ prisma-datamodel@1.34.3:
     pluralize "^7.0.0"
     popsicle "10"
 
-prisma-db-introspection@1.34.2:
-  version "1.34.2"
-  resolved "https://registry.yarnpkg.com/prisma-db-introspection/-/prisma-db-introspection-1.34.2.tgz#054b6877e098b9f3b88e0f550b229031f9448c23"
+prisma-db-introspection@1.34.3:
+  version "1.34.3"
+  resolved "https://registry.yarnpkg.com/prisma-db-introspection/-/prisma-db-introspection-1.34.3.tgz#fc97e77f9fd4bf8e59e52528dfc701d2c2dc6e88"
   dependencies:
     "@types/mongodb" "^3.1.14"
     "@types/mysql" "^2.15.5"
@@ -2747,18 +2719,9 @@ prisma-db-introspection@1.34.2:
     mysql "^2.16.0"
     pg "^7.4.1"
     pluralize "^7.0.0"
-    prisma-datamodel "1.34.2"
-    prisma-yml "1.34.2"
+    prisma-datamodel "1.34.3"
+    prisma-yml "1.34.3"
     scuid "^1.0.2"
-
-prisma-generate-schema@1.34.2:
-  version "1.34.2"
-  resolved "https://registry.yarnpkg.com/prisma-generate-schema/-/prisma-generate-schema-1.34.2.tgz#0d1e6fb51f8314a4dc4d83cdd780a2d8380a4511"
-  dependencies:
-    graphql "^14.3.0"
-    pluralize "^7.0.0"
-    popsicle "10"
-    prisma-datamodel "1.34.2"
 
 prisma-generate-schema@1.34.3:
   version "1.34.3"
@@ -2796,9 +2759,9 @@ prisma-yml@1.20.0-beta.18:
     scuid "^1.0.2"
     yaml-ast-parser "^0.0.40"
 
-prisma-yml@1.34.2:
-  version "1.34.2"
-  resolved "https://registry.yarnpkg.com/prisma-yml/-/prisma-yml-1.34.2.tgz#6b5195d86fb0618d8d56e71e8433b480697968ac"
+prisma-yml@1.34.3:
+  version "1.34.3"
+  resolved "https://registry.yarnpkg.com/prisma-yml/-/prisma-yml-1.34.3.tgz#290e996e6749823941c896b4741918e66aa1e104"
   dependencies:
     ajv "5"
     bluebird "^3.5.1"
@@ -2819,13 +2782,13 @@ prisma-yml@1.34.2:
     scuid "^1.0.2"
     yaml-ast-parser "^0.0.40"
 
-prisma@1.34.2:
-  version "1.34.2"
-  resolved "https://registry.yarnpkg.com/prisma/-/prisma-1.34.2.tgz#f038d599be7e57adbe3354f52088ebf88471d72b"
+prisma@1.34.3:
+  version "1.34.3"
+  resolved "https://registry.yarnpkg.com/prisma/-/prisma-1.34.3.tgz#be3bc0313042ed19ad5eee92b93dcf687403a407"
   dependencies:
     fs-extra "^7.0.0"
-    prisma-cli-core "1.34.2"
-    prisma-cli-engine "1.34.2"
+    prisma-cli-core "1.34.3"
+    prisma-cli-engine "1.34.3"
     semver "^5.4.1"
     source-map-support "^0.4.18"
 
