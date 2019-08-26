@@ -1475,9 +1475,9 @@ graphql-import@^0.7.0, graphql-import@^0.7.1:
     lodash "^4.17.4"
     resolve-from "^4.0.0"
 
-graphql-middleware@3.0.5:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/graphql-middleware/-/graphql-middleware-3.0.5.tgz#8cbce45ce4be95bd4600ffe5332e1936ec721e10"
+graphql-middleware@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/graphql-middleware/-/graphql-middleware-4.0.1.tgz#8c627b22cc046a47e9474a813cf9e0bd50fa0c4b"
   dependencies:
     graphql-tools "^4.0.5"
 
@@ -1552,9 +1552,9 @@ graphql-upload@^8.0.0:
     http-errors "^1.7.2"
     object-path "^0.11.4"
 
-graphql-yoga@1.18.2:
-  version "1.18.2"
-  resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-1.18.2.tgz#74a87072258b080b0e0d89a62010ee96e657d2cf"
+graphql-yoga@1.18.3:
+  version "1.18.3"
+  resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-1.18.3.tgz#047fa511dbef63cf6d6ea7c06a71202d37444844"
   dependencies:
     "@types/aws-lambda" "8.10.13"
     "@types/cors" "^2.8.4"
@@ -1571,7 +1571,7 @@ graphql-yoga@1.18.2:
     graphql "^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0"
     graphql-deduplicator "^2.0.1"
     graphql-import "^0.7.0"
-    graphql-middleware "3.0.5"
+    graphql-middleware "4.0.1"
     graphql-playground-middleware-express "1.7.11"
     graphql-playground-middleware-lambda "1.7.12"
     graphql-subscriptions "^0.5.8"
