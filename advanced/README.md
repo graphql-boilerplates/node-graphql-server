@@ -9,7 +9,7 @@
 
 ## Features
 
-- **Scalable GraphQL server:** The server uses [`graphql-yoga`](https://github.com/prisma/graphql-yoga) which is based on Apollo Server & Express
+- **Scalable GraphQL server:** The server uses [`graphql-yoga`](https://github.com/prismagraphql/graphql-yoga) which is based on Apollo Server & Express
 - **GraphQL database:** Includes GraphQL database binding to [Prisma](https://www.prismagraphql.com) (running on MySQL)
 - **Authentication**: Signup and login workflows are ready to use for your users
 - **Tooling**: Out-of-the-box support for [GraphQL Playground](https://github.com/prisma/graphql-playground) & [query performance tracing](https://github.com/apollographql/apollo-tracing)
